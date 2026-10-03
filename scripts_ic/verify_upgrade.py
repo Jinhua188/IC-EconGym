@@ -1,6 +1,6 @@
 """Check learned adapters, fixed splits, checkpoint identity and queue timing."""
 from pathlib import Path
-import json,hashlib
+import json,hashlib,csv
 import numpy as np
 from scripts_ic.upgrade_common import ROOT,scenario,write_csv
 from scripts_ic.run_upgrade_experiments import run_episode
@@ -10,6 +10,8 @@ from ic_extension.capacity_transition import schedule_capacity
 def main():
     report={'adapter_runs':[],'training_instances':20}
     test=json.loads((ROOT/'benchmark_splits/locked_scenarios_v3.json').read_text(encoding='utf-8'))
+    index_path=ROOT/'benchmark_splits/training_scenario_indices.csv'
+    stored_indices=list(csv.DictReader(index_path.open(encoding='utf-8-sig'))) if index_path.exists() else None
     indices=[]
     for task in ['ic_r1','ic_g5']:
         tests={cfg['seed'] for split in test[task].values() for cfg in split}
@@ -20,7 +22,12 @@ def main():
             metadata=json.loads((folder/'metadata.json').read_text(encoding='utf-8'))
             assert metadata['checkpoint_sha256']==hashlib.sha256((folder/'best.pt').read_bytes()).hexdigest()
             assert metadata['ppo_source_sha256']==hashlib.sha256((ROOT/'learning/ppo.py').read_bytes()).hexdigest()
-            episodes=json.loads((folder/'training_scenarios.json').read_text(encoding='utf-8'))
+            if stored_indices is not None:
+                selected=[r for r in stored_indices if r['task']==task and int(r['training_seed'])==seed]
+                episodes=[{'update':int(r['update']),'episode':int(r['episode']),'index':int(r['index']),'cfg':scenario(task,'train',int(r['index']))} for r in selected]
+                assert all(e['cfg']['seed']==int(r['scenario_seed']) for e,r in zip(episodes,selected))
+            else:
+                episodes=json.loads((folder/'training_scenarios.json').read_text(encoding='utf-8'))
             assert len(episodes)==400
             assert not {e['cfg']['seed'] for e in episodes}.intersection(tests|validation)
             indices.extend({'task':task,'training_seed':seed,'update':e['update'],'episode':e['episode'],'index':e['index'],'scenario_seed':e['cfg']['seed']} for e in episodes)
