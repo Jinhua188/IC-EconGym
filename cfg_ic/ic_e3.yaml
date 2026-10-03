@@ -1,0 +1,53 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- innovation
+- ai
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_e3
+name: AI与研发效率
+research_question: AI与研发共同投入能否加快技术状态积累？
+metrics:
+- technology
+- value_added
+- output
+rd_rate: 0.02
+ai_rate: 0.02
+rd_efficiency: 0.1
+tech_depreciation: 1.0e-05
+variants:
+  baseline:
+    modules:
+    - edge
+    - innovation
+    ai_rate: 0.0
+  rd_without_ai_complement:
+    modules:
+    - edge
+    - innovation
+    ai_rate: 0.0
+  moderate_ai_rd_complement:
+    innovation_ai_gain: 0.5
+  strong_ai_rd_complement:
+    innovation_ai_gain: 1.5
+source_v1_task_id: ic_e3_ai_innovation
+theory: 知识生产函数中AI与R&D互补，并通过投入产出邻接产生知识溢出。
+source_v1_outcomes:
+- avg_technology
+- total_value_added
+- total_output
+v1_arm_names:
+- rd_without_ai_complement
+- moderate_ai_rd_complement
+- strong_ai_rd_complement

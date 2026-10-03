@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="331.2pt" viewBox="0 0 720 331.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T12:32:27.638996</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 331.2 
+L 720 331.2 
+L 720 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 24.768 121.0176 
+L 199.368 121.0176 
+Q 204.9552 121.0176 204.9552 116.064 
+L 204.9552 54.144 
+Q 204.9552 49.1904 199.368 49.1904 
+L 24.768 49.1904 
+Q 19.1808 49.1904 19.1808 54.144 
+L 19.1808 116.064 
+Q 19.1808 121.0176 24.768 121.0176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 255.24 121.0176 
+L 450.792 121.0176 
+Q 456.3792 121.0176 456.3792 116.064 
+L 456.3792 54.144 
+Q 456.3792 49.1904 450.792 49.1904 
+L 255.24 49.1904 
+Q 249.6528 49.1904 249.6528 54.144 
+L 249.6528 116.064 
+Q 249.6528 121.0176 255.24 121.0176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 513.648 121.0176 
+L 688.248 121.0176 
+Q 693.8352 121.0176 693.8352 116.064 
+L 693.8352 54.144 
+Q 693.8352 49.1904 688.248 49.1904 
+L 513.648 49.1904 
+Q 508.0608 49.1904 508.0608 54.144 
+L 508.0608 116.064 
+Q 508.0608 121.0176 513.648 121.0176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 24.768 275.8176 
+L 199.368 275.8176 
+Q 204.9552 275.8176 204.9552 270.864 
+L 204.9552 177.984 
+Q 204.9552 173.0304 199.368 173.0304 
+L 24.768 173.0304 
+Q 19.1808 173.0304 19.1808 177.984 
+L 19.1808 270.864 
+Q 19.1808 275.8176 24.768 275.8176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 255.24 275.8176 
+L 450.792 275.8176 
+Q 456.3792 275.8176 456.3792 270.864 
+L 456.3792 177.984 
+Q 456.3792 173.0304 450.792 173.0304 
+L 255.24 173.0304 
+Q 249.6528 173.0304 249.6528 177.984 
+L 249.6528 270.864 
+Q 249.6528 275.8176 255.24 275.8176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 513.648 275.8176 
+L 688.248 275.8176 
+Q 693.8352 275.8176 693.8352 270.864 
+L 693.8352 177.984 
+Q 693.8352 173.0304 688.248 173.0304 
+L 513.648 173.0304 
+Q 508.0608 173.0304 508.0608 177.984 
+L 508.0608 270.864 
+Q 508.0608 275.8176 513.648 275.8176 
+z
+" clip-path="url(#peaf4ada8e3)" style="fill: #eef4ff; stroke: #93b4e8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(63.102375 82.264469)">2020 IO accounting</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(64.120344 93.462281)">55-sector structure</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(310.921469 82.264469)">13 sector agents</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(300.72225 93.462281)">+ government agent</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(551.615188 82.264469)">15 configured tasks</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(543.619875 93.462281)">E1–E5 / R1–R5 / G1–G5</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(64.37425 215.985563)">Explicit boundaries</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(61.533625 227.183375)">42 domestic sectors</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(55.118 238.381188)">Imports / final demand</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(314.37225 215.985563)">State transition</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(276.125375 227.183375)">Orders → arrivals → production</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(293.856625 238.381188)">Allocation → settlement</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(551.882375 215.985563)">Evaluation &amp; replay</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(532.31675 227.183375)">Matched-seed comparisons</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(550.365969 238.381188)">Sensitivity / runtime</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 208.354188 85.104 
+Q 225.561291 85.104 240.755933 85.104 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 236.755933 83.104 
+L 240.755933 85.104 
+L 236.755933 87.104 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 459.773712 85.104 
+Q 480.472926 85.104 499.159679 85.104 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 495.159679 83.104 
+L 499.159679 85.104 
+L 495.159679 87.104 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 353.016 124.254303 
+Q 353.016 145.475593 353.016 164.684422 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 355.016 160.684422 
+L 353.016 164.684422 
+L 351.016 160.684422 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 208.354188 224.424 
+Q 225.561291 224.424 240.755933 224.424 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 236.755933 222.424 
+L 240.755933 224.424 
+L 236.755933 226.424 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 459.773712 224.424 
+Q 480.472926 224.424 499.159679 224.424 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 495.159679 222.424 
+L 499.159679 224.424 
+L 495.159679 226.424 
+" style="fill: none; stroke: #456079; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="peaf4ada8e3">
+   <rect x="10.8" y="10.8" width="698.4" height="309.6"/>
+  </clipPath>
+ </defs>
+</svg>

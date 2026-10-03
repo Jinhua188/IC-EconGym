@@ -1,0 +1,73 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.005
+modules:
+- edge
+- coordination
+- contract
+- qualification
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_g3
+name: 数字契约与可核验协同
+research_question: 平台核验与契约激励如何改变协同采用及资源配置？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+shock:
+  sector: 8
+  start: 4
+  end: 8
+  capacity_loss: 0.2
+policy:
+  enabled: true
+  channels:
+    qualification: 1.0
+  start_period: 4
+contract:
+  platform_quality: 0.8
+  audit: 0.9
+  penalty: 0.2
+  sector_bargaining_weight: 0.5
+variants:
+  low_audit:
+    contract:
+      audit: 0.1
+  no_contract:
+    modules:
+    - edge
+    - coordination
+    - qualification
+  low_verifiability:
+    contract:
+      audit: 0.1
+      platform_quality: 0.2
+  medium_verifiability:
+    contract:
+      audit: 0.5
+      platform_quality: 0.5
+  high_verifiability:
+    contract:
+      audit: 0.9
+      platform_quality: 0.8
+source_v1_task_id: ic_g3_verifiable_digital_contract
+theory: 核验性提高有效激励，再经Logit影响高协同概率，并由KKT在产能预留、库存、反馈、联合验证和恢复之间配置有限资源。
+source_v1_outcomes:
+- resilience_index
+- shortage_ratio
+- avg_edge_pressure
+- total_output
+v1_arm_names:
+- low_verifiability
+- medium_verifiability
+- high_verifiability

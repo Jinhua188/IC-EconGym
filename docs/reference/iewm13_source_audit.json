@@ -1,0 +1,31 @@
+{
+  "source_docx": {
+    "path": "产业经济世界模型_IEWM系统蓝图_企业数据与可执行代码完整版.docx",
+    "sha256": "3c3b600aaed81c33afd69ffaf3b1e44fbf17ae9a5e64eeed8e374cac46c7f1e1"
+  },
+  "enterprise_nodes": {
+    "rows": 206,
+    "sha256": "0254cd4f851bd6aeaacb5364c7d81dca9aefa64f6f58b2a597a28e9cf4a9bcd5",
+    "unique_node_ids": 206,
+    "H_counts": {
+      "H1": 33,
+      "H3": 81,
+      "H2": 42,
+      "H6": 20,
+      "H5": 16,
+      "H4": 14
+    }
+  },
+  "candidate_edges": {
+    "rows": 8364,
+    "sha256": "161a1e8bd26d12101658ffba505b71072e47d47b17506839e9239c13751da085",
+    "all_endpoints_in_enterprise_table": true,
+    "product_specific_transaction_amount_fields": []
+  },
+  "firm_to_io_mapping": {
+    "rows": 206,
+    "identified_business_share_rows": 0
+  },
+  "load_enterprise_flows_into_13_sector_environment": false,
+  "reason": "Firm 2020 business shares and product-specific transaction amounts are not identified; H roles have non-unique candidate sector mappings."
+}

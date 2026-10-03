@@ -1,0 +1,56 @@
+{
+  "R1": {
+    "buffered_smoothing": {
+      "cumulative_shortage": 403313164.61604875,
+      "cumulative_final_shortage": 304630211.351515,
+      "final_fill_rate": 0.9676296363991472,
+      "cumulative_welfare": 3778245980.5018554,
+      "fiscal_spend": 0.0
+    },
+    "demand_tracking": {
+      "cumulative_shortage": 583410110.5014588,
+      "cumulative_final_shortage": 427641750.9973498,
+      "final_fill_rate": 0.9545582596030833,
+      "cumulative_welfare": 3742707044.189628,
+      "fiscal_spend": 0.0
+    },
+    "rule": {
+      "cumulative_shortage": 357797866.34749156,
+      "cumulative_final_shortage": 272870226.000203,
+      "final_fill_rate": 0.9710044944333694,
+      "cumulative_welfare": 3787273914.846191,
+      "fiscal_spend": 0.0
+    }
+  },
+  "G5": {
+    "linkage": {
+      "cumulative_shortage": 61497851.882222004,
+      "cumulative_final_shortage": 43977928.97440026,
+      "final_fill_rate": 0.9952097405851908,
+      "cumulative_welfare": 3832716281.740233,
+      "fiscal_spend": 6894329.59055641
+    },
+    "stress": {
+      "cumulative_shortage": 61459443.436098725,
+      "cumulative_final_shortage": 43949017.12628529,
+      "final_fill_rate": 0.9952128897842519,
+      "cumulative_welfare": 3832728166.2729306,
+      "fiscal_spend": 6894329.59055641
+    },
+    "uniform": {
+      "cumulative_shortage": 61495785.77837291,
+      "cumulative_final_shortage": 43976353.21549773,
+      "final_fill_rate": 0.9952099122234216,
+      "cumulative_welfare": 3832716921.076758,
+      "fiscal_spend": 6894329.59055641
+    }
+  },
+  "R1_final_shortage_lower_than_rule_cases": {
+    "demand_tracking": 0,
+    "buffered_smoothing": 0
+  },
+  "G5_final_shortage_lower_than_uniform_cases": {
+    "linkage": 1,
+    "stress": 13
+  }
+}

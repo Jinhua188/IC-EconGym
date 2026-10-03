@@ -1,0 +1,90 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- supplier_choice
+- price
+- market_power
+- ai
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_r5
+name: AI异质性与市场势力
+research_question: 效率差异和采购集中如何共同影响加价与产出？
+metrics:
+- supplier_hhi
+- price_index
+- value_added
+- output
+search_precision: 10.0
+hhi_markup: 0.08
+ai_rate: 0.03
+variants:
+  no_market_power:
+    modules:
+    - edge
+    - supplier_choice
+    - price
+    - ai
+    hhi_markup: 0.0
+  balanced_ai:
+    modules:
+    - edge
+    - supplier_choice
+    - price
+    - ai
+    search_precision: 1.0
+    hhi_markup: 0.0
+  core_sector_ai_advantage:
+    absorption:
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.95
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    hhi_markup: 0.04
+  core_advantage_high_markup:
+    absorption:
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.95
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    hhi_markup: 0.12
+source_v1_task_id: ic_r5_ai_productivity_concentration
+theory: AI导致的成本异质性通过利润、投资和价格反馈改变产出与价值集中度。
+source_v1_outcomes:
+- output_hhi
+- profit_hhi
+- value_added_hhi
+- total_profit
+- total_value_added
+v1_arm_names:
+- balanced_ai
+- core_sector_ai_advantage
+- core_advantage_high_markup

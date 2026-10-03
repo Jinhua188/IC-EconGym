@@ -1,0 +1,45 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- supplier_choice
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_e4
+name: AI与供应商匹配
+research_question: 较高搜索精度如何改变同类供给通道的拥堵？
+metrics:
+- supplier_hhi
+- congestion_loss
+- shortage
+- output
+search_precision: 8.0
+variants:
+  baseline:
+    search_precision: 0.0
+  proportional_allocation:
+    search_precision: 0.0
+  moderate_ai_allocation:
+    search_precision: 3.0
+  strong_ai_allocation:
+    search_precision: 8.0
+source_v1_task_id: ic_e4_ai_allocation_efficiency
+theory: 信息改善使稀缺中间投入更倾向于流向系统关键且AI可识别的用途。
+source_v1_outcomes:
+- total_output
+- shortage_ratio
+- resilience_index
+- total_value_added
+v1_arm_names:
+- proportional_allocation
+- moderate_ai_allocation
+- strong_ai_allocation

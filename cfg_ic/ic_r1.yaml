@@ -1,0 +1,55 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- price
+- investment
+external_supply_elasticity: 1.25
+capacity_lag: 6
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_r1
+name: 需求扩张与产能周期
+research_question: 扩产时滞如何改变需求冲击后的短缺和价格路径？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+demand_sector: 12
+demand_shock:
+  start: 4
+  end: 12
+  increase: 0.3
+variants:
+  no_shock:
+    demand_shock:
+      start: -1
+      end: -1
+      increase: 0.0
+  short_lag:
+    capacity_lag: 2
+  short_capacity_lag:
+    capacity_lag: 2
+  benchmark_lag:
+    capacity_lag: 6
+  long_capacity_lag:
+    capacity_lag: 10
+source_v1_task_id: ic_r1_ai_demand_capacity_cycle
+theory: 蛛网式供需调整与不可逆/滞后投资导致动态过度反应。
+source_v1_outcomes:
+- shortage_ratio
+- price_index
+- total_output
+- total_profit
+v1_arm_names:
+- short_capacity_lag
+- benchmark_lag
+- long_capacity_lag

@@ -1,0 +1,181 @@
+{
+  "task": "ic_g5",
+  "dimension": "government",
+  "policies": [
+    "uniform",
+    "linkage",
+    "stress"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "periods": 30,
+  "cases": {
+    "base": {
+      "kind": "baseline"
+    },
+    "import_intermediate_first": {
+      "kind": "import_allocation",
+      "import_case": "intermediate_first"
+    },
+    "import_final_first": {
+      "kind": "import_allocation",
+      "import_case": "final_first"
+    },
+    "backlog_retention_minus20": {
+      "kind": "ofat",
+      "parameter": "backlog_retention",
+      "original": 0.25,
+      "value": 0.2,
+      "multiplier": 0.8
+    },
+    "backlog_retention_plus20": {
+      "kind": "ofat",
+      "parameter": "backlog_retention",
+      "original": 0.25,
+      "value": 0.3,
+      "multiplier": 1.2
+    },
+    "external_supply_elasticity_minus20": {
+      "kind": "ofat",
+      "parameter": "external_supply_elasticity",
+      "original": 1.25,
+      "value": 1.0,
+      "multiplier": 0.8
+    },
+    "external_supply_elasticity_plus20": {
+      "kind": "ofat",
+      "parameter": "external_supply_elasticity",
+      "original": 1.25,
+      "value": 1.5,
+      "multiplier": 1.2
+    },
+    "shock_capacity_loss_minus20": {
+      "kind": "ofat",
+      "parameter": "shock.capacity_loss",
+      "original": 0.2,
+      "value": 0.16000000000000003,
+      "multiplier": 0.8
+    },
+    "shock_capacity_loss_plus20": {
+      "kind": "ofat",
+      "parameter": "shock.capacity_loss",
+      "original": 0.2,
+      "value": 0.24,
+      "multiplier": 1.2
+    },
+    "budget_share_minus20": {
+      "kind": "ofat",
+      "parameter": "budget_share",
+      "original": 0.01,
+      "value": 0.008,
+      "multiplier": 0.8
+    },
+    "budget_share_plus20": {
+      "kind": "ofat",
+      "parameter": "budget_share",
+      "original": 0.01,
+      "value": 0.012,
+      "multiplier": 1.2
+    },
+    "edge_health_floor_minus20": {
+      "kind": "ofat",
+      "parameter": "edge_health_floor",
+      "original": 0.85,
+      "value": 0.68,
+      "multiplier": 0.8
+    },
+    "edge_health_floor_plus20": {
+      "kind": "ofat",
+      "parameter": "edge_health_floor",
+      "original": 0.85,
+      "value": 1.0,
+      "multiplier": 1.2
+    }
+  },
+  "government_spend_fraction": 0.25,
+  "common_exogenous_scenarios": true,
+  "shock_noise_sd": 0.04,
+  "shock_noise_applied_to": "shock.capacity_loss",
+  "shock_noise_type": "seed-indexed scenario dispersion, not an empirical error distribution",
+  "independent_external_validation": false,
+  "metric_version": "v2-external-final-demand",
+  "base_configuration": {
+    "periods": 30,
+    "seed": 20261001,
+    "import_case": "proportional",
+    "budget_share": 0.01,
+    "modules": [
+      "edge",
+      "ai",
+      "investment",
+      "innovation",
+      "qualification",
+      "inventory",
+      "coordination"
+    ],
+    "external_supply_elasticity": 1.25,
+    "capacity_lag": 4,
+    "time_fit": 0.9,
+    "labor_share_of_va": 0.8,
+    "backlog_retention": 0.25,
+    "max_backlog_quarters": 2.0,
+    "edge_health_floor": 0.85,
+    "data_status": "2020 IO accounting observed; import uses and behavior parameters are scenarios",
+    "task_id": "ic_g5",
+    "name": "多目标政策组合",
+    "research_question": "组合治理是否优于同预算的单项政策？",
+    "metrics": [
+      "output",
+      "value_added",
+      "shortage",
+      "welfare"
+    ],
+    "shock": {
+      "sector": 8,
+      "start": 5,
+      "end": 10,
+      "capacity_loss": 0.2
+    },
+    "policy": {
+      "enabled": true,
+      "channels": {
+        "ai": 0.15,
+        "capacity": 0.25,
+        "rd": 0.15,
+        "qualification": 0.2,
+        "inventory": 0.15,
+        "edge_repair": 0.1
+      },
+      "start_period": 5,
+      "spend_fraction": 0.25
+    },
+    "source_v1_task_id": "ic_g5_multi_policy_coordination",
+    "theory": "单项最优政策的简单叠加未必系统最优，多工具政策需要共同考虑产出、技术、韧性、价格和财政成本。",
+    "source_v1_outcomes": [
+      "total_value_added",
+      "resilience_index",
+      "shortage_ratio",
+      "price_index",
+      "fiscal_cost"
+    ],
+    "v1_arm_names": [
+      "ai_department_only",
+      "industry_department_only",
+      "science_department_only",
+      "fixed_uncoordinated_mix",
+      "structured_adaptive_mix"
+    ]
+  },
+  "base_configuration_sha256": "931acd3255162873a8e26934090de8708576cf5c63180f52fbb599d6a6adfd65",
+  "interpretation": "Matched-seed conditional mechanism simulations; no RL/LLM training, empirical policy effects, or firm IO allocation."
+}

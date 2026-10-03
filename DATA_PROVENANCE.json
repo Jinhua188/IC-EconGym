@@ -1,0 +1,14 @@
+{
+  "source_workbook": "remake-2020年投入产出表与指标.xlsx",
+  "source_workbook_sha256": "7ac96b484f21962293d76980a20395da5e0590179c6317a659127b8b0c772430",
+  "io_builder": "io_abm_rebuild_20260924/prepare_io.py",
+  "source_year": 2020,
+  "amount_unit": "万元",
+  "files": {
+    "ic_extension/data/io_use_proportional.npz": "a51b0f01d1bfe14f19f1e1d447082836a5d028c601ff6cc03c5c9c434695f26f",
+    "ic_extension/data/io_use_intermediate_first.npz": "80f7e69b6c68f760a9bd1da044952812914a84ffd9dc1f3a00263e43347f3473",
+    "ic_extension/data/io_use_final_first.npz": "0c44eb649909f73abb7de36cbea42dc3c5344b6b55a61256bf2cac3118c803f1",
+    "ic_extension/data/sector_labels.csv": "fa4387bddedfefb9e5ec5bbe2244eac64e68808ae68f57292d4c4884ac872ac2",
+    "ic_extension/data/sector_roles.yaml": "8f7f6329837a9df6df6261e6362125ea2164051c67e6dd2d23ec41e620fd3e90"
+  }
+}

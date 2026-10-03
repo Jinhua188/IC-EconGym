@@ -1,0 +1,19 @@
+government:
+  role: GovernmentAgent
+  observation: [output, value_added, price, shortage, backlog, technology, edge_health, fiscal_cost, budget_remaining]
+  action: [ai, capacity, rd, qualification, inventory, edge_repair]
+  objective: weighted_value_added_and_resilience_less_shortage_and_fiscal_cost
+sectors:
+  - {sector_id: 1, type: materials, absorption: 0.55, friction: 0.12, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [qualification, material_substitution]}
+  - {sector_id: 2, type: materials, absorption: 0.50, friction: 0.13, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [qualification, material_substitution]}
+  - {sector_id: 3, type: materials, absorption: 0.50, friction: 0.14, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [qualification, material_substitution]}
+  - {sector_id: 4, type: equipment, absorption: 0.60, friction: 0.12, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [equipment, installation_lag, maintenance]}
+  - {sector_id: 5, type: equipment, absorption: 0.55, friction: 0.13, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [equipment, installation_lag]}
+  - {sector_id: 6, type: electronic_input, absorption: 0.60, friction: 0.11, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [design_fit, qualification]}
+  - {sector_id: 7, type: equipment, absorption: 0.60, friction: 0.12, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [equipment, measurement]}
+  - {sector_id: 8, type: manufacturing, absorption: 0.65, friction: 0.10, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [manufacturing, packaging, yield, wip, design_fit]}
+  - {sector_id: 9, type: application, absorption: 0.55, friction: 0.11, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [final_demand, order_feedback]}
+  - {sector_id: 10, type: application, absorption: 0.55, friction: 0.11, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [final_demand, order_feedback]}
+  - {sector_id: 11, type: application, absorption: 0.60, friction: 0.10, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [final_demand, order_feedback]}
+  - {sector_id: 12, type: application, absorption: 0.65, friction: 0.09, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [final_demand, ai_demand, order_feedback]}
+  - {sector_id: 13, type: application, absorption: 0.55, friction: 0.11, allowed_actions: [price_change, capex_share, rd_share, ai_share, coordination, diversification], plugins: [final_demand, order_feedback]}

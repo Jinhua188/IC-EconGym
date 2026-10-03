@@ -1,0 +1,72 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.01
+modules:
+- edge
+- ai
+- investment
+- innovation
+- qualification
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_g2
+name: AI与实体能力组合政策
+research_question: AI与产能、研发及认证补贴的组合能否缓解瓶颈？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+demand_shock:
+  start: 4
+  end: 12
+  increase: 0.2
+policy:
+  enabled: true
+  channels:
+    ai: 0.25
+    capacity: 0.35
+    rd: 0.2
+    qualification: 0.2
+  start_period: 4
+variants:
+  ai_only:
+    policy:
+      channels:
+        ai: 1.0
+  no_policy:
+    policy:
+      enabled: false
+  physical_only:
+    policy:
+      channels:
+        capacity: 0.5
+        qualification: 0.3
+        inventory: 0.2
+  coordinated_mix:
+    policy:
+      channels:
+        ai: 0.25
+        capacity: 0.35
+        rd: 0.2
+        qualification: 0.2
+source_v1_task_id: ic_g2_ai_physical_policy_mix
+theory: 数字能力与物理承接能力具有互补性，单一AI政策可能受实体瓶颈约束。
+source_v1_outcomes:
+- total_value_added
+- shortage_ratio
+- resilience_index
+- avg_technology
+- fiscal_cost
+v1_arm_names:
+- ai_only
+- physical_only
+- coordinated_mix

@@ -1,0 +1,32 @@
+{
+  "python": "3.12.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "numpy": "2.4.6",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "periods": 30,
+  "tasks": [
+    "ic_e1",
+    "ic_e2",
+    "ic_e3",
+    "ic_e4",
+    "ic_e5",
+    "ic_r1",
+    "ic_r2",
+    "ic_r3",
+    "ic_r4",
+    "ic_r5",
+    "ic_g1",
+    "ic_g2",
+    "ic_g3",
+    "ic_g4",
+    "ic_g5"
+  ],
+  "timing_scope": "single-process environment rollout, excluding world construction; includes policy calls and RSS sampling",
+  "memory_scope": "peak whole-process resident set during each run, sampled once per step; not incremental world memory",
+  "agent_scaling_test": false
+}

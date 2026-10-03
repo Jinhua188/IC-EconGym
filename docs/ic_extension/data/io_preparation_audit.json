@@ -1,0 +1,30 @@
+{
+  "source_unit": "万元",
+  "source_year_label": 2020,
+  "row_balance_max_abs": 5.9604644775390625e-06,
+  "column_balance_max_abs": 7.3909759521484375e-06,
+  "import_total": 1626591529.639294,
+  "cases": {
+    "proportional": {
+      "import_allocation_error": 5.960464477539063e-08,
+      "domestic_row_balance_error": 5.245208740234375e-06,
+      "total_column_balance_error": 7.3909759521484375e-06,
+      "import_allocated_to_exports": 0.0,
+      "negative_domestic_uses": 0
+    },
+    "intermediate_first": {
+      "import_allocation_error": 5.960464477539063e-08,
+      "domestic_row_balance_error": 5.4836273193359375e-06,
+      "total_column_balance_error": 7.152557373046875e-06,
+      "import_allocated_to_exports": 0.0,
+      "negative_domestic_uses": 0
+    },
+    "final_first": {
+      "import_allocation_error": 2.9802322387695312e-08,
+      "domestic_row_balance_error": 5.245208740234375e-06,
+      "total_column_balance_error": 7.3909759521484375e-06,
+      "import_allocated_to_exports": 0.0,
+      "negative_domestic_uses": 0
+    }
+  }
+}

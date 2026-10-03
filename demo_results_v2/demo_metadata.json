@@ -1,0 +1,13 @@
+{
+  "tasks": 15,
+  "runs": 150,
+  "periods": 30,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "arms": "v1",
+  "dashboard": "dashboard.html",
+  "interpretation": "Demonstration results from conditional mechanisms, not empirical policy effects"
+}

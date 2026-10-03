@@ -1,0 +1,55 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- forecast
+- ai
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_e2
+name: AI预测与供应链协同
+research_question: 降低个体预测误差是否同时降低库存和短缺？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+forecast_error_sd: 0.12
+common_forecast_share: 0.2
+ai_forecast_gain: 0.6
+ai_rate: 0.02
+variants:
+  baseline:
+    modules:
+    - edge
+    - forecast
+    ai_forecast_gain: 0.0
+  conventional_forecast:
+    modules:
+    - edge
+    - forecast
+    ai_forecast_gain: 0.0
+  ai_independent_forecast:
+    common_forecast_share: 0.0
+  ai_shared_model_forecast:
+    common_forecast_share: 0.9
+source_v1_task_id: ic_e2_ai_forecast_coordination
+theory: AI降低特异性预测误差，但共同模型可能引入相关误差。
+source_v1_outcomes:
+- shortage_ratio
+- backlog_total
+- total_output
+- price_index
+v1_arm_names:
+- conventional_forecast
+- ai_independent_forecast
+- ai_shared_model_forecast

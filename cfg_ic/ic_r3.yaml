@@ -1,0 +1,46 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- forecast
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_r3
+name: 共同预测误判
+research_question: 相关预测误差是否放大订单与短缺波动？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+forecast_error_sd: 0.2
+common_forecast_share: 0.95
+variants:
+  independent_errors:
+    common_forecast_share: 0.0
+  diversified_models:
+    common_forecast_share: 0.0
+  moderate_common_model:
+    common_forecast_share: 0.5
+  highly_homogeneous_models:
+    common_forecast_share: 0.95
+source_v1_task_id: ic_r3_algorithmic_common_error
+theory: 个体预测误差下降与跨主体误差相关性上升之间存在系统层权衡。
+source_v1_outcomes:
+- shortage_ratio
+- backlog_total
+- price_index
+- avg_edge_pressure
+v1_arm_names:
+- diversified_models
+- moderate_common_model
+- highly_homogeneous_models

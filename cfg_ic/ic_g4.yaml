@@ -1,0 +1,79 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.005
+modules:
+- edge
+- qualification
+- inventory
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_g4
+name: 库存认证与修复
+research_question: 同预算下库存、资格和边修复对供给冲击有何差异？
+metrics:
+- output
+- value_added
+- shortage
+- welfare
+shock:
+  sector: 4
+  start: 4
+  end: 8
+  capacity_loss: 0.3
+policy:
+  enabled: true
+  channels:
+    inventory: 0.5
+    qualification: 0.25
+    edge_repair: 0.25
+  start_period: 4
+variants:
+  inventory_only:
+    policy:
+      channels:
+        inventory: 1.0
+  edge_only:
+    policy:
+      channels:
+        edge_repair: 1.0
+  no_policy:
+    policy:
+      enabled: false
+  inventory_buffer_bias:
+    policy:
+      channels:
+        inventory: 1.0
+  joint_verification_bias:
+    policy:
+      channels:
+        qualification: 1.0
+  recovery_bias:
+    policy:
+      channels:
+        edge_repair: 1.0
+  balanced_adaptive:
+    policy:
+      channels:
+        inventory: 0.5
+        qualification: 0.25
+        edge_repair: 0.25
+source_v1_task_id: ic_g4_resilience_action_selection
+theory: 韧性行动的缓释收益必须超过搜索、认证、协调和资源重配摩擦。
+source_v1_outcomes:
+- resilience_index
+- shortage_ratio
+- output_loss
+- fiscal_cost
+v1_arm_names:
+- inventory_buffer_bias
+- joint_verification_bias
+- recovery_bias
+- balanced_adaptive

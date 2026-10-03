@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "tasks": 15,
+  "v1_arms": 50,
+  "baseline_import_cases": 3,
+  "baseline_periods": 6,
+  "date": "2026-10-03",
+  "checks": "validate_extension.py, including final-demand accounting",
+  "external_validation": false
+}

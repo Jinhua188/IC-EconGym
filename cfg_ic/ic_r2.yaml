@@ -1,0 +1,103 @@
+periods: 30
+seed: 20261001
+import_case: proportional
+budget_share: 0.0
+modules:
+- edge
+- ai
+external_supply_elasticity: 1.25
+capacity_lag: 4
+time_fit: 0.9
+labor_share_of_va: 0.8
+backlog_retention: 0.25
+max_backlog_quarters: 2.0
+edge_health_floor: 0.85
+data_status: 2020 IO accounting observed; import uses and behavior parameters are
+  scenarios
+task_id: ic_r2
+name: AI扩散与承接错配
+research_question: AI变化负荷超过下游吸收能力时会否提高边压力？
+metrics:
+- edge_health_mean
+- shortage
+- output
+ai_rate: 0.05
+ai_productivity: 0.3
+absorption:
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+- 0.3
+variants:
+  high_absorption:
+    absorption:
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+  balanced_ai_absorption:
+    absorption:
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+    - 0.9
+  front_end_ai_low_absorption:
+    absorption:
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+    - 0.3
+  mismatch_with_coordination:
+    modules:
+    - edge
+    - ai
+    - coordination
+    coordination_effort: 0.4
+source_v1_task_id: ic_r2_ai_absorption_mismatch
+theory: AI扩散本身不是风险，AI诱发调整负荷超过界面吸收能力时才形成正错配。
+source_v1_outcomes:
+- avg_edge_pressure
+- min_edge_health
+- shortage_ratio
+- output_loss
+- resilience_index
+v1_arm_names:
+- balanced_ai_absorption
+- front_end_ai_low_absorption
+- mismatch_with_coordination
