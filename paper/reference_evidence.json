@@ -1,0 +1,1278 @@
+[
+  {
+    "key": "Mi2025EconGym",
+    "title": "EconGym: A Scalable AI Testbed with Diverse Economic Tasks",
+    "authors": [
+      "Qirui Mi",
+      "Qipeng Yang",
+      "Zijun Fan",
+      "Wentian Fan",
+      "Heyang Ma",
+      "Chengdong Ma",
+      "Siyu Xia",
+      "Bo An",
+      "Jun Wang",
+      "Haifeng Zhang"
+    ],
+    "year": 2025,
+    "venue": "Advances in Neural Information Processing Systems",
+    "doi": "10.52202/085713-1515",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/40d45b1e23d00d5895e65778e85cf8ee-Abstract-Datasets_and_Benchmarks_Track.html",
+    "volume": "38",
+    "issue": "",
+    "pages": "",
+    "type": "inproceedings",
+    "bibtex": "@inproceedings{Mi2025EconGym,\n  author = {Qirui Mi and Qipeng Yang and Zijun Fan and Wentian Fan and Heyang Ma and Chengdong Ma and Siyu Xia and Bo An and Jun Wang and Haifeng Zhang},\n  title = {EconGym: A Scalable AI Testbed with Diverse Economic Tasks},\n  year = {2025},\n  doi = {10.52202/085713-1515},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2025/hash/40d45b1e23d00d5895e65778e85cf8ee-Abstract-Datasets_and_Benchmarks_Track.html},\n  booktitle = {Advances in Neural Information Processing Systems},\n  volume = {38},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 1
+  },
+  {
+    "key": "Han2026Blueprint",
+    "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+    "authors": [
+      "Jiale Han",
+      "Xiang Li",
+      "Jing Qian",
+      "Wenyuan Gu",
+      "Pin Gao",
+      "Ye Luo",
+      "Hongyuan Zha",
+      "Dacheng Tao",
+      "Benyou Wang",
+      "Lin William Cong"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "doi": "10.48550/arXiv.2608.06020",
+    "url": "https://arxiv.org/abs/2608.06020",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "type": "misc",
+    "bibtex": "@misc{Han2026Blueprint,\n  author = {Jiale Han and Xiang Li and Jing Qian and Wenyuan Gu and Pin Gao and Ye Luo and Hongyuan Zha and Dacheng Tao and Benyou Wang and Lin William Cong},\n  title = {From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models},\n  year = {2026},\n  doi = {10.48550/arXiv.2608.06020},\n  url = {https://arxiv.org/abs/2608.06020},\n  eprint = {2608.06020},\n  archivePrefix = {arXiv},\n  note = {Version 1, preprint; conference acceptance not verified},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": "2608.06020",
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 2
+  },
+  {
+    "key": "Acemoglu2012Networks",
+    "title": "The Network Origins of Aggregate Fluctuations",
+    "authors": [
+      "Daron Acemoglu",
+      "Vasco M. Carvalho",
+      "Asuman Ozdaglar",
+      "Alireza Tahbaz-Salehi"
+    ],
+    "year": 2012,
+    "venue": "Econometrica",
+    "doi": "10.3982/ECTA9623",
+    "url": "https://doi.org/10.3982/ECTA9623",
+    "volume": "80",
+    "issue": "5",
+    "pages": "1977--2016",
+    "type": "article",
+    "bibtex": "@article{Acemoglu2012Networks,\n  author = {Daron Acemoglu and Vasco M. Carvalho and Asuman Ozdaglar and Alireza Tahbaz-Salehi},\n  title = {The Network Origins of Aggregate Fluctuations},\n  year = {2012},\n  doi = {10.3982/ECTA9623},\n  url = {https://doi.org/10.3982/ECTA9623},\n  volume = {80},\n  number = {5},\n  pages = {1977--2016},\n  journal = {Econometrica},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 3
+  },
+  {
+    "key": "Pichler2022DynamicIO",
+    "title": "Forecasting the propagation of pandemic shocks with a dynamic input-output model",
+    "authors": [
+      "Anton Pichler",
+      "Marco Pangallo",
+      "R. Maria del Rio-Chanona",
+      "François Lafond",
+      "J. Doyne Farmer"
+    ],
+    "year": 2022,
+    "venue": "Journal of Economic Dynamics and Control",
+    "doi": "10.1016/j.jedc.2022.104527",
+    "url": "https://doi.org/10.1016/j.jedc.2022.104527",
+    "volume": "144",
+    "issue": "",
+    "pages": "104527",
+    "type": "article",
+    "bibtex": "@article{Pichler2022DynamicIO,\n  author = {Anton Pichler and Marco Pangallo and R. Maria del Rio-Chanona and François Lafond and J. Doyne Farmer},\n  title = {Forecasting the propagation of pandemic shocks with a dynamic input-output model},\n  year = {2022},\n  doi = {10.1016/j.jedc.2022.104527},\n  url = {https://doi.org/10.1016/j.jedc.2022.104527},\n  volume = {144},\n  pages = {104527},\n  journal = {Journal of Economic Dynamics and Control},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 4
+  },
+  {
+    "key": "Zheng2022AIEconomist",
+    "title": "The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning",
+    "authors": [
+      "Stephan Zheng",
+      "Alexander Trott",
+      "Sunil Srinivasa",
+      "David C. Parkes",
+      "Richard Socher"
+    ],
+    "year": 2022,
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.abk2607",
+    "url": "https://www.science.org/doi/10.1126/sciadv.abk2607",
+    "volume": "8",
+    "issue": "18",
+    "pages": "eabk2607",
+    "type": "article",
+    "bibtex": "@article{Zheng2022AIEconomist,\n  author = {Stephan Zheng and Alexander Trott and Sunil Srinivasa and David C. Parkes and Richard Socher},\n  title = {The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning},\n  year = {2022},\n  doi = {10.1126/sciadv.abk2607},\n  url = {https://www.science.org/doi/10.1126/sciadv.abk2607},\n  volume = {8},\n  number = {18},\n  pages = {eabk2607},\n  journal = {Science Advances},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 5
+  },
+  {
+    "key": "Inoue2020Propagation",
+    "title": "The propagation of economic impacts through supply chains: The case of a mega-city lockdown to prevent the spread of COVID-19",
+    "authors": [
+      "Hiroyasu Inoue",
+      "Yasuyuki Todo"
+    ],
+    "year": 2020,
+    "venue": "PLOS ONE",
+    "doi": "10.1371/journal.pone.0239251",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239251",
+    "volume": "15",
+    "issue": "9",
+    "pages": "e0239251",
+    "type": "article",
+    "bibtex": "@article{Inoue2020Propagation,\n  author = {Hiroyasu Inoue and Yasuyuki Todo},\n  title = {The propagation of economic impacts through supply chains: The case of a mega-city lockdown to prevent the spread of COVID-19},\n  year = {2020},\n  doi = {10.1371/journal.pone.0239251},\n  url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239251},\n  volume = {15},\n  number = {9},\n  pages = {e0239251},\n  journal = {PLOS ONE},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 6
+  },
+  {
+    "key": "Grimm2020ODD",
+    "title": "The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism",
+    "authors": [
+      "Volker Grimm",
+      "Steven F. Railsback",
+      "Christian E. Vincenot",
+      "Uta Berger",
+      "Cara Gallagher",
+      "Donald L. DeAngelis",
+      "Bruce Edmonds",
+      "Jiaqi Ge",
+      "Jarl Giske",
+      "Jürgen Groeneveld",
+      "Alice S. A. Johnston",
+      "Alexander Milles",
+      "Jacob Nabe-Nielsen",
+      "J. Gareth Polhill",
+      "Viktoriia Radchuk",
+      "Marie-Sophie Rohwäder",
+      "Richard A. Stillman",
+      "Jan C. Thiele",
+      "Daniel Ayllón"
+    ],
+    "year": 2020,
+    "venue": "Journal of Artificial Societies and Social Simulation",
+    "doi": "10.18564/jasss.4259",
+    "url": "https://www.jasss.org/23/2/7.html",
+    "volume": "23",
+    "issue": "2",
+    "pages": "7",
+    "type": "article",
+    "bibtex": "@article{Grimm2020ODD,\n  author = {Volker Grimm and Steven F. Railsback and Christian E. Vincenot and Uta Berger and Cara Gallagher and Donald L. DeAngelis and Bruce Edmonds and Jiaqi Ge and Jarl Giske and Jürgen Groeneveld and Alice S. A. Johnston and Alexander Milles and Jacob Nabe-Nielsen and J. Gareth Polhill and Viktoriia Radchuk and Marie-Sophie Rohwäder and Richard A. Stillman and Jan C. Thiele and Daniel Ayllón},\n  title = {The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism},\n  year = {2020},\n  doi = {10.18564/jasss.4259},\n  url = {https://www.jasss.org/23/2/7.html},\n  volume = {23},\n  number = {2},\n  pages = {7},\n  journal = {Journal of Artificial Societies and Social Simulation},\n}",
+    "source_platforms": [
+      "Previously verified primary publication"
+    ],
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "abstract": null,
+    "reference_number": 7
+  },
+  {
+    "key": "Miller2009",
+    "title": "Input–Output Analysis: Foundations and Extensions",
+    "authors": [
+      "Ronald E. Miller",
+      "Peter D. Blair"
+    ],
+    "year": 2009,
+    "venue": "Cambridge University Press",
+    "doi": "10.1017/CBO9780511626982",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://www.cambridge.org/core/books/abs/inputoutput-analysis/frontmatter/B6F9C9304120752E4037586DDD16DE40",
+    "pdf_url": null,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "type": "book",
+    "evidence_scope": "固定投入系数、Leontief逆及部门关联；不识别细分收入份额或动态参数",
+    "edition": "2",
+    "publisher": "Cambridge University Press",
+    "isbn": "9780521517133",
+    "abstract": null,
+    "bibtex": "@book{Miller2009,\n  author = {Ronald E. Miller and Peter D. Blair},\n  title = {Input–Output Analysis: Foundations and Extensions},\n  year = {2009},\n  url = {https://www.cambridge.org/core/books/abs/inputoutput-analysis/frontmatter/B6F9C9304120752E4037586DDD16DE40},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511626982},\n  isbn = {9780521517133},\n  edition = {2},\n}",
+    "reference_number": 8
+  },
+  {
+    "key": "Hallegatte2008",
+    "title": "An Adaptive Regional Input‐Output Model and its Application to the Assessment of the Economic Cost of Katrina",
+    "authors": [
+      "Stéphane Hallegatte"
+    ],
+    "year": 2008,
+    "venue": "Risk Analysis",
+    "doi": "10.1111/j.1539-6924.2008.01046.x",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18643833/",
+    "pdf_url": null,
+    "volume": "28",
+    "issue": "3",
+    "pages": "779-799",
+    "type": "journal-article",
+    "evidence_scope": "产能与前后向传播进入动态投入产出模型；不提供本项目的弹性与滞后数值",
+    "abstract": null,
+    "bibtex": "@article{Hallegatte2008,\n  author = {Stéphane Hallegatte},\n  title = {An Adaptive Regional Input‐Output Model and its Application to the Assessment of the Economic Cost of Katrina},\n  year = {2008},\n  url = {https://pubmed.ncbi.nlm.nih.gov/18643833/},\n  journal = {Risk Analysis},\n  doi = {10.1111/j.1539-6924.2008.01046.x},\n  volume = {28},\n  number = {3},\n  pages = {779-799},\n}",
+    "reference_number": 9
+  },
+  {
+    "key": "Fagiolo2007",
+    "doi": "10.1007/s10614-007-9104-4",
+    "title": "A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems",
+    "authors": [
+      "Giorgio Fagiolo",
+      "Alessio Moneta",
+      "Paul Windrum"
+    ],
+    "year": 2007,
+    "venue": "Computational Economics",
+    "volume": "30",
+    "issue": "3",
+    "pages": "195–226",
+    "url": "https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf",
+    "source_platforms": [
+      "Journal paper in author institution repository"
+    ],
+    "evidence_scope": "校准与经验验证的程序和边界",
+    "type": "journal-article",
+    "api_error": "HTTP Error 429: Too Many Requests",
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "pdf_url": "https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf",
+    "abstract": null,
+    "bibtex": "@article{Fagiolo2007,\n  author = {Giorgio Fagiolo and Alessio Moneta and Paul Windrum},\n  title = {A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems},\n  year = {2007},\n  url = {https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf},\n  journal = {Computational Economics},\n  doi = {10.1007/s10614-007-9104-4},\n  volume = {30},\n  number = {3},\n  pages = {195–226},\n}",
+    "reference_number": 10
+  },
+  {
+    "key": "Carvalho2021",
+    "title": "Supply Chain Disruptions: Evidence from the Great East Japan Earthquake",
+    "authors": [
+      "Vasco M Carvalho",
+      "Makoto Nirei",
+      "Yukiko U Saito",
+      "Alireza Tahbaz-Salehi"
+    ],
+    "year": 2021,
+    "venue": "The Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjaa044",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf",
+    "pdf_url": "https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf",
+    "volume": "136",
+    "issue": "2",
+    "pages": "1255-1321",
+    "type": "journal-article",
+    "evidence_scope": "地震冲击在真实企业关系中上下游传播；不证明本13部门情景量级",
+    "abstract": null,
+    "bibtex": "@article{Carvalho2021,\n  author = {Vasco M Carvalho and Makoto Nirei and Yukiko U Saito and Alireza Tahbaz-Salehi},\n  title = {Supply Chain Disruptions: Evidence from the Great East Japan Earthquake},\n  year = {2021},\n  url = {https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf},\n  journal = {The Quarterly Journal of Economics},\n  doi = {10.1093/qje/qjaa044},\n  volume = {136},\n  number = {2},\n  pages = {1255-1321},\n}",
+    "reference_number": 11
+  },
+  {
+    "key": "Tesfatsion2006",
+    "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
+    "authors": [
+      "Leigh Tesfatsion"
+    ],
+    "year": 2006,
+    "venue": "Handbook of Computational Economics",
+    "doi": "10.1016/S1574-0021(05)02016-2",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf",
+    "pdf_url": "https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf",
+    "volume": "2",
+    "issue": "",
+    "pages": "831-880",
+    "type": "book-chapter",
+    "evidence_scope": "将经济过程作为交互主体动态系统；不要求所有主体都学习",
+    "abstract": null,
+    "bibtex": "@incollection{Tesfatsion2006,\n  author = {Leigh Tesfatsion},\n  title = {Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory},\n  year = {2006},\n  url = {https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf},\n  booktitle = {Handbook of Computational Economics},\n  doi = {10.1016/S1574-0021(05)02016-2},\n  volume = {2},\n  pages = {831-880},\n}",
+    "reference_number": 12
+  },
+  {
+    "key": "Littman1994",
+    "title": "Markov games as a framework for multi-agent reinforcement learning",
+    "authors": [
+      "Michael L. Littman"
+    ],
+    "year": 1994,
+    "venue": "Machine Learning Proceedings 1994",
+    "doi": "10.1016/B978-1-55860-335-6.50027-1",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf",
+    "pdf_url": "https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf",
+    "volume": "",
+    "issue": "",
+    "pages": "157-163",
+    "type": "book-chapter",
+    "evidence_scope": "联合行动与环境状态转移的多主体框架；不把我方启发式称为RL",
+    "abstract": null,
+    "bibtex": "@inproceedings{Littman1994,\n  author = {Michael L. Littman},\n  title = {Markov games as a framework for multi-agent reinforcement learning},\n  year = {1994},\n  url = {https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf},\n  booktitle = {Machine Learning Proceedings 1994},\n  doi = {10.1016/B978-1-55860-335-6.50027-1},\n  pages = {157-163},\n}",
+    "reference_number": 13
+  },
+  {
+    "key": "Sargent2013",
+    "doi": "10.1057/jos.2012.20",
+    "title": "Verification and validation of simulation models",
+    "authors": [
+      "Robert G. Sargent"
+    ],
+    "year": 2013,
+    "venue": "Journal of Simulation",
+    "volume": "7",
+    "issue": "1",
+    "pages": "12–24",
+    "url": "https://doi.org/10.1057/jos.2012.20",
+    "source_platforms": [
+      "Publisher issue contents and indexed original abstract"
+    ],
+    "evidence_scope": "概念模型、代码、运行和数据有效性的区分；全文受限，引用限于摘要层面",
+    "type": "journal-article",
+    "api_error": "HTTP Error 429: Too Many Requests",
+    "fetched_at": "2026-10-03",
+    "arxiv_id": null,
+    "citation_count": null,
+    "pdf_url": null,
+    "abstract": null,
+    "bibtex": "@article{Sargent2013,\n  author = {Robert G. Sargent},\n  title = {Verification and validation of simulation models},\n  year = {2013},\n  url = {https://doi.org/10.1057/jos.2012.20},\n  journal = {Journal of Simulation},\n  doi = {10.1057/jos.2012.20},\n  volume = {7},\n  number = {1},\n  pages = {12–24},\n}",
+    "reference_number": 14
+  },
+  {
+    "key": "Saltelli2010",
+    "title": "How to avoid a perfunctory sensitivity analysis",
+    "authors": [
+      "Andrea Saltelli",
+      "Paola Annoni"
+    ],
+    "year": 2010,
+    "venue": "Environmental Modelling & Software",
+    "doi": "10.1016/j.envsoft.2010.04.012",
+    "arxiv_id": null,
+    "citation_count": null,
+    "source_platforms": [
+      "Crossref publisher-deposited metadata",
+      "primary text/publisher"
+    ],
+    "fetched_at": "2026-10-03",
+    "url": "https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf",
+    "pdf_url": "https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf",
+    "volume": "25",
+    "issue": "12",
+    "pages": "1508-1517",
+    "type": "journal-article",
+    "evidence_scope": "单因素敏感性不能覆盖参数空间与交互；不把OFAT称全局稳健性",
+    "abstract": null,
+    "bibtex": "@article{Saltelli2010,\n  author = {Andrea Saltelli and Paola Annoni},\n  title = {How to avoid a perfunctory sensitivity analysis},\n  year = {2010},\n  url = {https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf},\n  journal = {Environmental Modelling & Software},\n  doi = {10.1016/j.envsoft.2010.04.012},\n  volume = {25},\n  number = {12},\n  pages = {1508-1517},\n}",
+    "reference_number": 15
+  },
+  {
+    "citation_key": "clark1960optimal",
+    "title": "Optimal Policies for a Multi-Echelon Inventory Problem",
+    "authors": [
+      "Andrew J. Clark",
+      "Herbert Scarf"
+    ],
+    "year": 1960,
+    "venue": "Management Science",
+    "volume": "6",
+    "issue": "4",
+    "pages": "475--490",
+    "doi": "10.1287/mnsc.6.4.475",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": null,
+    "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.6.4.475",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "发表方摘要讨论串联多级库存：上游库存可用性与运输提前期共同决定交货，不能把交货提前期视为与供应方库存无关。",
+    "supports": "补库采用库存目标与待生产需求的差额有多级库存管理的理论背景；生产计划和上游可用库存需要联动。",
+    "cannot_support": "本包不是论文的串联系统；没有求解动态规划和最优基库存水平。0.25季度目标、积压保留0.25、库存与缺货惩罚均不是该文对中国半导体的估计。",
+    "suggested_sections": [
+      "4.2",
+      "4.3",
+      "5.2"
+    ],
+    "bibtex": "@article{clark1960optimal,\n  title = {Optimal Policies for a Multi-Echelon Inventory Problem},\n  author = {Andrew J. Clark and Herbert Scarf},\n  year = {1960},\n  journal = {Management Science},\n  volume = {6},\n  number = {4},\n  pages = {475--490},\n  doi = {10.1287/mnsc.6.4.475},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.6.4.475}\n}",
+    "key": "clark1960optimal",
+    "reference_number": 16
+  },
+  {
+    "citation_key": "sterman1989modeling",
+    "title": "Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment",
+    "authors": [
+      "John D. Sterman"
+    ],
+    "year": 1989,
+    "venue": "Management Science",
+    "volume": "35",
+    "issue": "3",
+    "pages": "321--339",
+    "doi": "10.1287/mnsc.35.3.321",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": null,
+    "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.35.3.321",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者用包含多个行为者、反馈、非线性和时滞的库存分配实验，提出库存管理的锚定与调整启发式；估计发现行为者容易忽视自身决策反馈。",
+    "supports": "部门需求跟随、库存调整、行动—订单—到货—再调整的动态回路，以及R1结果中局部跟随不保证系统改善的讨论。",
+    "cannot_support": "我方固定规则不等同实验中估计的行为规则；0.6/0.4平滑、响应幅度、误差标准差及行为参数没有移植或估计。最终履约下降本身不足以声称已检验订单方差意义的牛鞭效应。",
+    "suggested_sections": [
+      "2.2",
+      "4.2",
+      "5.2",
+      "6.3"
+    ],
+    "bibtex": "@article{sterman1989modeling,\n  title = {Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment},\n  author = {John D. Sterman},\n  year = {1989},\n  journal = {Management Science},\n  volume = {35},\n  number = {3},\n  pages = {321--339},\n  doi = {10.1287/mnsc.35.3.321},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.35.3.321}\n}",
+    "key": "sterman1989modeling",
+    "reference_number": 17
+  },
+  {
+    "citation_key": "lee1997information",
+    "title": "Information Distortion in a Supply Chain: The Bullwhip Effect",
+    "authors": [
+      "Hau L. Lee",
+      "V. Padmanabhan",
+      "Seungjin Whang"
+    ],
+    "year": 1997,
+    "venue": "Management Science",
+    "volume": "43",
+    "issue": "4",
+    "pages": "546--558",
+    "doi": "10.1287/mnsc.43.4.546",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": null,
+    "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.43.4.546",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "发表方摘要区分订单与销售的信息，并分析需求信号处理、配给博弈、批量订购和价格变化四类订单信息失真来源。",
+    "supports": "区分策略内生的中间订单与共同外生最终需求；讨论较强订单跟随可能放大需求信息与补库压力。",
+    "cannot_support": "R1尚未报告逐级订单/最终销量方差比，不能直接命名已发现牛鞭；本文没有实现上述四种来源的完整识别。1997原文与2004重印卷页/DOI不得混用。",
+    "suggested_sections": [
+      "1",
+      "2.2",
+      "4.2",
+      "5.3",
+      "6.3"
+    ],
+    "bibtex": "@article{lee1997information,\n  title = {Information Distortion in a Supply Chain: The Bullwhip Effect},\n  author = {Hau L. Lee and V. Padmanabhan and Seungjin Whang},\n  year = {1997},\n  journal = {Management Science},\n  volume = {43},\n  number = {4},\n  pages = {546--558},\n  doi = {10.1287/mnsc.43.4.546},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.43.4.546}\n}",
+    "key": "lee1997information",
+    "reference_number": 18
+  },
+  {
+    "citation_key": "cohen1990absorptive",
+    "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+    "authors": [
+      "Wesley M. Cohen",
+      "Daniel A. Levinthal"
+    ],
+    "year": 1990,
+    "venue": "Administrative Science Quarterly",
+    "volume": "35",
+    "issue": "1",
+    "pages": "128--152",
+    "doi": "10.2307/2393553",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": null,
+    "url": "https://www.jstor.org/stable/2393553",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "一手摘要定义企业识别、吸收并商业应用外部知识的能力，强调先验相关知识、组织层知识多样性与历史路径，并把研发与吸收能力联系起来。",
+    "supports": "区分技术支出/采用存量与有效吸收，保留部门异质性的吸收能力；研发与采用能力的互补。",
+    "cannot_support": "不支持AI×吸收×适配/(1+摩擦)这一具体函数及0.2/0.9情景值；原文讨论企业组织，聚合到统计部门是本文的简化。",
+    "suggested_sections": [
+      "1",
+      "2.3",
+      "4.4",
+      "6.2"
+    ],
+    "bibtex": "@article{cohen1990absorptive,\n  title = {Absorptive Capacity: A New Perspective on Learning and Innovation},\n  author = {Wesley M. Cohen and Daniel A. Levinthal},\n  year = {1990},\n  journal = {Administrative Science Quarterly},\n  volume = {35},\n  number = {1},\n  pages = {128--152},\n  doi = {10.2307/2393553},\n  url = {https://www.jstor.org/stable/2393553}\n}",
+    "key": "cohen1990absorptive",
+    "reference_number": 19
+  },
+  {
+    "citation_key": "brynjolfsson2002intangible",
+    "title": "Intangible Assets: Computers and Organizational Capital",
+    "authors": [
+      "Erik Brynjolfsson",
+      "Lorin M. Hitt",
+      "Shinkyu Yang"
+    ],
+    "year": 2002,
+    "venue": "Brookings Papers on Economic Activity",
+    "volume": "2002",
+    "issue": "1",
+    "pages": "137--198",
+    "doi": "10.1353/eca.2002.0003",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://www.brookings.edu/wp-content/uploads/2016/07/2002a_bpea_brynjolfsson.pdf",
+    "url": "https://www.brookings.edu/articles/intangible-assets-computers-and-organizational-capital/",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "发表方公开全文研究计算机资本和组织资本之间的互补，并报告组织实践、技术投入与市场价值/产出之间的关联。",
+    "supports": "技术资本不是独立产生收益：组织实践、技能与配套资产会影响技术投入转化；E1吸收/摩擦的机制动机。",
+    "cannot_support": "该文实证对象和我方13部门不同；不提供AI转化效率和季度滞后。用互补文献支持机制方向，不应借其估计值为本包参数背书。",
+    "suggested_sections": [
+      "1",
+      "2.3",
+      "4.4",
+      "6.2"
+    ],
+    "bibtex": "@article{brynjolfsson2002intangible,\n  title = {Intangible Assets: Computers and Organizational Capital},\n  author = {Erik Brynjolfsson and Lorin M. Hitt and Shinkyu Yang},\n  year = {2002},\n  journal = {Brookings Papers on Economic Activity},\n  volume = {2002},\n  number = {1},\n  pages = {137--198},\n  doi = {10.1353/eca.2002.0003},\n  url = {https://www.brookings.edu/articles/intangible-assets-computers-and-organizational-capital/}\n}",
+    "key": "brynjolfsson2002intangible",
+    "reference_number": 20
+  },
+  {
+    "citation_key": "brynjolfsson2021productivity",
+    "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+    "authors": [
+      "Erik Brynjolfsson",
+      "Daniel Rock",
+      "Chad Syverson"
+    ],
+    "year": 2021,
+    "venue": "American Economic Journal: Macroeconomics",
+    "volume": "13",
+    "issue": "1",
+    "pages": "333--372",
+    "doi": "10.1257/mac.20180386",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://www.nber.org/papers/w25148.pdf",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/mac.20180386",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "发表方摘要讨论AI等通用技术所需的互补无形投入，及未充分计量无形资本如何导致生产率早期低估、后期高估。",
+    "supports": "解释技术采用、配套能力和最终产出之间可能存在时间与计量差异；现实对话可强调不能用技术投入代替已实现交付。",
+    "cannot_support": "E1在正常需求下零交付增益由生产上界决定，尚未形成文献的生产率J曲线；本包没有无形资产核算或用TFP识别该动态。预印本与正式2021元数据应区分。",
+    "suggested_sections": [
+      "1",
+      "2.3",
+      "4.4",
+      "6.2"
+    ],
+    "bibtex": "@article{brynjolfsson2021productivity,\n  title = {The Productivity J-Curve: How Intangibles Complement General Purpose Technologies},\n  author = {Erik Brynjolfsson and Daniel Rock and Chad Syverson},\n  year = {2021},\n  journal = {American Economic Journal: Macroeconomics},\n  volume = {13},\n  number = {1},\n  pages = {333--372},\n  doi = {10.1257/mac.20180386},\n  url = {https://www.aeaweb.org/articles?id=10.1257/mac.20180386}\n}",
+    "key": "brynjolfsson2021productivity",
+    "verification_variants": [
+      {
+        "key": "brynjolfsson2021productivity",
+        "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+        "authors": [
+          "Erik Brynjolfsson",
+          "Daniel Rock",
+          "Chad Syverson"
+        ],
+        "year": 2021,
+        "venue": "American Economic Journal: Macroeconomics",
+        "volume": "13",
+        "issue": "1",
+        "pages": "333–372",
+        "doi": "10.1257/mac.20180386",
+        "kind": "期刊理论与实证论文",
+        "url": "https://www.aeaweb.org/articles?id=10.1257/mac.20180386",
+        "pdf_url": null,
+        "read_location": "出版社摘要与正式引文信息；正式摘要明确GPT互补无形投资与测量动态",
+        "supports": "AI等通用技术需要互补投入；能力形成、投入成本与测量的生产率改善可能跨期发生。",
+        "placement": [
+          "2.4 AI互补投资",
+          "4.4 AI吸收的机制动机",
+          "6.2 E1解释与范围"
+        ],
+        "cannot_claim": "本稿已经检验J曲线或无形资本计量偏误；研发产出、AI学习速度、折旧率或吸收率由文献定量识别；需求瓶颈结果是该论文预测的直接验证。",
+        "abstract": null,
+        "keywords": [],
+        "citation_count": null,
+        "download_count": null,
+        "source_platforms": [
+          "primary publisher/institution"
+        ],
+        "fetched_at": "2026-10-03",
+        "source_url": "https://www.aeaweb.org/articles?id=10.1257/mac.20180386"
+      }
+    ],
+    "reference_number": 21
+  },
+  {
+    "citation_key": "kydland1982time",
+    "title": "Time to Build and Aggregate Fluctuations",
+    "authors": [
+      "Finn E. Kydland",
+      "Edward C. Prescott"
+    ],
+    "year": 1982,
+    "venue": "Econometrica",
+    "volume": "50",
+    "issue": "6",
+    "pages": "1345--1370",
+    "doi": "10.2307/1913386",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://www.minneapolisfed.org/~/media/files/research/prescott/papers/timetobuild.pdf",
+    "url": "https://www.jstor.org/stable/1913386",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者公开的正式稿强调新生产资本建设需要多个期间，并在季度总量模型中研究建设时滞与经济波动。",
+    "supports": "资本支出先进入待投产队列、投产后提高可用产能的跨期设计。",
+    "cannot_support": "本包固定时滞与线性投产转化不是该文多阶段资本建设均衡模型；不支持半导体扩产6季度、政府0.1转化或私有投资效率的具体数值。",
+    "suggested_sections": [
+      "4.5",
+      "B.1"
+    ],
+    "bibtex": "@article{kydland1982time,\n  title = {Time to Build and Aggregate Fluctuations},\n  author = {Finn E. Kydland and Edward C. Prescott},\n  year = {1982},\n  journal = {Econometrica},\n  volume = {50},\n  number = {6},\n  pages = {1345--1370},\n  doi = {10.2307/1913386},\n  url = {https://www.jstor.org/stable/1913386}\n}",
+    "key": "kydland1982time",
+    "reference_number": 22
+  },
+  {
+    "citation_key": "mcfadden1974conditional",
+    "title": "Conditional Logit Analysis of Qualitative Choice Behavior",
+    "authors": [
+      "Daniel McFadden"
+    ],
+    "year": 1974,
+    "venue": "Frontiers in Econometrics",
+    "volume": null,
+    "issue": null,
+    "pages": "105--142",
+    "doi": null,
+    "isbn": "9780127761503",
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf",
+    "url": "https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者公开稿给出条件Logit选择理论；作者履历核实正式书章为1974、Zarembka编、Academic Press、105–142页。",
+    "supports": "采购槽份额的归一化指数形式，可作为离散选择启发式的经典依据。",
+    "cannot_support": "本包使用确定性概率权重进行分配，并没有估计随机效用或真实供应商选择。κ=0/5/12、质量[1,.9,.8]、通道偏差、容量份额均为人工设定。",
+    "suggested_sections": [
+      "4.4",
+      "B.4"
+    ],
+    "bibtex_type": "incollection",
+    "editor": "Paul Zarembka",
+    "publisher": "Academic Press",
+    "metadata_verification_url": "https://eml.berkeley.edu/~mcfadden/dlmcv10.html",
+    "isbn_verification_url": "https://ndlsearch.ndl.go.jp/en/books/R100000002-I000006382096",
+    "bibtex": "@incollection{mcfadden1974conditional,\n  title = {Conditional Logit Analysis of Qualitative Choice Behavior},\n  author = {Daniel McFadden},\n  year = {1974},\n  booktitle = {Frontiers in Econometrics},\n  editor = {Paul Zarembka},\n  publisher = {Academic Press},\n  pages = {105--142},\n  isbn = {9780127761503},\n  url = {https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf}\n}",
+    "key": "mcfadden1974conditional",
+    "reference_number": 23
+  },
+  {
+    "citation_key": "train2009discrete",
+    "title": "Discrete Choice Methods with Simulation",
+    "authors": [
+      "Kenneth E. Train"
+    ],
+    "year": 2009,
+    "venue": "Cambridge University Press",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "doi": "10.1017/CBO9780511805271",
+    "isbn": "9780521747387",
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://eml.berkeley.edu/books/choice2nd/Ch03_p34-75.pdf",
+    "url": "https://eml.berkeley.edu/books/choice2.html",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者公开第二版第3章由独立极值分布随机效用推导Logit，并讨论IIA、选择概率随效用变化和误差独立假设的局限。",
+    "supports": "Logit供给槽份额及二元协同概率的函数性质；解释同类供给通道在IIA等假设下的局限。",
+    "cannot_support": "指数权重归一化有形式依据，不意味着本文供给槽是真实独立备选供应商，也不支持合同奖励2、短缺0.5、截距−0.5的经验值。",
+    "suggested_sections": [
+      "4.4",
+      "4.5",
+      "B.4"
+    ],
+    "bibtex_type": "book",
+    "edition": "2",
+    "bibtex": "@book{train2009discrete,\n  title = {Discrete Choice Methods with Simulation},\n  author = {Kenneth E. Train},\n  year = {2009},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511805271},\n  isbn = {9780521747387},\n  url = {https://eml.berkeley.edu/books/choice2.html}\n}",
+    "key": "train2009discrete",
+    "reference_number": 24
+  },
+  {
+    "citation_key": "nash1950bargaining",
+    "title": "The Bargaining Problem",
+    "authors": [
+      "John F. Nash, Jr."
+    ],
+    "year": 1950,
+    "venue": "Econometrica",
+    "volume": "18",
+    "issue": "2",
+    "pages": "155--162",
+    "doi": "10.2307/1907266",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://www.haverford.edu/sites/default/files/Nash1950.pdf",
+    "url": "https://www.jstor.org/stable/1907266",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "读取正式原文：在紧凸可行效用集合、明确不合作基点等假设下以双方效用增益乘积确定谈判解。",
+    "supports": "以双方非负剩余乘积表示激励分配的权衡；可称Nash式目标。",
+    "cannot_support": "本文加权乘积与有限101点网格不是原文完整公理化Nash解；若未声明不合作效用、凸可行集与正剩余条件，不能直接声称谈判均衡。平台主体及现金转移也未实现。",
+    "suggested_sections": [
+      "4.5",
+      "B.4"
+    ],
+    "bibtex": "@article{nash1950bargaining,\n  title = {The Bargaining Problem},\n  author = {John F. Nash, Jr.},\n  year = {1950},\n  journal = {Econometrica},\n  volume = {18},\n  number = {2},\n  pages = {155--162},\n  doi = {10.2307/1907266},\n  url = {https://www.jstor.org/stable/1907266}\n}",
+    "key": "nash1950bargaining",
+    "reference_number": 25
+  },
+  {
+    "citation_key": "boyd2004convex",
+    "title": "Convex Optimization",
+    "authors": [
+      "Stephen Boyd",
+      "Lieven Vandenberghe"
+    ],
+    "year": 2004,
+    "venue": "Cambridge University Press",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "doi": "10.1017/CBO9780511804441",
+    "isbn": "9780521833783",
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+    "url": "https://web.stanford.edu/~boyd/cvxbook/",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者发布教科书讨论凸优化、拉格朗日对偶与KKT条件；有界可分凹二次收益在预算约束下可用乘子刻画。",
+    "supports": "B4若c_k>0且问题可行，严格凹目标给出唯一努力解；box约束下x_k=clip((b_k−λ)/c_k,0,1)，预算松弛时λ=0，绑定时可对总努力二分。",
+    "cannot_support": "优化形式与求解关系由数学条件支持；五种努力收益/成本系数、预算大小和对应真实经济福利未识别。政府比例缩放只是可行投影风格执行，并不是最优财政配置。",
+    "suggested_sections": [
+      "4.5",
+      "B.4"
+    ],
+    "bibtex_type": "book",
+    "bibtex": "@book{boyd2004convex,\n  title = {Convex Optimization},\n  author = {Stephen Boyd and Lieven Vandenberghe},\n  year = {2004},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511804441},\n  isbn = {9780521833783},\n  url = {https://web.stanford.edu/~boyd/cvxbook/}\n}",
+    "key": "boyd2004convex",
+    "reference_number": 26
+  },
+  {
+    "citation_key": "dosi2010schumpeter",
+    "title": "Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles",
+    "authors": [
+      "Giovanni Dosi",
+      "Giorgio Fagiolo",
+      "Andrea Roventini"
+    ],
+    "year": 2010,
+    "venue": "Journal of Economic Dynamics and Control",
+    "volume": "34",
+    "issue": "9",
+    "pages": "1748--1767",
+    "doi": "10.1016/j.jedc.2010.06.018",
+    "isbn": null,
+    "arxiv_id": null,
+    "pubmed_id": null,
+    "cnki_url": null,
+    "abstract": null,
+    "abstract_note": "未复制受版权保护摘要；evidence_summary 是读取一手来源后的概述。",
+    "citation_count": null,
+    "download_count": null,
+    "pdf_url": "https://iris.sssup.it/retrieve/dd9e0b31-c11c-709e-e053-3705fe0a83fd/JEDC_2010.pdf",
+    "url": "https://doi.org/10.1016/j.jedc.2010.06.018",
+    "keywords": [],
+    "source_platforms": [
+      "publisher_or_author"
+    ],
+    "fetched_at": "2026-10-03",
+    "evidence_summary": "作者机构正式稿把创新扩散、需求生成、企业库存、投资与价格/加成规则连接起来，研究供需政策互补及增长波动。",
+    "supports": "经济ABM采用有限理性计划、库存与投资调整、状态依赖定价，并在同一动态系统比较政策；可为本文部门行为简化与需求约束解释提供研究背景。",
+    "cannot_support": "该文定价是成本加成及份额响应；本包订单/成品缺口指数调价不同，不可写直接沿用该文价格公式。半导体不是原研究对象，也不能移用该文政策结果。",
+    "suggested_sections": [
+      "2.1",
+      "2.3",
+      "4.1",
+      "B.1",
+      "6.2"
+    ],
+    "bibtex": "@article{dosi2010schumpeter,\n  title = {Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles},\n  author = {Giovanni Dosi and Giorgio Fagiolo and Andrea Roventini},\n  year = {2010},\n  journal = {Journal of Economic Dynamics and Control},\n  volume = {34},\n  number = {9},\n  pages = {1748--1767},\n  doi = {10.1016/j.jedc.2010.06.018},\n  url = {https://doi.org/10.1016/j.jedc.2010.06.018}\n}",
+    "key": "dosi2010schumpeter",
+    "reference_number": 27
+  },
+  {
+    "key": "oecd2025mapping",
+    "title": "Mapping the semiconductor value chain: Working towards identifying dependencies and vulnerabilities",
+    "authors": [
+      "OECD"
+    ],
+    "year": 2025,
+    "venue": "OECD Science, Technology and Industry Policy Papers",
+    "report_number": "182",
+    "doi": "10.1787/4154cdbf-en",
+    "kind": "机构政策报告",
+    "url": "https://www.oecd.org/en/publications/mapping-the-semiconductor-value-chain_4154cdbf-en.html",
+    "pdf_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/mapping-the-semiconductor-value-chain_5ba52971/4154cdbf-en.pdf",
+    "read_location": "原报告 Executive summary（印刷页7，PDF第7页）；Introduction（印刷页8，PDF第8页）",
+    "supports": "全球分工、行业内连续加工与关键投入依赖；原报告以贸易和ICIO资料辨识不同层次关系。",
+    "placement": [
+      "引言首段产业背景",
+      "2.2 投入产出与产业链差异",
+      "3.1 部门边界"
+    ],
+    "cannot_claim": "本稿已经识别设计、晶圆制造和封装交易额；本稿13部门与OECD行业划分一致；原报告数值可直接校准当前库存或资格参数。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.oecd.org/en/publications/mapping-the-semiconductor-value-chain_4154cdbf-en.html",
+    "arxiv_id": null,
+    "bibtex": "@techreport{oecd2025mapping,\n  author = {OECD},\n  title = {Mapping the semiconductor value chain: Working towards identifying dependencies and vulnerabilities},\n  year = {2025},\n  url = {https://www.oecd.org/en/publications/mapping-the-semiconductor-value-chain_4154cdbf-en.html},\n  institution = {OECD Science, Technology and Industry Policy Papers},\n  doi = {10.1787/4154cdbf-en},\n  number = {182},\n}",
+    "reference_number": 28
+  },
+  {
+    "key": "haramboure2023vulnerabilities",
+    "title": "Vulnerabilities in the semiconductor supply chain",
+    "authors": [
+      "Antton Haramboure",
+      "Guy Lalanne",
+      "Cyrille Schwellnus",
+      "Joaquim Guilhoto"
+    ],
+    "year": 2023,
+    "venue": "OECD Science, Technology and Industry Working Papers",
+    "report_number": "2023/05",
+    "doi": "10.1787/6bed616f-en",
+    "kind": "机构工作论文",
+    "url": "https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html",
+    "pdf_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/06/vulnerabilities-in-the-semiconductor-supply-chain_f4de7491/6bed616f-en.pdf",
+    "read_location": "摘要、执行摘要；第2节印刷页10–12；第3节印刷页13–14；附录A印刷页29–32",
+    "supports": "行业细分需要贸易与更细国别IO证据，ICIO记录直接和间接依赖但不识别库存与替代行为；资本设备采购作为投资而非中间投入。",
+    "placement": [
+      "2.2 部门与企业网络区分",
+      "3.1/3.3 数据和参数识别边界",
+      "6.4 R4现实对话",
+      "7 Limitations"
+    ],
+    "cannot_claim": "标准部门表识别设备资本购买、认证时滞或投入可替代弹性；工作论文代表OECD成员国正式立场；广义电子部门等于独立半导体行业。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html",
+    "arxiv_id": null,
+    "bibtex": "@techreport{haramboure2023vulnerabilities,\n  author = {Antton Haramboure and Guy Lalanne and Cyrille Schwellnus and Joaquim Guilhoto},\n  title = {Vulnerabilities in the semiconductor supply chain},\n  year = {2023},\n  url = {https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html},\n  institution = {OECD Science, Technology and Industry Working Papers},\n  doi = {10.1787/6bed616f-en},\n  number = {2023/05},\n}",
+    "reference_number": 29
+  },
+  {
+    "key": "varas2021strengthening",
+    "title": "Strengthening the Global Semiconductor Supply Chain in an Uncertain Era",
+    "authors": [
+      "Antonio Varas",
+      "Raj Varadarajan",
+      "Jimmy Goodrich",
+      "Falan Yinug"
+    ],
+    "year": 2021,
+    "venue": "Boston Consulting Group and Semiconductor Industry Association",
+    "report_number": null,
+    "doi": null,
+    "kind": "行业联合报告",
+    "url": "https://www.semiconductors.org/resources/strengthening-the-global-semiconductor-supply-chain-in-an-uncertain-era/",
+    "pdf_url": "https://www.semiconductors.org/wp-content/uploads/2021/04/SIA-BCG-Report_Strengthening-the-Global-Semiconductor-Supply-Chain_April-2021.pdf",
+    "read_location": "原报告 Executive summary；The structure of the global supply chain；Strengthening the global supply chain for the next decade of innovation（印刷页51）",
+    "supports": "全球产业分工与规模经济并存，制造及关键材料集中形成韧性挑战；报告主张有针对性的投资和国际协作，并列明全面自给的成本。",
+    "placement": [
+      "引言产业背景",
+      "2.2 产业分工与风险",
+      "6.5 G5现实对话"
+    ],
+    "cannot_claim": "其行业倡议属于政策因果估计；本稿相同预算下的微小差异证明该报告政策有效；按报告全球占比校准本稿三个合成供应槽。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.semiconductors.org/resources/strengthening-the-global-semiconductor-supply-chain-in-an-uncertain-era/",
+    "arxiv_id": null,
+    "bibtex": "@techreport{varas2021strengthening,\n  author = {Antonio Varas and Raj Varadarajan and Jimmy Goodrich and Falan Yinug},\n  title = {Strengthening the Global Semiconductor Supply Chain in an Uncertain Era},\n  year = {2021},\n  url = {https://www.semiconductors.org/resources/strengthening-the-global-semiconductor-supply-chain-in-an-uncertain-era/},\n  institution = {Boston Consulting Group and Semiconductor Industry Association},\n}",
+    "reference_number": 30
+  },
+  {
+    "key": "brynjolfsson2025generative",
+    "title": "Generative AI at Work",
+    "authors": [
+      "Erik Brynjolfsson",
+      "Danielle Li",
+      "Lindsey Raymond"
+    ],
+    "year": 2025,
+    "venue": "The Quarterly Journal of Economics",
+    "volume": "140",
+    "issue": "2",
+    "pages": "889–942",
+    "doi": "10.1093/qje/qjae044",
+    "kind": "期刊实证论文",
+    "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+    "pdf_url": null,
+    "arxiv_id": "2304.11771",
+    "read_location": "正式发表版本摘要、Introduction、Main Results；出版社检索返回正式摘要已核实",
+    "supports": "客服场景AI辅助的生产率改善在员工技能和经验维度具有异质性；正式版本平均生产率提高15%，不能与早期14%摘要混用。",
+    "placement": [
+      "引言AI赋能问题",
+      "2.4 AI与组织条件相关文献",
+      "6.2 E1与文献对话"
+    ],
+    "cannot_claim": "客服人员效应可转为半导体部门AI系数；本稿吸收率0.2/0.9由这篇论文识别；本稿部门产出效果复现其劳动生产率因果效应。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+    "bibtex": "@article{brynjolfsson2025generative,\n  author = {Erik Brynjolfsson and Danielle Li and Lindsey Raymond},\n  title = {Generative AI at Work},\n  year = {2025},\n  url = {https://academic.oup.com/qje/article/140/2/889/7990658},\n  journal = {The Quarterly Journal of Economics},\n  doi = {10.1093/qje/qjae044},\n  volume = {140},\n  number = {2},\n  pages = {889–942},\n}",
+    "reference_number": 31
+  },
+  {
+    "key": "acemoglu2025simple",
+    "title": "The simple macroeconomics of AI",
+    "authors": [
+      "Daron Acemoglu"
+    ],
+    "year": 2025,
+    "venue": "Economic Policy",
+    "volume": "40",
+    "issue": "121",
+    "pages": "13–58",
+    "doi": "10.1093/epolic/eiae042",
+    "kind": "期刊理论与定量评估论文",
+    "url": "https://academic.oup.com/economicpolicy/article/40/121/13/7728473",
+    "pdf_url": "https://economics.mit.edu/sites/default/files/2024-10/The%20Simple%20Macroeconomics%20of%20AI.pdf",
+    "working_paper_version": {
+      "year": 2024,
+      "report_number": "NBER Working Paper 32487",
+      "doi": "10.3386/w32487",
+      "url": "https://www.nber.org/papers/w32487"
+    },
+    "read_location": "正式期刊SUMMARY及NBER正文摘要；期刊在线2024、卷期年份2025",
+    "supports": "任务层生产率或节省成本向宏观影响转化取决于受影响任务份额及任务层改善；对从少数场景外推总体效应提出约束。",
+    "placement": [
+      "引言赋能的聚合问题",
+      "2.4 AI经济效应",
+      "6.2 E1结果解释"
+    ],
+    "cannot_claim": "本稿观测到了现实十年TFP；本稿30期履约百分点等同GDP/TFP变化；本稿已采用Hulten福利核算或识别劳动收入效应。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://academic.oup.com/economicpolicy/article/40/121/13/7728473",
+    "arxiv_id": null,
+    "bibtex": "@article{acemoglu2025simple,\n  author = {Daron Acemoglu},\n  title = {The simple macroeconomics of AI},\n  year = {2025},\n  url = {https://academic.oup.com/economicpolicy/article/40/121/13/7728473},\n  journal = {Economic Policy},\n  doi = {10.1093/epolic/eiae042},\n  volume = {40},\n  number = {121},\n  pages = {13–58},\n}",
+    "reference_number": 32
+  },
+  {
+    "key": "juhasz2024new",
+    "title": "The New Economics of Industrial Policy",
+    "authors": [
+      "Réka Juhász",
+      "Nathan Lane",
+      "Dani Rodrik"
+    ],
+    "year": 2024,
+    "venue": "Annual Review of Economics",
+    "volume": "16",
+    "pages": "213–242",
+    "doi": "10.1146/annurev-economics-081023-024638",
+    "kind": "期刊综述论文",
+    "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-economics-081023-024638",
+    "pdf_url": "https://www.nber.org/system/files/working_papers/w31538/w31538.pdf",
+    "working_paper_version": {
+      "year": 2023,
+      "report_number": "NBER Working Paper 31538",
+      "doi": "10.3386/w31538"
+    },
+    "read_location": "正式出版社摘要与元数据；工作论文第6节关于治理和工具范围的讨论",
+    "supports": "产业政策评价需要测量、因果推断与经济结构；政策工具不限于补贴，实施治理与特定约束影响效果。",
+    "placement": [
+      "2.4 产业政策与政府策略",
+      "4.5 政府目标作为情景设计",
+      "6.5 G5文献对话"
+    ],
+    "cannot_claim": "综述证明本稿短缺靶向普遍优于其他政策；本稿启发式政府配置是最优政策；仿真差异构成现实因果识别。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-economics-081023-024638",
+    "arxiv_id": null,
+    "bibtex": "@article{juhasz2024new,\n  author = {Réka Juhász and Nathan Lane and Dani Rodrik},\n  title = {The New Economics of Industrial Policy},\n  year = {2024},\n  url = {https://www.annualreviews.org/content/journals/10.1146/annurev-economics-081023-024638},\n  journal = {Annual Review of Economics},\n  doi = {10.1146/annurev-economics-081023-024638},\n  volume = {16},\n  pages = {213–242},\n}",
+    "reference_number": 33
+  },
+  {
+    "key": "commerce2022results",
+    "title": "Results from Semiconductor Supply Chain Request for Information",
+    "authors": [
+      "U.S. Department of Commerce"
+    ],
+    "year": 2022,
+    "venue": "U.S. Department of Commerce",
+    "report_number": null,
+    "doi": null,
+    "kind": "政府自愿调查结果发布",
+    "url": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information",
+    "pdf_url": null,
+    "published_date": "2022-01-25",
+    "read_location": "OVERVIEW、Some key findings include、主要瓶颈分析；官网全文",
+    "supports": "150多份自愿回应中，买方所报告的重点芯片需求增长、库存下降及晶圆产能瓶颈共存；需求和供给冲击需共同解释当时短缺。",
+    "placement": [
+      "引言真实产业背景",
+      "6.2 E1需求与能力约束",
+      "6.3 R1库存对话"
+    ],
+    "cannot_claim": "调查是中国2020年13部门总体统计；40天至不足5天可以直接变成季度部门库存参数；真实芯片调查已经验证本稿短缺轨迹或库存策略排序。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information",
+    "arxiv_id": null,
+    "bibtex": "@techreport{commerce2022results,\n  author = {U.S. Department of Commerce},\n  title = {Results from Semiconductor Supply Chain Request for Information},\n  year = {2022},\n  url = {https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information},\n  institution = {U.S. Department of Commerce},\n}",
+    "reference_number": 34
+  },
+  {
+    "key": "oecd2025chip",
+    "title": "The chip landscape: Geographical distribution of wafer fabrication capacity",
+    "authors": [
+      "OECD"
+    ],
+    "year": 2025,
+    "venue": "OECD Science, Technology and Industry Policy Papers",
+    "report_number": "188",
+    "doi": "10.1787/02dbd028-en",
+    "kind": "机构政策报告",
+    "url": "https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html",
+    "pdf_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/the-chip-landscape_27ef5d87/02dbd028-en.pdf",
+    "contributing_authors": [
+      "Jan-Peter Kleinhans",
+      "Sabhyata Jha"
+    ],
+    "read_location": "摘要；Executive summary印刷页7（PDF第8页）；Introduction与厂房、芯片类型分类；Endnotes第2项",
+    "supports": "晶圆产能按节点、工艺、经营模式分类具有地域和企业集中，跨晶圆厂生产替代有限；first silicon是设备、工艺与集成验证，不等于立即规模投产。",
+    "placement": [
+      "引言粒度与瓶颈",
+      "2.2 真实产能与部门统计",
+      "6.4 R4现实对话",
+      "7 缺少工艺粒度的限制"
+    ],
+    "cannot_claim": "三个合成槽是三家真实晶圆厂；槽容量、资格分数或认证延迟来自该数据库；金额产出当量可与WSPM实物产能直接比对。",
+    "abstract": null,
+    "keywords": [],
+    "citation_count": null,
+    "download_count": null,
+    "source_platforms": [
+      "primary publisher/institution"
+    ],
+    "fetched_at": "2026-10-03",
+    "source_url": "https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html",
+    "arxiv_id": null,
+    "bibtex": "@techreport{oecd2025chip,\n  author = {OECD},\n  title = {The chip landscape: Geographical distribution of wafer fabrication capacity},\n  year = {2025},\n  url = {https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html},\n  institution = {OECD Science, Technology and Industry Policy Papers},\n  doi = {10.1787/02dbd028-en},\n  number = {188},\n}",
+    "reference_number": 35
+  }
+]

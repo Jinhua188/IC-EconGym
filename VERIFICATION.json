@@ -44,7 +44,7 @@
       "tasks": 15,
       "G5_seed3_period12": "99.910%"
     },
-    "paper_math_elements": 190,
+    "paper_math_elements": 202,
     "paper_math_errors": 0,
     "paper_mermaid_figures": 1
   },
@@ -59,7 +59,19 @@
     "engine_unchanged": true,
     "learning_baselines": false,
     "independent_external_validation": false,
-    "visual_qa": "19-page PDF reviewed in page renders; no outside-page blocks",
-    "references": 7
+    "visual_qa": "24-page PDF reviewed in page renders; no outside-page blocks",
+    "references": 35
+  },
+  "citation_revision": {
+    "references": 35,
+    "new_references": 28,
+    "all_references_cited": true,
+    "original_display_equations_unchanged": true,
+    "original_table_rows_unchanged": true,
+    "engine_configs_results_unchanged": true,
+    "local_links_resolve": true,
+    "calibration_added": false,
+    "external_validation_added": false,
+    "pdf_pages": 24
   }
 }
