@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-03",
+  "baseline_checks": {
+    "status": "pass",
+    "tasks": 15,
+    "v1_arms": 50,
+    "import_cases": 3
+  },
+  "browser_checks": {
+    "pages": [
+      {
+        "name": "index",
+        "title": "IC-EconGym · Semiconductor Policy Testbed",
+        "horizontal_overflow": false
+      },
+      {
+        "name": "observer",
+        "title": "IC-EconGym · 部门状态观察",
+        "horizontal_overflow": false
+      },
+      {
+        "name": "demo",
+        "title": "IC EconGym 15个产业经济任务演示",
+        "horizontal_overflow": false
+      },
+      {
+        "name": "paper",
+        "title": "IC-EconGym · 中文论文完善稿",
+        "horizontal_overflow": false
+      },
+      {
+        "name": "index-mobile",
+        "horizontal_overflow": false
+      },
+      {
+        "name": "observer-mobile",
+        "horizontal_overflow": false
+      }
+    ],
+    "browser_errors": [],
+    "http_failures": [],
+    "observer": {
+      "sectors": 13,
+      "tasks": 15,
+      "G5_seed3_period12": "99.910%"
+    },
+    "paper_math_elements": 50,
+    "paper_math_errors": 0,
+    "paper_mermaid_figures": 2
+  },
+  "publication": {
+    "repository": "https://github.com/Jinhua188/IC-EconGym",
+    "site": "https://jinhua188.github.io/IC-EconGym/"
+  },
+  "external_validation": false
+}

@@ -138,7 +138,7 @@ B_{t+1}=B_t-\sum_{j=1}^{13}\sum_{k=1}^{6}g_{jk,t}.
 <p>现有预算为整个实验的一次性总额；策略可以分期使用剩余预算，但环境不会在每期自动补充相同额度。</p>
 <h3>4.4 可复现运行时</h3>
 <p>任务 YAML 固定机制开关、冲击、预算、时滞和策略选择。运行时提供 <code>reset → run_agents → step → evaluate</code> 接口，导出逐期轨迹、部门面板与元数据；13 部门适配实现见<a href="ic_extension/iewm13.py">源代码</a>。预设 15 题与 50 个演示对照臂已完成 3 种子、每次 30 期的运行检查（<a href="RELEASE_CHECKS.json">发布核验</a>）。这一检查支持代码可执行和内部核算，尚不能视作历史数据回放。</p>
-<p><strong>图 1｜平台的计算边界与决策接口（待按投稿格式重绘）</strong></p>
+<p><strong>图 S1｜部门决策、轨迹与企业证据层之间的关系</strong></p>
 <pre class="mermaid">flowchart LR
     IO[2020 年投入产出核算] --&gt; ENV[13 部门环境转移]
     BOUND[42 个其他国内部门\n进口与最终使用] --&gt; ENV
