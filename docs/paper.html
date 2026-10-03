@@ -5,9 +5,9 @@
 <p><strong>关键词：</strong> 多智能体测试平台；投入产出约束；集成电路相关产业；供应链韧性；产业政策；机制诊断</p>
 <h2>1 Introduction</h2>
 <p>经济智能体的行动不能仅通过奖励函数中的加分项表示。扩产需要占用资源并等待投产，库存支持需要形成可用投入，部门产出还可能受到某一种上游产品限制。若这些约束没有进入环境转移，局部策略的高收益无法说明其提高了系统交付。对于集成电路相关产业，这一问题尤其突出：设计、制造、材料、设备与应用之间存在多种依赖，但宏观统计部门与工艺环节并非一一对应；部门总量、企业关系和产品交易额也具有不同的证据含义。</p>
-<p>半导体行业的这一特征已有产业证据。OECD 的价值链研究把设计、制造、设备、材料和终端应用的联系置于全球专业化分工中；SIA 与 BCG 的行业报告同时讨论专业化的效率来源和关键环节集中带来的脆弱性 [28, 30]。美国商务部对 2021 年短缺的自愿调查还记录了重点芯片需求增长、买方库存下降与晶圆产能瓶颈并存的现象 [34]。这些资料说明需求、可用投入与产能需要共同建模，但其行业粒度、地域和计量单位不能直接移植到中国广义统计部门。</p>
-<p>生产网络理论说明，部门特有冲击可以经直接与间接投入联系形成总体波动 [3]。动态投入产出模型进一步把需求、供给和库存纳入非均衡生产过程，并检验了冲击传播的预测能力 [4]。与此同时，EconGym 将多类经济角色与可替换策略组织为统一测试环境，以算法基准、现实贴合和运行效率支撑其平台主张 [1]。这两条研究路径为产业智能体实验提供了基础，但尚不能直接把通用家庭、银行或政府策略移植到具有分来源投入约束的产业部门，也不能把部门表直接解释为企业交易网络。</p>
-<p>AI 赋能和产业政策也需要区分投入与已实现效果。吸收能力研究强调组织识别、吸收并应用外部知识的条件，技术—组织互补研究则说明技术投资需要配套资产 [19, 20, 21]。任务层效率向总量效应的转化还依赖受影响活动的覆盖范围 [32]。对于政策，近期产业政策综述强调测量、因果识别、实施治理和具体经济结构 [33]。因此，本文关注能力、订单与财政行动经过约束后产生的交付，而将现实政策有效性留给额外的行为识别与外部验证。</p>
+<p>半导体行业的这一特征已有产业证据。OECD 的价值链研究把设计、制造、设备、材料和终端应用的联系置于全球专业化分工中；SIA 与 BCG 的行业报告同时讨论专业化的效率来源和关键环节集中带来的脆弱性 [1, 2]。美国商务部对 2021 年短缺的自愿调查还记录了重点芯片需求增长、买方库存下降与晶圆产能瓶颈并存的现象 [3]。这些资料说明需求、可用投入与产能需要共同建模，但其行业粒度、地域和计量单位不能直接移植到中国广义统计部门。</p>
+<p>生产网络理论说明，部门特有冲击可以经直接与间接投入联系形成总体波动 [4]。动态投入产出模型进一步把需求、供给和库存纳入非均衡生产过程，并检验了冲击传播的预测能力 [5]。与此同时，EconGym 将多类经济角色与可替换策略组织为统一测试环境，以算法基准、现实贴合和运行效率支撑其平台主张 [6]。这两条研究路径为产业智能体实验提供了基础，但尚不能直接把通用家庭、银行或政府策略移植到具有分来源投入约束的产业部门，也不能把部门表直接解释为企业交易网络。</p>
+<p>AI 赋能和产业政策也需要区分投入与已实现效果。吸收能力研究强调组织识别、吸收并应用外部知识的条件，技术—组织互补研究则说明技术投资需要配套资产 [7, 8, 9]。任务层效率向总量效应的转化还依赖受影响活动的覆盖范围 [10]。对于政策，近期产业政策综述强调测量、因果识别、实施治理和具体经济结构 [11]。因此，本文关注能力、订单与财政行动经过约束后产生的交付，而将现实政策有效性留给额外的行为识别与外部验证。</p>
 <p>IC-EconGym 将部门核算结构转化为策略可作用的逐期环境。13 个相关部门分别提出生产计划、补库目标、价格调整和能力投入；政府在一次性总预算内选择支出渠道与部门配置。环境决定哪些计划能够生产、哪些交付可以到达，以及哪些项目只能在后续期生效。策略与经济结算分别实现，因而可在保持核算来源和观察权限一致的条件下替换策略、改变冲击和关闭机制。</p>
 <p>本文围绕三个研究问题开展实验。</p>
 <ul>
@@ -19,16 +19,16 @@
 <p>本文研究对象是集成电路相关部门的条件机制实验。2020 年核算表识别基期用途和投入比例，细分结构包含收入分劈假设；AI、投资、库存和合同参数未由该表估计。本文的结果解释为模型内策略与机制比较，不解释为现实政策因果效应。</p>
 <h2>2 Related Work and Positioning</h2>
 <h3>2.1 经济策略学习与测试平台</h3>
-<p>AI Economist 通过经济主体与规划者的两层深度多智能体强化学习研究税收设计，表明政策比较需要考虑主体对政策的响应 [5]。EconGym 进一步组织多角色和多任务，比较规则、学习及语言模型等策略，并考察跨政策协同 [1]。IC-EconGym 借鉴其角色、观察、行动、奖励和环境结算的分离方式，新增的研究对象是受投入来源、库存与产能约束的产业部门。原平台已训练的家庭或银行策略不构成本文部门基线；所有候选策略都必须适配本文的观察字段和行动结构。</p>
+<p>AI Economist 通过经济主体与规划者的两层深度多智能体强化学习研究税收设计，表明政策比较需要考虑主体对政策的响应 [12]。EconGym 进一步组织多角色和多任务，比较规则、学习及语言模型等策略，并考察跨政策协同 [6]。IC-EconGym 借鉴其角色、观察、行动、奖励和环境结算的分离方式，新增的研究对象是受投入来源、库存与产能约束的产业部门。原平台已训练的家庭或银行策略不构成本文部门基线；所有候选策略都必须适配本文的观察字段和行动结构。</p>
 <p>现有实验使用规则与启发式，没有进行强化学习训练、语言模型调用或训练—测试泛化比较。本文因此将“可替换策略的测试环境”作为已实现能力，将“学习型算法基准”作为后续验证项。规则策略对状态作固定公式响应，也不等于其在运行中学习。</p>
-<p>这一实现属于计算经济学的规则主体路径。Tesfatsion 将经济过程表示为主体反复交互的动态系统，主体可以包含行为规则、属性与制度约束 [12]；Littman 的多主体框架则明确联合行动如何进入环境状态转移 [13]。本文沿用主体—行动—转移的组织方式，观察受角色权限限制，但不据此宣称已经求得博弈均衡或学习到经济行为。</p>
+<p>这一实现属于计算经济学的规则主体路径。Tesfatsion 将经济过程表示为主体反复交互的动态系统，主体可以包含行为规则、属性与制度约束 [13]；Littman 的多主体框架则明确联合行动如何进入环境状态转移 [14]。本文沿用主体—行动—转移的组织方式，观察受角色权限限制，但不据此宣称已经求得博弈均衡或学习到经济行为。</p>
 <h3>2.2 投入产出结构与供应网络仿真</h3>
-<p>Acemoglu 等说明高阶投入依赖在部门冲击向总量波动的传导中具有重要作用 [3]。Pichler 等以动态投入产出模型表示行业供需冲击、库存和生产限制，并使用独立经济活动数据检验预测 [4]。本文沿用固定投入与库存约束的建模思路，重点提供策略接口、共同预算比较和机制诊断；没有完成与其同等的历史预测验证。</p>
-<p>固定投入系数与 Leontief 关联分析提供了部门核算基础 [8]。Hallegatte 的 ARIO 模型进一步把产能和前后向传播用于灾害损失分析，说明重建需求只有经过产能约束才能转化为生产 [9]。Carvalho 等利用东日本大地震及企业关系数据识别了上下游冲击传播 [11]。这些研究支持在环境中保留投入依赖与产能，但理论网络、统计部门网络和观测企业网络分别支持不同层级的结论。</p>
-<p>企业级供应链模型依赖更细的关系资料。Inoue 和 Todo 使用日本企业供应关系构建动态 ABM，并结合销售额与投入产出表推估交易权重 [6]。关系观测与交易额识别在该研究中也需区分。本文工作区的 206 家企业和 8,364 条候选边尚未具备保持部门核算总量的业务份额和逐产品权重，因此未载入当前生产转移。三个合成供给通道仅用于集中与拥堵实验。</p>
-<p>库存与信息反馈属于另一层行为机制。Clark 和 Scarf 的多级库存研究表明，上游库存和交付提前期需要联动 [16]；Sterman 的实验研究讨论决策者对库存与反馈的误判 [17]；Lee 等将订单信息失真与终端销售区分，并分析牛鞭效应的多种来源 [18]。本文用这些研究解释补库和订单反馈的建模理由，具体系数仍由任务设定，且不把最终短缺变化直接称为牛鞭效应。</p>
+<p>Acemoglu 等说明高阶投入依赖在部门冲击向总量波动的传导中具有重要作用 [4]。Pichler 等以动态投入产出模型表示行业供需冲击、库存和生产限制，并使用独立经济活动数据检验预测 [5]。本文沿用固定投入与库存约束的建模思路，重点提供策略接口、共同预算比较和机制诊断；没有完成与其同等的历史预测验证。</p>
+<p>固定投入系数与 Leontief 关联分析提供了部门核算基础 [15]。Hallegatte 的 ARIO 模型进一步把产能和前后向传播用于灾害损失分析，说明重建需求只有经过产能约束才能转化为生产 [16]。Carvalho 等利用东日本大地震及企业关系数据识别了上下游冲击传播 [17]。这些研究支持在环境中保留投入依赖与产能，但理论网络、统计部门网络和观测企业网络分别支持不同层级的结论。</p>
+<p>企业级供应链模型依赖更细的关系资料。Inoue 和 Todo 使用日本企业供应关系构建动态 ABM，并结合销售额与投入产出表推估交易权重 [18]。关系观测与交易额识别在该研究中也需区分。本文工作区的 206 家企业和 8,364 条候选边尚未具备保持部门核算总量的业务份额和逐产品权重，因此未载入当前生产转移。三个合成供给通道仅用于集中与拥堵实验。</p>
+<p>库存与信息反馈属于另一层行为机制。Clark 和 Scarf 的多级库存研究表明，上游库存和交付提前期需要联动 [19]；Sterman 的实验研究讨论决策者对库存与反馈的误判 [20]；Lee 等将订单信息失真与终端销售区分，并分析牛鞭效应的多种来源 [21]。本文用这些研究解释补库和订单反馈的建模理由，具体系数仍由任务设定，且不把最终短缺变化直接称为牛鞭效应。</p>
 <h3>2.3 经济世界模型的系统边界</h3>
-<p>Han 等提出经济世界模型的能力阶梯与实现协议，将主体、环境、共演化、现实对齐和评估分开，并区分信念更新、行动、状态转移、聚合和制度演化 [2]。该文当前为 arXiv 预印本，本文借鉴的是其系统分类与诊断原则。IC-EconGym 已实现固定规则主体、环境执行和只读轨迹评价；未实现显式信念更新、持续策略学习、制度内生演化或在线数据纠正。政府在预算内选择支出属于行动，不构成制度自演化。</p>
+<p>Han 等提出经济世界模型的能力阶梯与实现协议，将主体、环境、共演化、现实对齐和评估分开，并区分信念更新、行动、状态转移、聚合和制度演化 [22]。该文当前为 arXiv 预印本，本文借鉴的是其系统分类与诊断原则。IC-EconGym 已实现固定规则主体、环境执行和只读轨迹评价；未实现显式信念更新、持续策略学习、制度内生演化或在线数据纠正。政府在预算内选择支出属于行动，不构成制度自演化。</p>
 <p><strong>表 1 系统定位与证据边界</strong></p>
 <table>
 <thead>
@@ -41,44 +41,44 @@
 </thead>
 <tbody>
 <tr>
-<td>EconGym [1]</td>
+<td>EconGym [6]</td>
 <td>多角色经济任务与算法</td>
 <td>模块化角色、跨任务策略比较、外部贴合及效率</td>
 <td>采用接口组织；产业策略需重新实现</td>
 </tr>
 <tr>
-<td>AI Economist [5]</td>
+<td>AI Economist [12]</td>
 <td>主体与规划者共同学习</td>
 <td>政策—主体响应及训练评估</td>
 <td>当前没有两层学习实验</td>
 </tr>
 <tr>
-<td>动态投入产出模型 [4]</td>
+<td>动态投入产出模型 [5]</td>
 <td>部门供需与库存传播</td>
 <td>受投入约束的动态生产、独立预测检验</td>
 <td>保留投入边界；未完成独立预测检验</td>
 </tr>
 <tr>
-<td>企业供应网络 ABM [6]</td>
+<td>企业供应网络 ABM [18]</td>
 <td>实际企业关系与传播</td>
 <td>库存、替代与细粒度关系</td>
 <td>当前仅部门级，候选企业边不等于实际关系</td>
 </tr>
 <tr>
-<td>EWM 系统蓝图 [2]</td>
+<td>EWM 系统蓝图 [22]</td>
 <td>能力阶梯与实现协议</td>
 <td>类型化接口及分层诊断</td>
 <td>已实现执行与评估，未实现共演化与现实对齐</td>
 </tr>
 </tbody>
 </table>
-<p>模型报告参照 ODD 对实体、状态、时序、初始化、输入和子模型的要求 [7]，完整代码映射见附录 B。ODD 是描述与复现规范，不构成经济准确性的验证。</p>
+<p>模型报告参照 ODD 对实体、状态、时序、初始化、输入和子模型的要求 [23]，完整代码映射见附录 B。ODD 是描述与复现规范，不构成经济准确性的验证。</p>
 <h3>2.4 技术吸收、投资时滞与产业政策</h3>
-<p>Cohen 和 Levinthal 将吸收能力与既有知识及研发联系起来 [19]。Brynjolfsson 等关于组织资本和生产率 J 曲线的研究说明，通用技术的收益可能依赖互补投入与测量时序 [20, 21]。生成式 AI 的客服实证进一步发现，效果在经验和技能维度上具有异质性 [31]。本文据此区分采用存量、有效 AI 和交付绩效；部门级乘法转化式并非上述企业或劳动者研究估计出的函数。</p>
-<p>Kydland 和 Prescott 的 time-to-build 研究为资本支出与可用生产资本之间的跨期分离提供了经典依据 [22]。Dosi 等在经济 ABM 中组织需求、创新、投资与政策反馈 [27]，Juhász 等则将产业政策的工具、实施与识别置于具体结构中讨论 [33]。本平台将投产队列与政府支出接口显式化，用于条件反事实；其财政权重和投产效率没有继承文献的经验估计。</p>
+<p>Cohen 和 Levinthal 将吸收能力与既有知识及研发联系起来 [7]。Brynjolfsson 等关于组织资本和生产率 J 曲线的研究说明，通用技术的收益可能依赖互补投入与测量时序 [8, 9]。生成式 AI 的客服实证进一步发现，效果在经验和技能维度上具有异质性 [24]。本文据此区分采用存量、有效 AI 和交付绩效；部门级乘法转化式并非上述企业或劳动者研究估计出的函数。</p>
+<p>Kydland 和 Prescott 的 time-to-build 研究为资本支出与可用生产资本之间的跨期分离提供了经典依据 [25]。Dosi 等在经济 ABM 中组织需求、创新、投资与政策反馈 [26]，Juhász 等则将产业政策的工具、实施与识别置于具体结构中讨论 [11]。本平台将投产队列与政府支出接口显式化，用于条件反事实；其财政权重和投产效率没有继承文献的经验估计。</p>
 <h3>2.5 产业粒度与模型验证</h3>
-<p>OECD 的半导体脆弱性研究指出，投入产出记录需要配合更细行业资料才能识别关键联系；设备资本购置也不能仅由中间使用矩阵表达 [29]。其晶圆产能研究按工艺、节点及经营模式区分产能与替代限制 [35]。这些分类为未来细化 H 机制提供方向，当前广义部门与合成通道仍保留自身统计边界。</p>
-<p>验证方法同样需要分层。Sargent 区分概念模型、代码、运行结果与数据的有效性 [14]；Fagiolo 等讨论经济 ABM 中校准、经验事实与验证程序的关系 [10]。据此，本文分别报告核算和代码检查、模型内机制实验及尚未完成的外部验证，不以文献中的现实证据替代本环境的独立检验。</p>
+<p>OECD 的半导体脆弱性研究指出，投入产出记录需要配合更细行业资料才能识别关键联系；设备资本购置也不能仅由中间使用矩阵表达 [27]。其晶圆产能研究按工艺、节点及经营模式区分产能与替代限制 [28]。这些分类为未来细化 H 机制提供方向，当前广义部门与合成通道仍保留自身统计边界。</p>
+<p>验证方法同样需要分层。Sargent 区分概念模型、代码、运行结果与数据的有效性 [29]；Fagiolo 等讨论经济 ABM 中校准、经验事实与验证程序的关系 [30]。据此，本文分别报告核算和代码检查、模型内机制实验及尚未完成的外部验证，不以文献中的现实证据替代本环境的独立检验。</p>
 <h2>3 Data and Economic Boundary</h2>
 <h3>3.1 部门划分与计量单位</h3>
 <p>输入是项目整理的 2020 年投入产出工作簿。原 42 部门经营业收入比例分劈形成 55 部门，其中前 13 个作为决策主体，其余 42 个为外部国内供给和需求边界。13 个主体包括材料、设备、电子投入、电子制造和应用部门，具体统计标签与分劈份额见附录 A。它们代表集成电路相关经济活动，并非 13 个分别观测的芯片工艺环节。第 8 部门仍是电子设备制造统计范围，H3 设计、H4 晶圆制造、H5 封测标签不能被解释为已识别的独立交易额。</p>
@@ -97,7 +97,7 @@ x_j=\sum_{r=1}^{55}(z^d_{rj}+z^m_{rj})+VA_j^0.
 \tag{2}
 \]</p>
 <p>现有资料没有识别每种进口产品的实际使用者。平台提供比例分配、优先中间使用、优先最终使用三种平衡假设，均保持核算总量并不将进口配置给出口用途。不同假设改变国内与进口来源约束，不能称为三套观测供应链。预处理最大行、列绝对残差分别为 $5.96\times10^{-6}$ 与 $7.39\times10^{-6}$ 万元；数值平衡反映构造一致性，不是预测精度。</p>
-<p>式（1）—（2）的系数和用途核算采用投入产出分析的通常定义 [8]。收入分劈与进口使用分配属于本文数据处理选择。对于专用设备，资本形成中的新设备购置及其产能服务还需独立投资资料，不能仅凭设备部门的中间投入边推断完整扩产关系 [29]。</p>
+<p>式（1）—（2）的系数和用途核算采用投入产出分析的通常定义 [15]。收入分劈与进口使用分配属于本文数据处理选择。对于专用设备，资本形成中的新设备购置及其产能服务还需独立投资资料，不能仅凭设备部门的中间投入边推断完整扩产关系 [27]。</p>
 <h3>3.3 数据、参数与证据来源</h3>
 <p><strong>表 2 核算信息与情景信息</strong></p>
 <table>
@@ -144,7 +144,7 @@ x_j=\sum_{r=1}^{55}(z^d_{rj}+z^m_{rj})+VA_j^0.
 </table>
 <p>处理后的矩阵、标签、审计与来源哈希已经发布。原始工作簿及收入分劈依据未随仓库分发，公开包支持从处理矩阵重现仿真，尚不能独立重建全部预处理。原始统计来源、分劈年份和数据使用许可仍需由作者补充确认。</p>
 <h3>3.4 参数设定依据与识别状态</h3>
-<p>本文分别记录核算量、理论支持的机制形式、任务情景参数与数值实现设置。文献使规则的选择理由可追踪；具体系数只有经过与研究对象相符的估计才能称为经验参数。模型验证研究也要求把参数校准与结果检验分开 [10, 14]。表 P1—P2 列出正文主要参数；完整配置保留在 YAML 和实验元数据中，任务覆盖值优先于代码默认值。</p>
+<p>本文分别记录核算量、理论支持的机制形式、任务情景参数与数值实现设置。文献使规则的选择理由可追踪；具体系数只有经过与研究对象相符的估计才能称为经验参数。模型验证研究也要求把参数校准与结果检验分开 [29, 30]。表 P1—P2 列出正文主要参数；完整配置保留在 YAML 和实验元数据中，任务覆盖值优先于代码默认值。</p>
 <p><strong>表 P1 核算、能力与资源参数</strong></p>
 <table>
 <thead>
@@ -158,42 +158,42 @@ x_j=\sum_{r=1}^{55}(z^d_{rj}+z^m_{rj})+VA_j^0.
 <tr>
 <td>核算与期间</td>
 <td>$a^d=z^d/x$、$a^m=z^m/x$；年度流量除以 4</td>
-<td>[8] 支持核算定义；四等分是无季节性转换约定</td>
+<td>[15] 支持核算定义；四等分是无季节性转换约定</td>
 </tr>
 <tr>
 <td>基期初始化</td>
 <td>产能与产出为 $q^0$；成品与材料初值 0；一期内部在途为基期流量</td>
-<td>ODD 要求报告初始化 [7]；此处是工程设定，不代表实测库存</td>
+<td>ODD 要求报告初始化 [23]；此处是工程设定，不代表实测库存</td>
 </tr>
 <tr>
 <td>吸收与摩擦</td>
 <td>角色吸收 0.50—0.65、摩擦 0.09—0.14；时间适配 0.9；E1 吸收 0.2／0.9</td>
-<td>[19, 20] 支持互补和异质性；函数与数值均为情景设定</td>
+<td>[7, 8] 支持互补和异质性；函数与数值均为情景设定</td>
 </tr>
 <tr>
 <td>AI 转化与产能</td>
 <td>转化默认 0.1；生产率增益默认 0.1、E1 为 0.3；E1 支出率 0.02</td>
-<td>[21] 支持采用与实现效果分离；数值未估计</td>
+<td>[9] 支持采用与实现效果分离；数值未估计</td>
 </tr>
 <tr>
 <td>研发与技术</td>
 <td>转化默认 0.01、折旧 0.001、AI 互补 0.5；E3 转化 0.1、折旧 0.00001</td>
-<td>[19, 27] 为研发和能力积累背景；默认与任务覆盖值分别报告</td>
+<td>[7, 26] 为研发和能力积累背景；默认与任务覆盖值分别报告</td>
 </tr>
 <tr>
 <td>补库与积压</td>
 <td>补库速度 0.25；平滑策略目标 0.25 季度；积压保留 0.25、上限 2 季度</td>
-<td>[16, 17] 支持库存反馈；不是最优库存或实测取消率</td>
+<td>[19, 20] 支持库存反馈；不是最优库存或实测取消率</td>
 </tr>
 <tr>
 <td>外部来源上限</td>
 <td>计划到货上限为基期投入的 1.25 倍</td>
-<td>[4] 与 [9, 29] 支持供给约束；1.25 未由统计表识别</td>
+<td>[5] 与 [16, 27] 支持供给约束；1.25 未由统计表识别</td>
 </tr>
 <tr>
 <td>资本项目</td>
 <td>私人／政府默认转化 0.1；默认滞后 4 季度；R1 为 6，对照为 2／10</td>
-<td>[22, 35] 支持跨期形成；固定滞后与效率不是文献估计</td>
+<td>[25, 28] 支持跨期形成；固定滞后与效率不是文献估计</td>
 </tr>
 </tbody>
 </table>
@@ -210,46 +210,46 @@ x_j=\sum_{r=1}^{55}(z^d_{rj}+z^m_{rj})+VA_j^0.
 <tr>
 <td>供给通道</td>
 <td>3 槽；质量 1／0.9／0.8；偏置 0／0.03／0.05；容量份额 0.45／0.40／0.35；R4 精度 0／5／12、容量乘子 1.05</td>
-<td>[23, 24] 支持 Logit 形式；槽、容量和效用均为合成设定</td>
+<td>[31, 32] 支持 Logit 形式；槽、容量和效用均为合成设定</td>
 </tr>
 <tr>
 <td>预测误差</td>
 <td>E2 标准差 0.12、AI 降误差系数 0.6；R3 标准差 0.2、共同载荷 0／0.5／0.95</td>
-<td>[17, 18] 提供信息反馈背景；高斯过程及系数为情景值</td>
+<td>[20, 21] 提供信息反馈背景；高斯过程及系数为情景值</td>
 </tr>
 <tr>
 <td>边与资格</td>
 <td>压力记忆 0.70；健康下限 0.85；资格初始为 1，内部运输基准 1 季度</td>
-<td>[6] 与 [11] 支持传播动机；式（B3）系数与资格规则由本文设定</td>
+<td>[18] 与 [17] 支持传播动机；式（B3）系数与资格规则由本文设定</td>
 </tr>
 <tr>
 <td>价格与成本</td>
 <td>自动调价系数 0.05，单步项截断 ±0.05；动作项截断 ±0.1；劳动其他成本份额 0.8</td>
-<td>[27] 为 ABM 定价背景；本缺口式调价及份额未经验校准</td>
+<td>[26] 为 ABM 定价背景；本缺口式调价及份额未经验校准</td>
 </tr>
 <tr>
 <td>合同与协同</td>
 <td>G3 核验强度 0.1／0.5／0.9；惩罚 0.2；剩余权重 0.5；份额网格 101 点</td>
-<td>[24, 25] 支持目标与选择形式；强度、系数及网格属于情景／数值设置</td>
+<td>[32, 33] 支持目标与选择形式；强度、系数及网格属于情景／数值设置</td>
 </tr>
 <tr>
 <td>努力配置</td>
 <td>5 种努力、上限 1；成本系数为 1；预算默认 1</td>
-<td>[26] 支持优化条件；收益权重与预算由本文设定</td>
+<td>[34] 支持优化条件；收益权重与预算由本文设定</td>
 </tr>
 <tr>
 <td>财政与冲击</td>
 <td>G5 初始预算为季度基准总产出的 1%；每期花费余款 0.25；产能损失 0.2；R1 需求增量 0.3</td>
-<td>[33] 支持条件化政策评价；该数值非现实财政占比或实测冲击</td>
+<td>[11] 支持条件化政策评价；该数值非现实财政占比或实测冲击</td>
 </tr>
 <tr>
 <td>实验与扰动</td>
 <td>30 季度；10 个匹配种子；冲击离散标准差 0.04；名义 OFAT ±20%</td>
-<td>[10, 15] 支持报告不确定性；期间和范围是实验设计，非置信区间</td>
+<td>[30, 35] 支持报告不确定性；期间和范围是实验设计，非置信区间</td>
 </tr>
 </tbody>
 </table>
-<p>上述文献未提供本稿的吸收率、扩产速度、取消率、槽容量或财政权重。它们用于构造可比较条件，不承担中国集成电路产业的点预测。参数范围目前由对照任务和单因素扰动给出；联合采样与范围的经验依据仍需补充。将 OAT／OFAT 当作全局敏感性证据会遗漏交互方向 [15]。</p>
+<p>上述文献未提供本稿的吸收率、扩产速度、取消率、槽容量或财政权重。它们用于构造可比较条件，不承担中国集成电路产业的点预测。参数范围目前由对照任务和单因素扰动给出；联合采样与范围的经验依据仍需补充。将 OAT／OFAT 当作全局敏感性证据会遗漏交互方向 [35]。</p>
 <h2>4 IC-EconGym Environment</h2>
 <h3>4.1 决策主体与环境状态</h3>
 <p>令主体集合为 $\mathcal N=\{1,\ldots,13,g\}$，任务 $\tau$ 声明机制、冲击、观察、策略和有限期间 $H$。全环境状态包含部门产出与产能、分来源投入库存、成品库存、积压、价格、AI 与技术存量、边压力与资格、在途交付队列、待投产项目、剩余财政预算和时期。对合法行动，转移写为</p>
@@ -259,7 +259,7 @@ s_{t+1}=T_\tau(s_t,a_{1:13,t},a_{g,t},u_t;A^d,A^m).
 \tag{3}
 \]</p>
 <p>这里 $u_t$ 是声明的外生需求或供给冲击。完整状态包含在途与项目队列；仅给出当期产出向量不足以定义下一期。当前策略系数在一次运行内固定，环境状态演化不被称为策略学习。</p>
-<p>式（3）采用交互主体与联合行动的环境表述 [12, 13]。状态和观察分别定义，使部门能够按局部信息决策，而在途投入、财政和项目仍由环境执行。实体、状态、初始化与调度遵循 ODD 的报告要求 [7]；这些接口定义并不保证局部观察构成马尔可夫充分统计量。</p>
+<p>式（3）采用交互主体与联合行动的环境表述 [13, 14]。状态和观察分别定义，使部门能够按局部信息决策，而在途投入、财政和项目仍由环境执行。实体、状态、初始化与调度遵循 ODD 的报告要求 [23]；这些接口定义并不保证局部观察构成马尔可夫充分统计量。</p>
 <p><strong>表 3 主体接口与可行域</strong></p>
 <table>
 <thead>
@@ -296,7 +296,7 @@ O^d_{rj,t}=a^d_{rj}\widehat q_{j,t}
 \qquad r\leq13,
 \tag{4}
 \]</p>
-<p>式（4）采用目标库存缺口的补库思想，与多级库存控制及库存调整启发式的机制背景相连 [16, 17]。本规则没有把全部在途量组成经典库存位置，也未求解最优目标。订单由计划与补库共同生成，因此需要与终端需求分别计量 [18]。</p>
+<p>式（4）采用目标库存缺口的补库思想，与多级库存控制及库存调整启发式的机制背景相连 [19, 20]。本规则没有把全部在途量组成经典库存位置，也未求解最优目标。订单由计划与补库共同生成，因此需要与终端需求分别计量 [21]。</p>
 <p>其中 $\iota_{j,t}$ 为补库目标的季度数，$\lambda_I$ 为补库调节系数。内部订单由行动生成。其他国内来源和进口每期按计划需求与基期外部供给上限的较小值到货；以进口为例，</p>
 <p>\[
 R^m_{rj,t}=\min\{a^m_{rj}\widehat q_{j,t},\ \epsilon_{ext}z^m_{rj}/4\}\,\chi_{rj,t}.
@@ -314,7 +314,7 @@ q_{j,t}=\left[\min\left\{
 \tag{6}
 \]</p>
 <p>实现中小于或等于 $10^{-12}$ 的投入系数不构成瓶颈上界；生产后按固定投入系数扣减材料。成品可用量为当期产出加期初成品库存。环境先满足内部投入订单，剩余按比例分配给其他国内部门、当期最终使用及旧积压。这一配给顺序是制度假设，不是由统计表估计的市场清算规则。没有最终使用者的价格弹性或效用最大化过程。</p>
-<p>固定比例投入由 Leontief 技术提供核算基础 [8]，式（6）的需求、产能和库存共同限制与 ARIO 及动态投入产出模型的非均衡生产思路相连 [9] [4]。本文的中间品优先配给、来源分账和截断顺序按当前引擎定义，不能从经典投入产出系数推导出唯一配给制度。</p>
+<p>固定比例投入由 Leontief 技术提供核算基础 [15]，式（6）的需求、产能和库存共同限制与 ARIO 及动态投入产出模型的非均衡生产思路相连 [16] [5]。本文的中间品优先配给、来源分账和截断顺序按当前引擎定义，不能从经典投入产出系数推导出唯一配给制度。</p>
 <p>未售出产品转成品库存。总未满足订单 $S_{r,t}$ 按设定保留率转积压：</p>
 <p>\[
 b_{r,t+1}=\min\{\rho_B S_{r,t},\ \overline b q_r^0\}.
@@ -329,7 +329,7 @@ b_{r,t+1}=\min\{\rho_B S_{r,t},\ \overline b q_r^0\}.
 \tag{8}
 \]</p>
 <p>其中 $\eta_j$ 为吸收能力，$\phi$ 为时间适配，$f_j$ 为组织摩擦。启用 AI 时，产能乘以 $1+\beta_{AI}\alpha_{j,t}$；AI 还可降低设定的劳动与其他成本，并提高研发转化系数。研发形成无量纲技术状态，技术产能增益只取超过基准 1 的正部分。采用、吸收、研发折旧与转化均为情景参数。</p>
-<p>采用与吸收的分离借鉴吸收能力和组织资本研究 [19, 20]，互补投入和收益形成的跨期性可与生产率 J 曲线研究对话 [21]。式（8）的乘法与摩擦分母是本文的简化转化函数，未从这些论文的企业或劳动者估计中移植。</p>
+<p>采用与吸收的分离借鉴吸收能力和组织资本研究 [7, 8]，互补投入和收益形成的跨期性可与生产率 J 曲线研究对话 [9]。式（8）的乘法与摩擦分母是本文的简化转化函数，未从这些论文的企业或劳动者估计中移植。</p>
 <p><strong>命题 1，局部产能增益的条件。</strong> 在给定期初材料、需求、计划、积压及其他机制状态的条件下，令 $L_{j,t}$ 为式（6）中除有效产能外各上界的最小值，且有效产能为 $K_{j,t}(1+\beta_{AI}\alpha_{j,t})$。则</p>
 <p>\[
 \frac{\partial q_{j,t}}{\partial\alpha_{j,t}}=
@@ -349,10 +349,10 @@ p_{rc}=\frac{\exp(\kappa q_c-d_c)}{\sum_{c&#x27;}\exp(\kappa q_{c&#x27;}-d_{c&#x
 \tag{10}
 \]</p>
 <p>其中 $s=(0.45,0.40,0.35)$、$\kappa$ 为搜索精度、$\gamma$ 为通道容量乘子。通道需求超过容量后削减内部交付，HHI 为 $\sum_c p_{rc}^2$。这是一项受容量约束的选择机制，不是企业真实供应商识别、网络重连或最优采购模型。R4 用于检验集中与拥堵的条件关系。</p>
-<p>式（10）的归一化指数形式借鉴条件 Logit [23, 24]。当前代码直接用权重分配订单，未估计效用系数或抽取真实企业选择。Logit 的替代结构与其选择集合有关，真实半导体设备和工艺是否可替代还需专门资料 [29, 35]。</p>
+<p>式（10）的归一化指数形式借鉴条件 Logit [31, 32]。当前代码直接用权重分配订单，未估计效用系数或抽取真实企业选择。Logit 的替代结构与其选择集合有关，真实半导体设备和工艺是否可替代还需专门资料 [27, 28]。</p>
 <h3>4.5 投资、政府预算与奖励</h3>
 <p>私人资本、研发与 AI 支出为相应行动份额乘以 $q_j^0$。私人资本支出经过设定滞后转为产能，政府产能支出另进入项目队列。收益以价格加权交付为收入，扣除投入、设定的劳动其他成本、库存与总短缺代价；部门奖励再扣除当期私人能力投入。固定价格增加值为 $a_j^{VA}q_{j,t}$，并不因为 AI 降低设定成本而自动改变增加值系数。</p>
-<p>将投资先记为项目、再形成可用产能，以 time-to-build 文献为机制依据 [22]。创新、计划、投资及定价的启发式组合可与经济 ABM 研究比较 [27]；本项目的线性转化、固定时滞与成本权重另行设定，并未继承其均衡或行为估计。</p>
+<p>将投资先记为项目、再形成可用产能，以 time-to-build 文献为机制依据 [25]。创新、计划、投资及定价的启发式组合可与经济 ABM 研究比较 [26]；本项目的线性转化、固定时滞与成本权重另行设定，并未继承其均衡或行为估计。</p>
 <p>政府请求 $G_{jk,t}\geq0$ 经剩余预算 $\mathcal B_t$ 缩放为实际支出：</p>
 <p>\[
 g_{jk,t}=G_{jk,t}\min\left\{1,\frac{\mathcal B_t}{\sum_{j,k}G_{jk,t}}\right\},\quad
@@ -361,7 +361,7 @@ g_{jk,t}=G_{jk,t}\min\left\{1,\frac{\mathcal B_t}{\sum_{j,k}G_{jk,t}}\right\},\q
 \]</p>
 <p>总请求为零时实际支出为零。对于有限非负请求，式（11）保证实际支出不超过预算。预算为整个运行的一次性总额，没有自动季度补充。六个渠道为 AI、产能、研发、资格、库存和边修复；支出是否改变产出还取决于对应机制和约束。政府奖励是配置权重下的增加值、技术、履约、价格波动、总短缺、财政与集中度的组合，不解释为已估计的社会福利。</p>
 <p>协同模块将设定激励与短缺率映射为 Logit 协同概率，并使用受预算约束的二次目标分配五种努力。条件 Nash 式激励份额通过有限网格求得，用于协同概率；没有独立的平台智能体或相应现金转移账户。有关公式和局限见附录 B。</p>
-<p>协同概率使用离散选择的 Logit 形式 [24]，双方非负剩余乘积借鉴 Nash 谈判目标 [25]，努力配置则采用可分离凹目标的 KKT 条件 [26]。它们为风格化规则提供形式依据，有限网格与激励映射不等于完整谈判均衡。政府目标和工具的经济解释参照产业政策评价中对具体约束与实施条件的强调 [33]。</p>
+<p>协同概率使用离散选择的 Logit 形式 [32]，双方非负剩余乘积借鉴 Nash 谈判目标 [33]，努力配置则采用可分离凹目标的 KKT 条件 [34]。它们为风格化规则提供形式依据，有限网格与激励映射不等于完整谈判均衡。政府目标和工具的经济解释参照产业政策评价中对具体约束与实施条件的强调 [11]。</p>
 <h3>4.6 更新时序与实现</h3>
 <pre class="mermaid">sequenceDiagram
     participant A as 部门与政府策略
@@ -380,7 +380,7 @@ g_{jk,t}=G_{jk,t}\min\left\{1,\frac{\mathcal B_t}{\sum_{j,k}G_{jk,t}}\right\},\q
 </pre>
 <p>图 2 合法行动下的季度更新顺序。动作的调用顺序与环境内生效顺序分别由策略接口和结算代码决定。</p>
 <p>运行时提供 <code>reset / run_agents / step / evaluate</code>，任务配置和随机种子可追踪。该接口用于环境式执行，尚不宣称完全兼容 Gymnasium 或 PettingZoo。静态项目页面回放预计算轨迹，浏览器选择操作不重新运行模型。</p>
-<p>固定调度、初始化和子模型顺序依据 ODD 报告 [7]；结算执行和独立评价的区分借鉴测试平台及系统蓝图 [1, 2]。代码与概念规则的一致性通过实现检查评价，现实适用性需要另行验证 [14]。</p>
+<p>固定调度、初始化和子模型顺序依据 ODD 报告 [23]；结算执行和独立评价的区分借鉴测试平台及系统蓝图 [6, 22]。代码与概念规则的一致性通过实现检查评价，现实适用性需要另行验证 [29]。</p>
 <h2>5 Benchmark Tasks and Evaluation Protocol</h2>
 <h3>5.1 任务组合与可检验对象</h3>
 <p>15 项任务共享结算引擎，分别改变能力、风险或治理配置。任务名称声明研究意图，不意味着该机制已经触发或经经验验证。</p>
@@ -500,7 +500,7 @@ g_{jk,t}=G_{jk,t}\min\left\{1,\frac{\mathcal B_t}{\sum_{j,k}G_{jk,t}}\right\},\q
 \tag{13}
 \]</p>
 <p>库存平滑策略另设内部材料库存目标 0.25 个季度。三者使用相同观察结构，研发、AI 与资本行动沿用规则模块；补库与产量反馈造成的后续私人支出可能不同。比较保证相同接口和外生资源，不保证相同已实现私人投入，相关成本单列报告。它们是透明启发式，不是强化学习、最优控制或求解均衡的算法。</p>
-<p>需求响应和库存调整作为基线，源自库存控制与行为反馈研究提供的可解释规则族 [16, 17]。式（12）—（13）的平滑权重由本文指定，未复刻文献的估计策略或最优控制器。关联度靶向使用经典后向联系的结构指标 [8]，加入短缺权重则是本平台的政策启发式。</p>
+<p>需求响应和库存调整作为基线，源自库存控制与行为反馈研究提供的可解释规则族 [19, 20]。式（12）—（13）的平滑权重由本文指定，未复刻文献的估计策略或最优控制器。关联度靶向使用经典后向联系的结构指标 [15]，加入短缺权重则是本平台的政策启发式。</p>
 <p>令 $\ell_j$ 为完整 55 部门国内 Leontief 逆矩阵列和的标准化值。政府三种权重为</p>
 <p>\[
 w_j^U\propto1,\qquad w_j^L\propto\ell_j,\qquad
@@ -509,7 +509,7 @@ w_{j,t}^S\propto\ell_j\left(0.1+\frac{S_{j,t-1}}{\max(q_j^0,1)}\right).
 \]</p>
 <p>三种政府策略共用支出渠道、起始期、总预算和每期剩余预算支出比例 0.25，仅替换部门靶向。短缺靶向使用总订单短缺作为可见状态；评价则独立使用最终需求履约，避免将策略自身的目标或中间量视为绩效。</p>
 <h3>5.3 内生订单与共同最终需求指标</h3>
-<p>订单与最终销售的区分可与订单信息失真研究相连 [18]。式（15）以本模型共同外生需求构造任务绩效；它不是文献牛鞭方差指标或现实社会福利度量。</p>
+<p>订单与最终销售的区分可与订单信息失真研究相连 [21]。式（15）以本模型共同外生需求构造任务绩效；它不是文献牛鞭方差指标或现实社会福利度量。</p>
 <p>总订单短缺混合了策略生成的内部需求、当期外部需求与旧积压。减少内部订单可能改变总短缺和总订单服务率的分母，因此仅凭其排序不足以比较相同最终使用需求下的服务能力。令 $C_{j,t}$ 为当期最终交付，主要指标为</p>
 <p>\[
 S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
@@ -530,7 +530,7 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 <h3>6.1 核算检查与实验正确性</h3>
 <p>三种进口分配均通过国内用途非负和基期行列平衡检查。环境自检包含 15 题加载、50 个演示臂检查、无冲击基期、有限非负状态和政府预算检查。新增实验汇总还核对同种子的冲击乘子、累计外生最终需求以及 E1 高低吸收组的累计 AI 支出是否一致。</p>
 <p>基期产出由输入表设定，所以基期再现检验的是构造与实现。本文没有把这些检查解释为现实贴合度。独立时间序列的部门映射、计价与行为估计仍未完成；第 6.7 节区分可以复现的结果与尚缺的外部证据。</p>
-<p>这一分层沿用仿真验证和经济 ABM 经验验证文献的区别 [10, 14]。在投入产出研究中，基期总量与系数本来就由输入资料构造 [8]；其平衡不能替代独立时序或冲击后的样本外误差。</p>
+<p>这一分层沿用仿真验证和经济 ABM 经验验证文献的区别 [29, 30]。在投入产出研究中，基期总量与系数本来就由输入资料构造 [15]；其平衡不能替代独立时序或冲击后的样本外误差。</p>
 <h3>6.2 RQ1：能力改善何时转化为交付</h3>
 <p>在基期需求下，高低吸收组的期末部门平均有效 AI 分别为约 0.04216 和 0.00937，而最终需求履约均为 100%（浮点误差量级）。累计私人 AI 支出相同，为约 $4.1397\times10^8$ 万元。能力状态的变化没有增加已经满足的需求，也不能被解释为产出回报。</p>
 <p>加入第 8 部门需求扩张后，吸收改善产生有限交付增益。比例分配假设下，高、低吸收组的平均履约率分别为 99.2367% 和 99.2101%，差异约 0.02652 个百分点；三种进口假设下的改善介于约 0.02535—0.02847 个百分点。</p>
@@ -572,7 +572,7 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 <p><img src="figures/e1_constraint_activation.png" alt="相同 AI 支出下的最终需求履约变化" /></p>
 <p>图 3 E1 需求扩张条件下，高吸收相对低吸收的配对履约变化。散点为 10 个设定冲击种子，横线为均值。基期需求组没有随机扰动，差异在数值精度内为零。</p>
 <p>这一结果与命题 1 的约束逻辑一致，但多期交付还受计划和投入传播影响，不能由局部导数直接确定。累计投入相同也不等于吸收能力提升没有实现成本：本文只把吸收作为外生机制条件，未估计提高吸收所需的培训或组织调整投入。</p>
-<p><strong>与文献和现实的对话。</strong> 吸收能力和组织互补研究支持“同等技术投入可以具有不同实现条件” [19, 20]。本文新增的证据是，在给定结构内，能力状态改善是否转化为最终交付还取决于生产上界。客服 AI 实证测量的是劳动者任务绩效及其异质性 [31]，本稿测量的是固定价格部门当量的最终履约；两者可以在转化条件上比较，不能用客服效果校准本部门系数。本文没有无形资本核算和实测生产率轨迹，不能据基期零交付增益声称发现了 J 曲线 [21]，也不能将履约百分点解释为宏观 TFP [32]。</p>
+<p><strong>与文献和现实的对话。</strong> 吸收能力和组织互补研究支持“同等技术投入可以具有不同实现条件” [7, 8]。本文新增的证据是，在给定结构内，能力状态改善是否转化为最终交付还取决于生产上界。客服 AI 实证测量的是劳动者任务绩效及其异质性 [24]，本稿测量的是固定价格部门当量的最终履约；两者可以在转化条件上比较，不能用客服效果校准本部门系数。本文没有无形资本核算和实测生产率轨迹，不能据基期零交付增益声称发现了 J 曲线 [9]，也不能将履约百分点解释为宏观 TFP [10]。</p>
 <h3>6.3 RQ2：部门策略与内部订单反馈</h3>
 <p>R1 比较共同最终需求下的三种部门策略。既定规则的平均履约率为 97.1004%，需求跟随和库存平滑分别为 95.4558% 与 96.7630%。后两者相对差异为 −1.6446 与 −0.3375 个百分点；10 个匹配种子的差异范围分别为 [−1.7506, −1.5224] 和 [−0.3595, −0.3121] 个百分点，方向一致。这些范围描述设定冲击的离散，不是现实效果的置信区间。</p>
 <p><strong>表 6 R1 基准情景的交付与私人投入（10 个种子的均值）</strong></p>
@@ -607,7 +607,7 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 </tbody>
 </table>
 <p>需求跟随与库存平滑的累计私人投入分别比既定规则高约 4,583,704.33 和 920,000.45 万元；本组设定中，投入增加没有改善最终履约。结果仅支持给定反馈、配给与固定投入条件下的比较，不能推及现实企业策略。三种进口分配和单因素扰动构成的 13 个情景中，两种启发式的最终短缺均高于既定规则。</p>
-<p><strong>与文献和现实的对话。</strong> 该结果与 Sterman 关于库存决策反馈及 Lee 等关于订单信息失真的研究，在“局部订单响应需要经过供应回路”这一机制上相连 [17, 18]。本实验没有估计行为误判，也未报告逐级订单与最终销售的方差比，因而不能宣布检验了牛鞭效应。真实震灾供应链研究识别的是观测企业关系上的传播 [11]，本文的部门启发式排序缺少对应企业证据。美国芯片短缺调查中的买方库存收缩 [34] 可说明库存与瓶颈同时存在的现实背景，其自愿样本的库存天数不能直接换算为本平台最优季度补库目标。</p>
+<p><strong>与文献和现实的对话。</strong> 该结果与 Sterman 关于库存决策反馈及 Lee 等关于订单信息失真的研究，在“局部订单响应需要经过供应回路”这一机制上相连 [20, 21]。本实验没有估计行为误判，也未报告逐级订单与最终销售的方差比，因而不能宣布检验了牛鞭效应。真实震灾供应链研究识别的是观测企业关系上的传播 [17]，本文的部门启发式排序缺少对应企业证据。美国芯片短缺调查中的买方库存收缩 [3] 可说明库存与瓶颈同时存在的现实背景，其自愿样本的库存天数不能直接换算为本平台最优季度补库目标。</p>
 <h3>6.4 RQ2：合成通道集中与拥堵</h3>
 <p>R4 改变搜索精度，其他通道质量和容量保持固定。低、中、高精度下，期末合成通道 HHI 约为 0.3335、0.3909、0.5750；30 期最终需求履约率约为 100%、94.1396%、68.2698%。集中提高伴随通道容量拥堵与有效内部交付下降，说明平台能够产生来源偏好与投入瓶颈之间的条件联系。</p>
 <p><strong>表 7 R4 预设对照臂的机制与交付</strong></p>
@@ -642,7 +642,7 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 </tbody>
 </table>
 <p>这些轨迹未启用随机选择，三个记录种子产生相同路径，故不报告统计置信区间。R4 同时改变集中度和拥堵，不能将履约变化单独归因于 HHI。通道容量与质量均为设定值，该结果不证明真实企业的 AI 采购造成了相同幅度的再集中。</p>
-<p><strong>与文献和现实的对话。</strong> 条件 Logit 为偏好强度与选择份额之间的关系提供形式依据 [23, 24]。OECD 的工艺与产能资料则表明，真实半导体替代需要考虑节点、产品、业务模式和厂房能力 [35]，不能仅以名义供应商数判断冗余。R4 说明偏好集中在合成容量限制下可以减少有效交付；外推到现实前，需要将合成槽映射到可核实产品、产能和可替代集合。OECD 的脆弱性研究还指出，库存缓冲和替代行为不能从标准投入产出表自动获得 [29]。</p>
+<p><strong>与文献和现实的对话。</strong> 条件 Logit 为偏好强度与选择份额之间的关系提供形式依据 [31, 32]。OECD 的工艺与产能资料则表明，真实半导体替代需要考虑节点、产品、业务模式和厂房能力 [28]，不能仅以名义供应商数判断冗余。R4 说明偏好集中在合成容量限制下可以减少有效交付；外推到现实前，需要将合成槽映射到可核实产品、产能和可替代集合。OECD 的脆弱性研究还指出，库存缓冲和替代行为不能从标准投入产出表自动获得 [27]。</p>
 <h3>6.5 RQ3：同预算靶向的效应大小</h3>
 <p>G5 使用相同渠道组合、初始预算和分期支出比例。组内累计财政支出差距低于 $2\times10^{-9}$ 万元。比例分配情景下，短缺靶向相对均匀配置的最终需求短缺降低约 27,336.09 万元，履约率提高约 0.000298 个百分点；10 个配对差异介于约 0.000277—0.000316 个百分点。累计总订单短缺的相对下降约为 0.059%，与最终履约采用不同计量口径。</p>
 <p><strong>表 8 G5 基准情景的同预算比较（10 个种子的均值）</strong></p>
@@ -681,7 +681,7 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 </tbody>
 </table>
 <p>短缺靶向在全部 13 个情景中最终短缺较低，关联度靶向仅在 1 个情景中较低。排序方向与效果大小应同时报告：稳定的小差异不能解释为稳健的现实政策优势。G5 的私人投入是各部门响应后的结果，虽财政资源相同，私人支出并不严格相等。</p>
-<p><strong>与文献和现实的对话。</strong> 后向关联度来自投入产出乘数的结构信息 [8]，短缺靶向则加入当期瓶颈信号。这个比较与产业政策文献关注特定约束、政策实施及因果评价的问题相连 [33]，但没有求解财政最优配置。SIA 与 BCG 的报告讨论有针对性的投资和国际协作 [30]；其行业建议与本文的条件配置实验可以对照研究对象，不能被视为本次靶向结果的经验验证。如此小的交付差异尤其需要放在未识别参数和未建模资格退化之下解释。</p>
+<p><strong>与文献和现实的对话。</strong> 后向关联度来自投入产出乘数的结构信息 [15]，短缺靶向则加入当期瓶颈信号。这个比较与产业政策文献关注特定约束、政策实施及因果评价的问题相连 [11]，但没有求解财政最优配置。SIA 与 BCG 的报告讨论有针对性的投资和国际协作 [2]；其行业建议与本文的条件配置实验可以对照研究对象，不能被视为本次靶向结果的经验验证。如此小的交付差异尤其需要放在未识别参数和未建模资格退化之下解释。</p>
 <p><img src="figures/paired_policy_differences.png" alt="部门与政府策略的配对履约差异" /></p>
 <p>图 4 基准情景中的配对最终履约差异。R1 以既定规则、G5 以均匀靶向为参照。两个子图采用各自的量级；G5 的纵轴直接显示小差异，不用几乎重叠的绝对履约率散点推断优势。</p>
 <h3>6.6 通道关闭、敏感性与未激活机制</h3>
@@ -738,58 +738,58 @@ S^F=\sum_t\sum_j[F_{j,t}-C_{j,t}]_+,\qquad
 </table>
 <p>表中采用比例进口分配；各格为 10 个匹配种子的均值。承接边关闭在另外两种进口分配中同样为零。</p>
 <p><strong>敏感性。</strong> 已完成结构分配与名义 ±20% 单因素扰动。R1 改变积压、外部供给、私人资本效率、滞后和需求幅度；G5 改变积压、外部供给、产能冲击、预算和健康下限。这些检查没有覆盖相关参数的联合变化、配给制度变化或企业流量映射误差，因此不称为全局稳健性证明。</p>
-<p>单因素检查的这一限制与 Saltelli 和 Annoni 对 OAT 参数空间覆盖不足的论证一致 [15]。经典多级库存中目标和提前期需要联动 [16]，经济 ABM 验证也需要同时检查结构、初值与行为参数 [10]。因此，现有排序在 OFAT 中保持只支持已运行的条件范围。</p>
+<p>单因素检查的这一限制与 Saltelli 和 Annoni 对 OAT 参数空间覆盖不足的论证一致 [35]。经典多级库存中目标和提前期需要联动 [19]，经济 ABM 验证也需要同时检查结构、初值与行为参数 [30]。因此，现有排序在 OFAT 中保持只支持已运行的条件范围。</p>
 <p><strong>机制触发审计。</strong> 现有 R2 的 30 期有效 AI 水平未超过相关下游吸收门槛，不能据其任务名称声称检验了正错配风险。G3 的核验强度使期末协同概率约从 0.387 变为 0.465，但最终履约相同。所有预设 15 题的资格日志范围均为 $[1,1]$，表明从上限初始化的资格机制在这些情景中没有可提高空间。附录 D 保留这些无效干预，后续任务校准需要为对应约束提供可诊断的触发条件。</p>
 <h3>6.7 运行成本与现实贴合的证据等级</h3>
 <p>固定 13 部门加政府环境，对 15 题各运行 3 个种子、30 期，共 45 次。测量包含策略调用、环境转移和每步 RSS 采样，排除构造。Intel Core Ultra 7 155H、Python 3.12.6、NumPy 2.4.6 下，逐题每步时间的种子中位数介于 1.913—21.586 毫秒；峰值约 38.1 MB 是整个 Python 进程的驻留内存，不是单环境净增占用。</p>
 <p><img src="figures/runtime_15tasks.png" alt="固定部门规模下的运行成本" /></p>
 <p>图 5 固定规模下的任务运行成本。该图反映机制复杂度的成本，未测试智能体数量扩展性，也不与 EconGym 不同硬件、模型和规模下的计时直接排名。</p>
 <p>本文的现实联系目前位于核算结构层面。基期再现、条件扰动和机制关闭均不属于独立现实验证。已提供同口径外部产出的比较接口，但未取得经核实的 13 部门独立数据或可比动态序列。不能将芯片实物产量与这些广义部门的金额产出直接作误差比较，也不能把来源工作簿自身作为独立验证样本。</p>
-<p>外部验证可以参照动态投入产出研究的样本外活动对照 [4]，同时遵循数据和操作有效性分别检查的要求 [10, 14]。OECD 的更细产业和晶圆分类资料 [28, 35] 可辅助建立粒度映射，但补充粒度资料本身不等于已验证本模型轨迹。</p>
+<p>外部验证可以参照动态投入产出研究的样本外活动对照 [5]，同时遵循数据和操作有效性分别检查的要求 [29, 30]。OECD 的更细产业和晶圆分类资料 [1, 28] 可辅助建立粒度映射，但补充粒度资料本身不等于已验证本模型轨迹。</p>
 <h2>7 Limitations and Responsible Interpretation</h2>
 <p><strong>数据与行为识别。</strong> 细分部门结构来自分劈，进口用途来自假设。动态行为、政策权重和成本参数没有经验估计。结构与参数共同决定实验结果，模型内配对差异不等于现实因果效应。</p>
-<p>机制方向的文献依据与本地参数估计分别报告，是经济 ABM 经验验证的基本要求 [10]。本稿尚未完成产业政策综述所强调的现实因果识别 [33]；补充参考文献仅提高选择理由和解释边界的可追踪性。</p>
+<p>机制方向的文献依据与本地参数估计分别报告，是经济 ABM 经验验证的基本要求 [30]。本稿尚未完成产业政策综述所强调的现实因果识别 [11]；补充参考文献仅提高选择理由和解释边界的可追踪性。</p>
 <p><strong>经济与网络范围。</strong> 当前没有企业融资硬预算、完整金融账户、逐客户订单批次或晶圆工序流。部门 8 的统计范围较宽；三个合成通道和企业候选边均不能代替真实芯片供应关系。投入可用量折损、固定投入系数和中间品优先配给属于模型边界。</p>
 <p><strong>算法与任务成熟度。</strong> 已比较的是启发式，未训练 RL、LLM 或优化控制策略。15 题提供配置接口，但部分机制未触发或状态初值饱和。有效基准需要报告机制激活、无效动作和可行域，而不能仅增加任务数量。学习型比较还需训练、验证和未见冲击测试集，并控制观察权限、环境交互量、调参和推理成本。</p>
 <p><strong>验证与规模。</strong> 未完成独立外部数据对照、联合参数稳健性和企业规模实验。固定 14 个决策主体的运行成本只说明本版本的采样代价。本文提供可执行产业测试环境与条件诊断证据，尚不提供现实预测精度、最优政策或大规模企业世界模型的结论。</p>
 <h2>8 Conclusion</h2>
 <p>IC-EconGym 将分来源投入产出结构转化为产业部门和政府可以交互的动态环境，并以共同最终需求、财政预算和机制中间量组织策略比较。现有实验显示，能力提升的交付收益受到绑定约束限制，较强订单跟随可能降低最终履约，同预算靶向差异可能很小；机制关闭还能够识别某些场景中并未影响结果的通道。平台的贡献是使这些条件可执行、可检查和可复现。进一步形成学习型产业基准，需要完成任务激活校准、共同约束下的训练与测试，以及独立于输入核算表的现实验证。</p>
 <h2>参考文献</h2>
-<p>[1] Mi Q, Yang Q, Fan Z, et al. (2025). <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/40d45b1e23d00d5895e65778e85cf8ee-Abstract-Datasets_and_Benchmarks_Track.html">EconGym: A Scalable AI Testbed with Diverse Economic Tasks</a>. Advances in Neural Information Processing Systems 38, Datasets and Benchmarks Track. DOI: 10.52202/085713-1515.</p>
-<p>[2] Han J, Li X, Qian J, et al. (2026). <a href="https://arxiv.org/abs/2608.06020">From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models</a>. arXiv:2608.06020v1，预印本. DOI: 10.48550/arXiv.2608.06020.</p>
-<p>[3] Acemoglu D, Carvalho V M, Ozdaglar A, Tahbaz-Salehi A. (2012). <a href="https://doi.org/10.3982/ECTA9623">The Network Origins of Aggregate Fluctuations</a>. Econometrica, 80(5): 1977–2016. DOI: 10.3982/ECTA9623.</p>
-<p>[4] Pichler A, Pangallo M, del Rio-Chanona R M, Lafond F, Farmer J D. (2022). <a href="https://doi.org/10.1016/j.jedc.2022.104527">Forecasting the propagation of pandemic shocks with a dynamic input-output model</a>. Journal of Economic Dynamics and Control, 144: 104527. DOI: 10.1016/j.jedc.2022.104527.</p>
-<p>[5] Zheng S, Trott A, Srinivasa S, Parkes D C, Socher R. (2022). <a href="https://www.science.org/doi/10.1126/sciadv.abk2607">The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning</a>. Science Advances, 8(18): eabk2607. DOI: 10.1126/sciadv.abk2607.</p>
-<p>[6] Inoue H, Todo Y. (2020). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239251">The propagation of economic impacts through supply chains: The case of a mega-city lockdown to prevent the spread of COVID-19</a>. PLOS ONE, 15(9): e0239251. DOI: 10.1371/journal.pone.0239251.</p>
-<p>[7] Grimm V, Railsback S F, Vincenot C E, et al. (2020). <a href="https://www.jasss.org/23/2/7.html">The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism</a>. Journal of Artificial Societies and Social Simulation, 23(2): 7. DOI: 10.18564/jasss.4259.</p>
-<p>[8] Ronald E. Miller, Peter D. Blair (2009). <a href="https://www.cambridge.org/core/books/abs/inputoutput-analysis/frontmatter/B6F9C9304120752E4037586DDD16DE40">Input–Output Analysis: Foundations and Extensions</a>. Cambridge University Press, 2nd edition. DOI: 10.1017/CBO9780511626982.</p>
-<p>[9] Stéphane Hallegatte (2008). <a href="https://pubmed.ncbi.nlm.nih.gov/18643833/">An Adaptive Regional Input‐Output Model and its Application to the Assessment of the Economic Cost of Katrina</a>. Risk Analysis, 28(3): 779-799. DOI: 10.1111/j.1539-6924.2008.01046.x.</p>
-<p>[10] Giorgio Fagiolo, Alessio Moneta, Paul Windrum (2007). <a href="https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf">A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems</a>. Computational Economics, 30(3): 195–226. DOI: 10.1007/s10614-007-9104-4.</p>
-<p>[11] Vasco M Carvalho, Makoto Nirei, Yukiko U Saito, Alireza Tahbaz-Salehi (2021). <a href="https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf">Supply Chain Disruptions: Evidence from the Great East Japan Earthquake</a>. The Quarterly Journal of Economics, 136(2): 1255-1321. DOI: 10.1093/qje/qjaa044.</p>
-<p>[12] Leigh Tesfatsion (2006). <a href="https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf">Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory</a>. Handbook of Computational Economics, 2: 831-880. DOI: 10.1016/S1574-0021(05)02016-2.</p>
-<p>[13] Michael L. Littman (1994). <a href="https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf">Markov games as a framework for multi-agent reinforcement learning</a>. Machine Learning Proceedings 1994: 157-163. DOI: 10.1016/B978-1-55860-335-6.50027-1.</p>
-<p>[14] Robert G. Sargent (2013). <a href="https://doi.org/10.1057/jos.2012.20">Verification and validation of simulation models</a>. Journal of Simulation, 7(1): 12–24. DOI: 10.1057/jos.2012.20.</p>
-<p>[15] Andrea Saltelli, Paola Annoni (2010). <a href="https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf">How to avoid a perfunctory sensitivity analysis</a>. Environmental Modelling &amp; Software, 25(12): 1508-1517. DOI: 10.1016/j.envsoft.2010.04.012.</p>
-<p>[16] Andrew J. Clark, Herbert Scarf (1960). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.6.4.475">Optimal Policies for a Multi-Echelon Inventory Problem</a>. Management Science, 6(4): 475–490. DOI: 10.1287/mnsc.6.4.475.</p>
-<p>[17] John D. Sterman (1989). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.35.3.321">Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment</a>. Management Science, 35(3): 321–339. DOI: 10.1287/mnsc.35.3.321.</p>
-<p>[18] Hau L. Lee, V. Padmanabhan, Seungjin Whang (1997). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.43.4.546">Information Distortion in a Supply Chain: The Bullwhip Effect</a>. Management Science, 43(4): 546–558. DOI: 10.1287/mnsc.43.4.546.</p>
-<p>[19] Wesley M. Cohen, Daniel A. Levinthal (1990). <a href="https://www.jstor.org/stable/2393553">Absorptive Capacity: A New Perspective on Learning and Innovation</a>. Administrative Science Quarterly, 35(1): 128–152. DOI: 10.2307/2393553.</p>
-<p>[20] Erik Brynjolfsson, Lorin M. Hitt, Shinkyu Yang (2002). <a href="https://www.brookings.edu/articles/intangible-assets-computers-and-organizational-capital/">Intangible Assets: Computers and Organizational Capital</a>. Brookings Papers on Economic Activity, 2002(1): 137–198. DOI: 10.1353/eca.2002.0003.</p>
-<p>[21] Erik Brynjolfsson, Daniel Rock, Chad Syverson (2021). <a href="https://www.aeaweb.org/articles?id=10.1257/mac.20180386">The Productivity J-Curve: How Intangibles Complement General Purpose Technologies</a>. American Economic Journal: Macroeconomics, 13(1): 333–372. DOI: 10.1257/mac.20180386.</p>
-<p>[22] Finn E. Kydland, Edward C. Prescott (1982). <a href="https://www.jstor.org/stable/1913386">Time to Build and Aggregate Fluctuations</a>. Econometrica, 50(6): 1345–1370. DOI: 10.2307/1913386.</p>
-<p>[23] Daniel McFadden (1974). <a href="https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf">Conditional Logit Analysis of Qualitative Choice Behavior</a>. Frontiers in Econometrics: 105–142. ISBN: 9780127761503.</p>
-<p>[24] Kenneth E. Train (2009). <a href="https://eml.berkeley.edu/books/choice2.html">Discrete Choice Methods with Simulation</a>. Cambridge University Press, 2nd edition. DOI: 10.1017/CBO9780511805271.</p>
-<p>[25] John F. Nash, Jr. (1950). <a href="https://www.jstor.org/stable/1907266">The Bargaining Problem</a>. Econometrica, 18(2): 155–162. DOI: 10.2307/1907266.</p>
-<p>[26] Stephen Boyd, Lieven Vandenberghe (2004). <a href="https://web.stanford.edu/~boyd/cvxbook/">Convex Optimization</a>. Cambridge University Press. DOI: 10.1017/CBO9780511804441.</p>
-<p>[27] Giovanni Dosi, Giorgio Fagiolo, Andrea Roventini (2010). <a href="https://doi.org/10.1016/j.jedc.2010.06.018">Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles</a>. Journal of Economic Dynamics and Control, 34(9): 1748–1767. DOI: 10.1016/j.jedc.2010.06.018.</p>
-<p>[28] OECD (2025). <a href="https://www.oecd.org/en/publications/mapping-the-semiconductor-value-chain_4154cdbf-en.html">Mapping the semiconductor value chain: Working towards identifying dependencies and vulnerabilities</a>. OECD Science, Technology and Industry Policy Papers, No. 182（机构政策报告）. DOI: 10.1787/4154cdbf-en.</p>
-<p>[29] Antton Haramboure, Guy Lalanne, Cyrille Schwellnus, Joaquim Guilhoto (2023). <a href="https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html">Vulnerabilities in the semiconductor supply chain</a>. OECD Science, Technology and Industry Working Papers, No. 2023/05（机构工作论文）. DOI: 10.1787/6bed616f-en.</p>
-<p>[30] Antonio Varas, Raj Varadarajan, Jimmy Goodrich, Falan Yinug (2021). <a href="https://www.semiconductors.org/resources/strengthening-the-global-semiconductor-supply-chain-in-an-uncertain-era/">Strengthening the Global Semiconductor Supply Chain in an Uncertain Era</a>. Boston Consulting Group and Semiconductor Industry Association（行业联合报告）.</p>
-<p>[31] Erik Brynjolfsson, Danielle Li, Lindsey Raymond (2025). <a href="https://academic.oup.com/qje/article/140/2/889/7990658">Generative AI at Work</a>. The Quarterly Journal of Economics, 140(2): 889–942（期刊实证论文）. DOI: 10.1093/qje/qjae044.</p>
-<p>[32] Daron Acemoglu (2025). <a href="https://academic.oup.com/economicpolicy/article/40/121/13/7728473">The simple macroeconomics of AI</a>. Economic Policy, 40(121): 13–58（期刊理论与定量评估论文）. DOI: 10.1093/epolic/eiae042.</p>
-<p>[33] Réka Juhász, Nathan Lane, Dani Rodrik (2024). <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-economics-081023-024638">The New Economics of Industrial Policy</a>. Annual Review of Economics, 16: 213–242（期刊综述论文）. DOI: 10.1146/annurev-economics-081023-024638.</p>
-<p>[34] U.S. Department of Commerce (2022). <a href="https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information">Results from Semiconductor Supply Chain Request for Information</a>. U.S. Department of Commerce（政府自愿调查结果发布）.</p>
-<p>[35] OECD (2025). <a href="https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html">The chip landscape: Geographical distribution of wafer fabrication capacity</a>. OECD Science, Technology and Industry Policy Papers, No. 188（机构政策报告）. DOI: 10.1787/02dbd028-en.</p>
+<p>[1] OECD (2025). <a href="https://www.oecd.org/en/publications/mapping-the-semiconductor-value-chain_4154cdbf-en.html">Mapping the semiconductor value chain: Working towards identifying dependencies and vulnerabilities</a>. OECD Science, Technology and Industry Policy Papers, No. 182（机构政策报告）. DOI: 10.1787/4154cdbf-en.</p>
+<p>[2] Antonio Varas, Raj Varadarajan, Jimmy Goodrich, Falan Yinug (2021). <a href="https://www.semiconductors.org/resources/strengthening-the-global-semiconductor-supply-chain-in-an-uncertain-era/">Strengthening the Global Semiconductor Supply Chain in an Uncertain Era</a>. Boston Consulting Group and Semiconductor Industry Association（行业联合报告）.</p>
+<p>[3] U.S. Department of Commerce (2022). <a href="https://www.commerce.gov/news/blog/2022/01/results-semiconductor-supply-chain-request-information">Results from Semiconductor Supply Chain Request for Information</a>. U.S. Department of Commerce（政府自愿调查结果发布）.</p>
+<p>[4] Acemoglu D, Carvalho V M, Ozdaglar A, Tahbaz-Salehi A. (2012). <a href="https://doi.org/10.3982/ECTA9623">The Network Origins of Aggregate Fluctuations</a>. Econometrica, 80(5): 1977–2016. DOI: 10.3982/ECTA9623.</p>
+<p>[5] Pichler A, Pangallo M, del Rio-Chanona R M, Lafond F, Farmer J D. (2022). <a href="https://doi.org/10.1016/j.jedc.2022.104527">Forecasting the propagation of pandemic shocks with a dynamic input-output model</a>. Journal of Economic Dynamics and Control, 144: 104527. DOI: 10.1016/j.jedc.2022.104527.</p>
+<p>[6] Mi Q, Yang Q, Fan Z, et al. (2025). <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/40d45b1e23d00d5895e65778e85cf8ee-Abstract-Datasets_and_Benchmarks_Track.html">EconGym: A Scalable AI Testbed with Diverse Economic Tasks</a>. Advances in Neural Information Processing Systems 38, Datasets and Benchmarks Track. DOI: 10.52202/085713-1515.</p>
+<p>[7] Wesley M. Cohen, Daniel A. Levinthal (1990). <a href="https://www.jstor.org/stable/2393553">Absorptive Capacity: A New Perspective on Learning and Innovation</a>. Administrative Science Quarterly, 35(1): 128–152. DOI: 10.2307/2393553.</p>
+<p>[8] Erik Brynjolfsson, Lorin M. Hitt, Shinkyu Yang (2002). <a href="https://www.brookings.edu/articles/intangible-assets-computers-and-organizational-capital/">Intangible Assets: Computers and Organizational Capital</a>. Brookings Papers on Economic Activity, 2002(1): 137–198. DOI: 10.1353/eca.2002.0003.</p>
+<p>[9] Erik Brynjolfsson, Daniel Rock, Chad Syverson (2021). <a href="https://www.aeaweb.org/articles?id=10.1257/mac.20180386">The Productivity J-Curve: How Intangibles Complement General Purpose Technologies</a>. American Economic Journal: Macroeconomics, 13(1): 333–372. DOI: 10.1257/mac.20180386.</p>
+<p>[10] Daron Acemoglu (2025). <a href="https://academic.oup.com/economicpolicy/article/40/121/13/7728473">The simple macroeconomics of AI</a>. Economic Policy, 40(121): 13–58（期刊理论与定量评估论文）. DOI: 10.1093/epolic/eiae042.</p>
+<p>[11] Réka Juhász, Nathan Lane, Dani Rodrik (2024). <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-economics-081023-024638">The New Economics of Industrial Policy</a>. Annual Review of Economics, 16: 213–242（期刊综述论文）. DOI: 10.1146/annurev-economics-081023-024638.</p>
+<p>[12] Zheng S, Trott A, Srinivasa S, Parkes D C, Socher R. (2022). <a href="https://www.science.org/doi/10.1126/sciadv.abk2607">The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning</a>. Science Advances, 8(18): eabk2607. DOI: 10.1126/sciadv.abk2607.</p>
+<p>[13] Leigh Tesfatsion (2006). <a href="https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf">Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory</a>. Handbook of Computational Economics, 2: 831-880. DOI: 10.1016/S1574-0021(05)02016-2.</p>
+<p>[14] Michael L. Littman (1994). <a href="https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf">Markov games as a framework for multi-agent reinforcement learning</a>. Machine Learning Proceedings 1994: 157-163. DOI: 10.1016/B978-1-55860-335-6.50027-1.</p>
+<p>[15] Ronald E. Miller, Peter D. Blair (2009). <a href="https://www.cambridge.org/core/books/abs/inputoutput-analysis/frontmatter/B6F9C9304120752E4037586DDD16DE40">Input–Output Analysis: Foundations and Extensions</a>. Cambridge University Press, 2nd edition. DOI: 10.1017/CBO9780511626982.</p>
+<p>[16] Stéphane Hallegatte (2008). <a href="https://pubmed.ncbi.nlm.nih.gov/18643833/">An Adaptive Regional Input‐Output Model and its Application to the Assessment of the Economic Cost of Katrina</a>. Risk Analysis, 28(3): 779-799. DOI: 10.1111/j.1539-6924.2008.01046.x.</p>
+<p>[17] Vasco M Carvalho, Makoto Nirei, Yukiko U Saito, Alireza Tahbaz-Salehi (2021). <a href="https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf">Supply Chain Disruptions: Evidence from the Great East Japan Earthquake</a>. The Quarterly Journal of Economics, 136(2): 1255-1321. DOI: 10.1093/qje/qjaa044.</p>
+<p>[18] Inoue H, Todo Y. (2020). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239251">The propagation of economic impacts through supply chains: The case of a mega-city lockdown to prevent the spread of COVID-19</a>. PLOS ONE, 15(9): e0239251. DOI: 10.1371/journal.pone.0239251.</p>
+<p>[19] Andrew J. Clark, Herbert Scarf (1960). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.6.4.475">Optimal Policies for a Multi-Echelon Inventory Problem</a>. Management Science, 6(4): 475–490. DOI: 10.1287/mnsc.6.4.475.</p>
+<p>[20] John D. Sterman (1989). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.35.3.321">Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment</a>. Management Science, 35(3): 321–339. DOI: 10.1287/mnsc.35.3.321.</p>
+<p>[21] Hau L. Lee, V. Padmanabhan, Seungjin Whang (1997). <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.43.4.546">Information Distortion in a Supply Chain: The Bullwhip Effect</a>. Management Science, 43(4): 546–558. DOI: 10.1287/mnsc.43.4.546.</p>
+<p>[22] Han J, Li X, Qian J, et al. (2026). <a href="https://arxiv.org/abs/2608.06020">From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models</a>. arXiv:2608.06020v1，预印本. DOI: 10.48550/arXiv.2608.06020.</p>
+<p>[23] Grimm V, Railsback S F, Vincenot C E, et al. (2020). <a href="https://www.jasss.org/23/2/7.html">The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism</a>. Journal of Artificial Societies and Social Simulation, 23(2): 7. DOI: 10.18564/jasss.4259.</p>
+<p>[24] Erik Brynjolfsson, Danielle Li, Lindsey Raymond (2025). <a href="https://academic.oup.com/qje/article/140/2/889/7990658">Generative AI at Work</a>. The Quarterly Journal of Economics, 140(2): 889–942（期刊实证论文）. DOI: 10.1093/qje/qjae044.</p>
+<p>[25] Finn E. Kydland, Edward C. Prescott (1982). <a href="https://www.jstor.org/stable/1913386">Time to Build and Aggregate Fluctuations</a>. Econometrica, 50(6): 1345–1370. DOI: 10.2307/1913386.</p>
+<p>[26] Giovanni Dosi, Giorgio Fagiolo, Andrea Roventini (2010). <a href="https://doi.org/10.1016/j.jedc.2010.06.018">Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles</a>. Journal of Economic Dynamics and Control, 34(9): 1748–1767. DOI: 10.1016/j.jedc.2010.06.018.</p>
+<p>[27] Antton Haramboure, Guy Lalanne, Cyrille Schwellnus, Joaquim Guilhoto (2023). <a href="https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html">Vulnerabilities in the semiconductor supply chain</a>. OECD Science, Technology and Industry Working Papers, No. 2023/05（机构工作论文）. DOI: 10.1787/6bed616f-en.</p>
+<p>[28] OECD (2025). <a href="https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html">The chip landscape: Geographical distribution of wafer fabrication capacity</a>. OECD Science, Technology and Industry Policy Papers, No. 188（机构政策报告）. DOI: 10.1787/02dbd028-en.</p>
+<p>[29] Robert G. Sargent (2013). <a href="https://doi.org/10.1057/jos.2012.20">Verification and validation of simulation models</a>. Journal of Simulation, 7(1): 12–24. DOI: 10.1057/jos.2012.20.</p>
+<p>[30] Giorgio Fagiolo, Alessio Moneta, Paul Windrum (2007). <a href="https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf">A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems</a>. Computational Economics, 30(3): 195–226. DOI: 10.1007/s10614-007-9104-4.</p>
+<p>[31] Daniel McFadden (1974). <a href="https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf">Conditional Logit Analysis of Qualitative Choice Behavior</a>. Frontiers in Econometrics: 105–142. ISBN: 9780127761503.</p>
+<p>[32] Kenneth E. Train (2009). <a href="https://eml.berkeley.edu/books/choice2.html">Discrete Choice Methods with Simulation</a>. Cambridge University Press, 2nd edition. DOI: 10.1017/CBO9780511805271.</p>
+<p>[33] John F. Nash, Jr. (1950). <a href="https://www.jstor.org/stable/1907266">The Bargaining Problem</a>. Econometrica, 18(2): 155–162. DOI: 10.2307/1907266.</p>
+<p>[34] Stephen Boyd, Lieven Vandenberghe (2004). <a href="https://web.stanford.edu/~boyd/cvxbook/">Convex Optimization</a>. Cambridge University Press. DOI: 10.1017/CBO9780511804441.</p>
+<p>[35] Andrea Saltelli, Paola Annoni (2010). <a href="https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf">How to avoid a perfunctory sensitivity analysis</a>. Environmental Modelling &amp; Software, 25(12): 1508-1517. DOI: 10.1016/j.envsoft.2010.04.012.</p>
 <h2>附录 A 部门、来源与数据清单</h2>
 <p><strong>表 A1 13 个决策部门及其原统计部门</strong></p>
 <table>
@@ -893,9 +893,9 @@ T_{j,t+1}=(1-\delta_T)T_{j,t}
 \tag{B1}
 \]</p>
 <p>政府 AI 与研发在当期能力计算前增加存量。私人能力支出在生产后更新，主要影响后续期。私人资本转化系数由任务设置，政府资本在当前实现中使用固定 0.1 转化系数。制造、封装与设备机制若启用，按配置乘子限制第 8 部门的有效产能；WIP 仅为活动平滑状态，不执行工序排程。</p>
-<p>技术积累和互补的机制动机见 [19, 21, 27]，资本投产时滞的经典依据见 [22]。式（B1）的线性转化与季度折旧仍是本稿状态规则。</p>
+<p>技术积累和互补的机制动机见 [7, 9, 26]，资本投产时滞的经典依据见 [25]。式（B1）的线性转化与季度折旧仍是本稿状态规则。</p>
 <p>价格按订单与可用成品的不平衡作指数更新，单期自动项截断在 ±0.05；价格行动项截断在 ±0.1。市场势力模块另使用合成 HHI 加价。价格不会形成最终需求弹性或替代投入选择，所以不能把价格路径解释为均衡市场价格预测。</p>
-<p>经济 ABM 中的定价与产量反馈可参照 Dosi 等 [27]。本指数缺口规则不同于其成本加成规则，文献用于说明启发式定价的建模背景，未提供这些系数。</p>
+<p>经济 ABM 中的定价与产量反馈可参照 Dosi 等 [26]。本指数缺口规则不同于其成本加成规则，文献用于说明启发式定价的建模背景，未提供这些系数。</p>
 <h3>B.2 预测误差</h3>
 <p>启用预测时，规则策略的需求比乘以 $\max(0,1+e_{j,t})$，其中</p>
 <p>\[
@@ -904,7 +904,7 @@ e_{j,t}=\sigma(1-g_{AI}\min\{\alpha_{j,t},1\})
 \tag{B2}
 \]</p>
 <p>共同与个体误差由规则策略随机数生成器产生。$c$ 是共同误差的载荷，若个体误差相互独立，标准化误差的跨部门相关为 $c^2$，不能把 $c$ 直接解释为相关系数。该预测过程为随机规则，不构成学习型预测器。</p>
-<p>库存反馈与订单信息失真研究提供预测信息进入采购的背景 [17, 18]；式（B2）的高斯共同因子分解为本项目指定，相关为 $c^2$ 是该分解的代数性质，不是经验估计。</p>
+<p>库存反馈与订单信息失真研究提供预测信息进入采购的背景 [20, 21]；式（B2）的高斯共同因子分解为本项目指定，相关为 $c^2$ 是该分解的代数性质，不是经验估计。</p>
 <h3>B.3 承接边与运输</h3>
 <p>边压力的主要更新为</p>
 <p>\[
@@ -917,7 +917,7 @@ P_{rj,t+1}=\left[0.70P_{rj,t}
 \]</p>
 <p>随后 $h_{rj}=\operatorname{clip}(1-0.05P_{rj},h_{min},1)$。当期排入在途队列的交付使用排队时的边健康与资格，之后更新的修复不会回溯修改该批交付。边矩阵包含 13×13 个位置，记录的平均健康不是仅对非零边的加权网络指标。</p>
 <p>当前 <code>extra_lag</code> 初始化为零，代码没有通过资格机制内生提高它。因此基准内部运输为一季度；字段存在并不意味着已估计或实现认证时滞的内生变化。资格从 1 初始化且只增加，解释其效果必须同时检查是否存在非饱和状态。</p>
-<p>真实关系上的冲击传播见 [6] 和 [11]，工艺与厂房替代限制见 [35]。这些文献支持关注承接条件，未给出式（B3）的压力、资格或健康参数。</p>
+<p>真实关系上的冲击传播见 [18] 和 [17]，工艺与厂房替代限制见 [28]。这些文献支持关注承接条件，未给出式（B3）的压力、资格或健康参数。</p>
 <h3>B.4 协同、努力配置与条件合同</h3>
 <p>协同概率由 $\sigma(2v_j+0.5S_j/\max(D_j,1)-0.5)$ 给出。$v_j$ 由资格支出及启用合同时的核验—惩罚项构成。默认直接使用概率强度，<code>stochastic_coordination=true</code> 时才抽取 Bernoulli 参与。</p>
 <p>五类努力使用</p>
@@ -928,7 +928,7 @@ x_k=\operatorname{clip}\left(\frac{b_k-\lambda}{c_k},0,1\right).
 \tag{B4}
 \]</p>
 <p>代码用二分搜索预算乘子。不同努力降低压力或提高资格，参数固定。条件合同在 101 个激励份额上最大化两方非负剩余的加权乘积，得到进入协同强度的份额；这不是完整的讨价还价学习或带现金结算的双主体合同。</p>
-<p>当 $c_k&gt;0$、预算非负且问题可行时，式（B4）的目标为凹函数，盒约束与线性预算构成凸可行域；截断解来自 KKT 条件 [26]。预算松弛时取 $\lambda=0$，绑定时搜索满足预算的非负乘子。协同的 Logit 形式见 [24]，条件剩余乘积的理论来源见 Nash [25]；其公理化谈判解不能由本代码有限网格和风格化收益自动保证。</p>
+<p>当 $c_k&gt;0$、预算非负且问题可行时，式（B4）的目标为凹函数，盒约束与线性预算构成凸可行域；截断解来自 KKT 条件 [34]。预算松弛时取 $\lambda=0$，绑定时搜索满足预算的非负乘子。协同的 Logit 形式见 [32]，条件剩余乘积的理论来源见 Nash [33]；其公理化谈判解不能由本代码有限网格和风格化收益自动保证。</p>
 <p><strong>表 B1 核心关系与实现位置</strong></p>
 <table>
 <thead>
