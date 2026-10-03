@@ -1,0 +1,20 @@
+{
+  "adapter_runs": [
+    {
+      "task": "ic_r1",
+      "fill": 0.5352195758720549,
+      "matched": true
+    },
+    {
+      "task": "ic_g5",
+      "fill": 0.9638676503484261,
+      "matched": true
+    }
+  ],
+  "training_instances": 20,
+  "train_validation_test_disjoint": true,
+  "checkpoint_and_source_hashes_match": true,
+  "queue_timing_and_accumulation": true,
+  "training_episodes": 8000,
+  "periods_per_adapter": 30
+}

@@ -1,0 +1,40 @@
+{
+  "ai_initial": [
+    0.0,
+    0.0,
+    0.0,
+    0.16078118226562962,
+    0.16078118226562962,
+    0.0,
+    0.16078118226562962,
+    0.2,
+    0.15135103770014313,
+    0.15135103770014313,
+    0.15135103770014313,
+    0.15135103770014313,
+    0.15135103770014313
+  ],
+  "absorption": [
+    0.3,
+    0.3,
+    0.3,
+    0.7,
+    0.7,
+    0.3,
+    0.7,
+    0.46893322113238595,
+    0.5632914551482731,
+    0.5632914551482731,
+    0.5632914551482731,
+    0.5632914551482731,
+    0.5632914551482731
+  ],
+  "proxy_mapping_scale": {
+    "ai_initial_max": 0.2,
+    "absorption_min": 0.3,
+    "absorption_max": 0.7
+  },
+  "status": "proxy-informed scenario initialization; not estimated conversion or causal absorption",
+  "ai_conversion_changed": false,
+  "year_alignment": "mixed 2023/2024/unspecified; not 2020 observations"
+}

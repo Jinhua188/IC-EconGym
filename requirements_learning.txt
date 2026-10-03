@@ -1,0 +1,9 @@
+# Separate environment for the reproducible CPU training run.
+numpy==1.26.4
+torch==2.3.0
+PyYAML
+psutil
+openpyxl
+PyMuPDF
+matplotlib
+pandas

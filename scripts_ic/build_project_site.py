@@ -104,12 +104,26 @@ def build():
         shutil.copy2(ROOT / relative, target)
     for folder in ["r1_v2", "g5_v2", "runtime_v2", "manuscript_diagnostics"]:
         shutil.copytree(ROOT / "benchmark_results" / folder, docs / "benchmark_results" / folder, dirs_exist_ok=True)
+    if (ROOT / "EXPERIMENT_UPGRADE.md").exists():
+        shutil.copy2(ROOT / "EXPERIMENT_UPGRADE.md", docs / "EXPERIMENT_UPGRADE.md")
+        shutil.copy2(ROOT / "DATA_CARD.md", docs / "DATA_CARD.md")
+        for folder in ["calibration", "external_validation", "benchmark_splits", "robustness"]:
+            target = docs / folder
+            target.mkdir(parents=True, exist_ok=True)
+            for file in (ROOT / folder).iterdir():
+                if file.is_file() and file.name != "locked_scenarios.json":
+                    shutil.copy2(file, target / file.name)
+        for folder in ["p0_v3", "p1_v3", "p4_v3", "upgrade_summary"]:
+            shutil.copytree(ROOT / "benchmark_results" / folder, docs / "benchmark_results" / folder, dirs_exist_ok=True)
     pdf = ROOT / "paper/IC-EconGym_中文论文完善稿.pdf"
     if pdf.exists():
         shutil.copy2(pdf, docs / "paper" / pdf.name)
+    import subprocess
     manifest = []
-    for file in sorted(ROOT.rglob("*")):
-        if file.is_file() and not any(p in file.parts for p in [".git", "__pycache__", "qa", ".venv"]) and file.name != "MANIFEST.sha256":
+    public = subprocess.check_output(["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"], cwd=ROOT).decode("utf-8").split("\0")
+    for relative in sorted(set(public)):
+        file = ROOT / relative
+        if relative and file.is_file() and file.name != "MANIFEST.sha256":
             manifest.append(hashlib.sha256(file.read_bytes()).hexdigest() + "  " + file.relative_to(ROOT).as_posix())
     (ROOT / "MANIFEST.sha256").write_text("\n".join(manifest) + "\n", encoding="utf-8")
     print(json.dumps({"tasks": len(index["tasks"]), "site": "docs", "files": len(manifest)}, ensure_ascii=False))

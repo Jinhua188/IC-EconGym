@@ -6,7 +6,7 @@
 
 IC-EconGym is a Python environment with **13 industrial sector agents and one government agent**, **15 configured tasks**, and **three accounting-consistent import allocation assumptions**. Orders, source-specific materials, capacity, allocation and fiscal spending are settled under a common input–output boundary.
 
-Current evidence covers accounting checks, heuristic paired-policy experiments and fixed-size rollout timing. Dynamic behavior parameters are scenarios; independent external validation and RL/LLM baselines remain outstanding. The project is a research testbed, with conditional simulation results.
+Current evidence includes task diagnostics, R1 sector IPPO and G5 government PPO with independent training and locked tests, a local external capacity case, joint parameter and rationing experiments, and fixed-agent batch timing. The learning benchmark retains poor R1 delivery and inconclusive G5 improvement. Dynamic coefficients remain scenarios; the external case does not validate the full economy. See [experiment upgrade](EXPERIMENT_UPGRADE.md).
 
 ## Quick start
 
@@ -33,7 +33,7 @@ The 2020 accounting table was split from 42 to 55 sectors using revenue shares. 
 | `ic_extension/` | Environment, role constraints, policies and World13 adapter |
 | `cfg_ic/` | E1–E5 empowerment, R1–R5 risk, G1–G5 governance |
 | `scripts_ic/` | Task runner, paired benchmarks, runtime and external-baseline interface |
-| `benchmark_results/` | 780 matched policy trajectories, 426 mechanism diagnostics and 45 timing runs |
+| `benchmark_results/` | Historical paired results plus P0/P1/P4 and statistical summaries |
 | `demo_results_v2/` | 150 replay runs across 50 comparison arms |
 | `paper/` | Chinese manuscript, figures and computed result summary |
 | `docs/` | GitHub Pages project page, task demo, observer and paper |
@@ -52,7 +52,7 @@ Matched seeds share exogenous shocks. Final-demand fill rate is logged independe
 
 [PDF manuscript](paper/IC-EconGym_中文论文完善稿.pdf).
 
-Version 0.2.0 is a research prototype with a Chinese manuscript. No acceptance, DOI or arXiv identifier is asserted. Author information and licensing are to be supplied by the project owner. GitHub Actions validate the environment and deploy `docs/` to Pages after push. Set Pages source to **GitHub Actions**.
+The original v0.2.0 release is retained; v0.3-experimental adds learning and validation experiments with a Chinese manuscript. No acceptance, DOI or arXiv identifier is asserted. Author information and licensing are to be supplied by the project owner. GitHub Actions validate the environment and deploy `docs/` to Pages after push. Set Pages source to **GitHub Actions**.
 
 ## References and attribution
 

@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "file": "AI渗透综合指标.xlsx",
+      "sha256": "85ae585ff884ddaa7994840d7f50ba8bcdddf9c920edd8363b81d286417ad115"
+    },
+    {
+      "file": "打印-返修2.1-基于投入产出表的中国集成电路全产业链结构与关联效应研究(1).docx",
+      "sha256": "611c28bd96b4caecfc02731783b65ff70f20e0d51a939456ff81e85f5cbff8c6"
+    },
+    {
+      "file": "remake-2020年投入产出表与指标.xlsx",
+      "sha256": "7ac96b484f21962293d76980a20395da5e0590179c6317a659127b8b0c772430"
+    }
+  ],
+  "ai_sheets": [
+    {
+      "sheet": "任务暴露度",
+      "source_rows": 1433,
+      "unique_valid_firms": 1426,
+      "duplicate_rows_removed": 0,
+      "year": 2024
+    },
+    {
+      "sheet": "招聘_2024",
+      "source_rows": 261,
+      "unique_valid_firms": 261,
+      "duplicate_rows_removed": 0,
+      "year": 2024
+    },
+    {
+      "sheet": "文本披露型采纳强度",
+      "source_rows": 1416,
+      "unique_valid_firms": 1416,
+      "duplicate_rows_removed": 0,
+      "year": 2023
+    },
+    {
+      "sheet": "专利吸收与知识扩散强度",
+      "source_rows": 126,
+      "unique_valid_firms": 126,
+      "duplicate_rows_removed": 0,
+      "year": "unspecified"
+    }
+  ],
+  "pooling": "firm-weighted arithmetic mean; H3/H4/H5 pooled before mean, not unweighted mean of group means",
+  "patent_H5_observations": 0,
+  "patent_year": "unspecified",
+  "warnings": [
+    "AI workbook is not a ready combined longitudinal AI score",
+    "Within-H functional mapping repeats proxies across several IO sectors",
+    "Missing recruitment/patent firms are not filled with zero",
+    "AI conversion remains a scenario coefficient",
+    "Yearbook editions and source-year statements are transcribed from supplied manuscript, not independently authenticated",
+    "2020 interpolated revenue can use 2023 information; not vintage-2020 forecasting"
+  ],
+  "io_statistics": "2020 executable matrix retained; supplied manuscript uses a different sector scope including information services"
+}

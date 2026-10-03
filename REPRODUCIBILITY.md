@@ -23,3 +23,8 @@ R1 与 G5 各为 13 情景×3 策略×10 种子×30 季度。种子 42–51，�
 ## 版本与校验
 
 v0.2.0 在原平台上新增最终需求与内部交付日志，状态转移保持原实现。发布文件哈希见 `MANIFEST.sha256`。网页为回放；未提供在线 Python 后端或在线训练。
+
+
+## v0.3新增实验
+
+见 [P0—P4复现协议](EXPERIMENT_UPGRADE.md)。使用独立环境与 requirements_learning.lock.txt；原版命令继续运行原引擎。新增原始轨迹级指标、逐期P0日志、独立训练记录、检查点和锁定划分均保留。benchmark_splits/training_scenario_indices.csv 可从种子重建配置；未公开原始附件，默认从已处理表开始。

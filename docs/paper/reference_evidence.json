@@ -468,6 +468,28 @@
     "reference_number": 12
   },
   {
+    "reference_number": 13,
+    "key": "schulman2017ppo",
+    "title": "Proximal Policy Optimization Algorithms",
+    "url": "https://arxiv.org/abs/1707.06347",
+    "supports": "PPO 截断更新；本地实现与超参数另外记录",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "官方来源",
+    "verification": "primary_source_verified",
+    "fetched_at": "2026-10-03"
+  },
+  {
+    "reference_number": 14,
+    "key": "patterson2024empirical",
+    "title": "Empirical Design in Reinforcement Learning",
+    "url": "https://jmlr.org/papers/v25/23-0183.html",
+    "supports": "强化学习经验设计及成本、超参数报告",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "官方来源",
+    "verification": "primary_source_verified",
+    "fetched_at": "2026-10-03"
+  },
+  {
     "key": "Tesfatsion2006",
     "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
     "authors": [
@@ -492,7 +514,7 @@
     "evidence_scope": "将经济过程作为交互主体动态系统；不要求所有主体都学习",
     "abstract": null,
     "bibtex": "@incollection{Tesfatsion2006,\n  author = {Leigh Tesfatsion},\n  title = {Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory},\n  year = {2006},\n  url = {https://www2.econ.iastate.edu/tesfatsi/hbintlt.pdf},\n  booktitle = {Handbook of Computational Economics},\n  doi = {10.1016/S1574-0021(05)02016-2},\n  volume = {2},\n  pages = {831-880},\n}",
-    "reference_number": 13
+    "reference_number": 15
   },
   {
     "key": "Littman1994",
@@ -519,7 +541,7 @@
     "evidence_scope": "联合行动与环境状态转移的多主体框架；不把我方启发式称为RL",
     "abstract": null,
     "bibtex": "@inproceedings{Littman1994,\n  author = {Michael L. Littman},\n  title = {Markov games as a framework for multi-agent reinforcement learning},\n  year = {1994},\n  url = {https://www.eecs.harvard.edu/cs286r/courses/spring06/papers/littman94markov.pdf},\n  booktitle = {Machine Learning Proceedings 1994},\n  doi = {10.1016/B978-1-55860-335-6.50027-1},\n  pages = {157-163},\n}",
-    "reference_number": 14
+    "reference_number": 16
   },
   {
     "key": "Miller2009",
@@ -550,7 +572,7 @@
     "isbn": "9780521517133",
     "abstract": null,
     "bibtex": "@book{Miller2009,\n  author = {Ronald E. Miller and Peter D. Blair},\n  title = {Input–Output Analysis: Foundations and Extensions},\n  year = {2009},\n  url = {https://www.cambridge.org/core/books/abs/inputoutput-analysis/frontmatter/B6F9C9304120752E4037586DDD16DE40},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511626982},\n  isbn = {9780521517133},\n  edition = {2},\n}",
-    "reference_number": 15
+    "reference_number": 17
   },
   {
     "key": "Hallegatte2008",
@@ -577,7 +599,7 @@
     "evidence_scope": "产能与前后向传播进入动态投入产出模型；不提供本项目的弹性与滞后数值",
     "abstract": null,
     "bibtex": "@article{Hallegatte2008,\n  author = {Stéphane Hallegatte},\n  title = {An Adaptive Regional Input‐Output Model and its Application to the Assessment of the Economic Cost of Katrina},\n  year = {2008},\n  url = {https://pubmed.ncbi.nlm.nih.gov/18643833/},\n  journal = {Risk Analysis},\n  doi = {10.1111/j.1539-6924.2008.01046.x},\n  volume = {28},\n  number = {3},\n  pages = {779-799},\n}",
-    "reference_number": 16
+    "reference_number": 18
   },
   {
     "key": "Carvalho2021",
@@ -607,7 +629,7 @@
     "evidence_scope": "地震冲击在真实企业关系中上下游传播；不证明本13部门情景量级",
     "abstract": null,
     "bibtex": "@article{Carvalho2021,\n  author = {Vasco M Carvalho and Makoto Nirei and Yukiko U Saito and Alireza Tahbaz-Salehi},\n  title = {Supply Chain Disruptions: Evidence from the Great East Japan Earthquake},\n  year = {2021},\n  url = {https://www.kellogg.northwestern.edu/faculty/alirezat/JapanEQ.pdf},\n  journal = {The Quarterly Journal of Economics},\n  doi = {10.1093/qje/qjaa044},\n  volume = {136},\n  number = {2},\n  pages = {1255-1321},\n}",
-    "reference_number": 17
+    "reference_number": 19
   },
   {
     "key": "Inoue2020Propagation",
@@ -632,7 +654,7 @@
     "arxiv_id": null,
     "citation_count": null,
     "abstract": null,
-    "reference_number": 18
+    "reference_number": 20
   },
   {
     "citation_key": "clark1960optimal",
@@ -672,7 +694,7 @@
     ],
     "bibtex": "@article{clark1960optimal,\n  title = {Optimal Policies for a Multi-Echelon Inventory Problem},\n  author = {Andrew J. Clark and Herbert Scarf},\n  year = {1960},\n  journal = {Management Science},\n  volume = {6},\n  number = {4},\n  pages = {475--490},\n  doi = {10.1287/mnsc.6.4.475},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.6.4.475}\n}",
     "key": "clark1960optimal",
-    "reference_number": 19
+    "reference_number": 21
   },
   {
     "citation_key": "sterman1989modeling",
@@ -712,7 +734,7 @@
     ],
     "bibtex": "@article{sterman1989modeling,\n  title = {Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment},\n  author = {John D. Sterman},\n  year = {1989},\n  journal = {Management Science},\n  volume = {35},\n  number = {3},\n  pages = {321--339},\n  doi = {10.1287/mnsc.35.3.321},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.35.3.321}\n}",
     "key": "sterman1989modeling",
-    "reference_number": 20
+    "reference_number": 22
   },
   {
     "citation_key": "lee1997information",
@@ -755,7 +777,7 @@
     ],
     "bibtex": "@article{lee1997information,\n  title = {Information Distortion in a Supply Chain: The Bullwhip Effect},\n  author = {Hau L. Lee and V. Padmanabhan and Seungjin Whang},\n  year = {1997},\n  journal = {Management Science},\n  volume = {43},\n  number = {4},\n  pages = {546--558},\n  doi = {10.1287/mnsc.43.4.546},\n  url = {https://pubsonline.informs.org/doi/10.1287/mnsc.43.4.546}\n}",
     "key": "lee1997information",
-    "reference_number": 21
+    "reference_number": 23
   },
   {
     "key": "Han2026Blueprint",
@@ -788,7 +810,7 @@
     "arxiv_id": "2608.06020",
     "citation_count": null,
     "abstract": null,
-    "reference_number": 22
+    "reference_number": 24
   },
   {
     "key": "Grimm2020ODD",
@@ -830,7 +852,7 @@
     "arxiv_id": null,
     "citation_count": null,
     "abstract": null,
-    "reference_number": 23
+    "reference_number": 25
   },
   {
     "key": "brynjolfsson2025generative",
@@ -868,7 +890,7 @@
     "fetched_at": "2026-10-03",
     "source_url": "https://academic.oup.com/qje/article/140/2/889/7990658",
     "bibtex": "@article{brynjolfsson2025generative,\n  author = {Erik Brynjolfsson and Danielle Li and Lindsey Raymond},\n  title = {Generative AI at Work},\n  year = {2025},\n  url = {https://academic.oup.com/qje/article/140/2/889/7990658},\n  journal = {The Quarterly Journal of Economics},\n  doi = {10.1093/qje/qjae044},\n  volume = {140},\n  number = {2},\n  pages = {889–942},\n}",
-    "reference_number": 24
+    "reference_number": 26
   },
   {
     "citation_key": "kydland1982time",
@@ -907,7 +929,7 @@
     ],
     "bibtex": "@article{kydland1982time,\n  title = {Time to Build and Aggregate Fluctuations},\n  author = {Finn E. Kydland and Edward C. Prescott},\n  year = {1982},\n  journal = {Econometrica},\n  volume = {50},\n  number = {6},\n  pages = {1345--1370},\n  doi = {10.2307/1913386},\n  url = {https://www.jstor.org/stable/1913386}\n}",
     "key": "kydland1982time",
-    "reference_number": 25
+    "reference_number": 27
   },
   {
     "citation_key": "dosi2010schumpeter",
@@ -950,7 +972,7 @@
     ],
     "bibtex": "@article{dosi2010schumpeter,\n  title = {Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles},\n  author = {Giovanni Dosi and Giorgio Fagiolo and Andrea Roventini},\n  year = {2010},\n  journal = {Journal of Economic Dynamics and Control},\n  volume = {34},\n  number = {9},\n  pages = {1748--1767},\n  doi = {10.1016/j.jedc.2010.06.018},\n  url = {https://doi.org/10.1016/j.jedc.2010.06.018}\n}",
     "key": "dosi2010schumpeter",
-    "reference_number": 26
+    "reference_number": 28
   },
   {
     "key": "haramboure2023vulnerabilities",
@@ -988,7 +1010,7 @@
     "source_url": "https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html",
     "arxiv_id": null,
     "bibtex": "@techreport{haramboure2023vulnerabilities,\n  author = {Antton Haramboure and Guy Lalanne and Cyrille Schwellnus and Joaquim Guilhoto},\n  title = {Vulnerabilities in the semiconductor supply chain},\n  year = {2023},\n  url = {https://www.oecd.org/en/publications/vulnerabilities-in-the-semiconductor-supply-chain_6bed616f-en.html},\n  institution = {OECD Science, Technology and Industry Working Papers},\n  doi = {10.1787/6bed616f-en},\n  number = {2023/05},\n}",
-    "reference_number": 27
+    "reference_number": 29
   },
   {
     "key": "oecd2025chip",
@@ -1027,7 +1049,7 @@
     "source_url": "https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html",
     "arxiv_id": null,
     "bibtex": "@techreport{oecd2025chip,\n  author = {OECD},\n  title = {The chip landscape: Geographical distribution of wafer fabrication capacity},\n  year = {2025},\n  url = {https://www.oecd.org/en/publications/the-chip-landscape_02dbd028-en.html},\n  institution = {OECD Science, Technology and Industry Policy Papers},\n  doi = {10.1787/02dbd028-en},\n  number = {188},\n}",
-    "reference_number": 28
+    "reference_number": 30
   },
   {
     "key": "Sargent2013",
@@ -1054,7 +1076,7 @@
     "pdf_url": null,
     "abstract": null,
     "bibtex": "@article{Sargent2013,\n  author = {Robert G. Sargent},\n  title = {Verification and validation of simulation models},\n  year = {2013},\n  url = {https://doi.org/10.1057/jos.2012.20},\n  journal = {Journal of Simulation},\n  doi = {10.1057/jos.2012.20},\n  volume = {7},\n  number = {1},\n  pages = {12–24},\n}",
-    "reference_number": 29
+    "reference_number": 31
   },
   {
     "key": "Fagiolo2007",
@@ -1083,7 +1105,7 @@
     "pdf_url": "https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf",
     "abstract": null,
     "bibtex": "@article{Fagiolo2007,\n  author = {Giorgio Fagiolo and Alessio Moneta and Paul Windrum},\n  title = {A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems},\n  year = {2007},\n  url = {https://www.iris.sssup.it/retrieve/handle/11382/103372/384/COMPECO_2007.pdf},\n  journal = {Computational Economics},\n  doi = {10.1007/s10614-007-9104-4},\n  volume = {30},\n  number = {3},\n  pages = {195–226},\n}",
-    "reference_number": 30
+    "reference_number": 32
   },
   {
     "citation_key": "mcfadden1974conditional",
@@ -1126,7 +1148,7 @@
     "isbn_verification_url": "https://ndlsearch.ndl.go.jp/en/books/R100000002-I000006382096",
     "bibtex": "@incollection{mcfadden1974conditional,\n  title = {Conditional Logit Analysis of Qualitative Choice Behavior},\n  author = {Daniel McFadden},\n  year = {1974},\n  booktitle = {Frontiers in Econometrics},\n  editor = {Paul Zarembka},\n  publisher = {Academic Press},\n  pages = {105--142},\n  isbn = {9780127761503},\n  url = {https://eml.berkeley.edu/reprints/mcfadden/zarembka.pdf}\n}",
     "key": "mcfadden1974conditional",
-    "reference_number": 31
+    "reference_number": 33
   },
   {
     "citation_key": "train2009discrete",
@@ -1167,7 +1189,7 @@
     "edition": "2",
     "bibtex": "@book{train2009discrete,\n  title = {Discrete Choice Methods with Simulation},\n  author = {Kenneth E. Train},\n  year = {2009},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511805271},\n  isbn = {9780521747387},\n  url = {https://eml.berkeley.edu/books/choice2.html}\n}",
     "key": "train2009discrete",
-    "reference_number": 32
+    "reference_number": 34
   },
   {
     "citation_key": "nash1950bargaining",
@@ -1205,7 +1227,7 @@
     ],
     "bibtex": "@article{nash1950bargaining,\n  title = {The Bargaining Problem},\n  author = {John F. Nash, Jr.},\n  year = {1950},\n  journal = {Econometrica},\n  volume = {18},\n  number = {2},\n  pages = {155--162},\n  doi = {10.2307/1907266},\n  url = {https://www.jstor.org/stable/1907266}\n}",
     "key": "nash1950bargaining",
-    "reference_number": 33
+    "reference_number": 35
   },
   {
     "citation_key": "boyd2004convex",
@@ -1245,7 +1267,7 @@
     "bibtex_type": "book",
     "bibtex": "@book{boyd2004convex,\n  title = {Convex Optimization},\n  author = {Stephen Boyd and Lieven Vandenberghe},\n  year = {2004},\n  publisher = {Cambridge University Press},\n  doi = {10.1017/CBO9780511804441},\n  isbn = {9780521833783},\n  url = {https://web.stanford.edu/~boyd/cvxbook/}\n}",
     "key": "boyd2004convex",
-    "reference_number": 34
+    "reference_number": 36
   },
   {
     "key": "Saltelli2010",
@@ -1273,6 +1295,50 @@
     "evidence_scope": "单因素敏感性不能覆盖参数空间与交互；不把OFAT称全局稳健性",
     "abstract": null,
     "bibtex": "@article{Saltelli2010,\n  author = {Andrea Saltelli and Paola Annoni},\n  title = {How to avoid a perfunctory sensitivity analysis},\n  year = {2010},\n  url = {https://www.nusap.net/spe/Saltelli_and_Annoni_2010.pdf},\n  journal = {Environmental Modelling & Software},\n  doi = {10.1016/j.envsoft.2010.04.012},\n  volume = {25},\n  number = {12},\n  pages = {1508-1517},\n}",
-    "reference_number": 35
+    "reference_number": 37
+  },
+  {
+    "reference_number": 38,
+    "key": "supplied_io_revision",
+    "title": "基于投入产出表的中国集成电路全产业链结构与关联效应研究（用户提供返修稿）",
+    "url": null,
+    "supports": "分劈方法与年鉴版本的附件证据，不验证原表单元格",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "用户提供未发表资料",
+    "verification": "supplied_source_only",
+    "fetched_at": "2026-10-03"
+  },
+  {
+    "reference_number": 39,
+    "key": "supplied_ai_workbook",
+    "title": "AI渗透综合指标（用户提供工作簿）",
+    "url": null,
+    "supports": "四项代理的来源、年份和聚合，不识别投入转化效率",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "用户提供未发表资料",
+    "verification": "supplied_source_only",
+    "fetched_at": "2026-10-03"
+  },
+  {
+    "reference_number": 40,
+    "key": "smic2020_2025quarters",
+    "title": "SMIC Quarterly Earnings Releases, 2020Q1–2025Q4",
+    "url": "https://www.smics.com/en/site/company_financialSummary",
+    "supports": "独立制造物理数据，官方 PDF 在本地下载并存哈希和页码",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "官方来源",
+    "verification": "primary_source_verified",
+    "fetched_at": "2026-10-03"
+  },
+  {
+    "reference_number": 41,
+    "key": "agarwal2021precipice",
+    "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    "url": "https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html",
+    "supports": "独立训练变异与区间报告；未声称采用其全部指标",
+    "cannot_claim": "本平台全部行为已校准、学习策略收敛或现实政策因果效果",
+    "kind": "官方来源",
+    "verification": "primary_source_verified",
+    "fetched_at": "2026-10-03"
   }
 ]

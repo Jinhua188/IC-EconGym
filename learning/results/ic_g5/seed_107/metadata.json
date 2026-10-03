@@ -1,0 +1,32 @@
+{
+  "engine_version": "v0.3-experimental",
+  "hashes": {
+    "ic_extension\\model_v3.py": "d9ed016e9dcca9f0db1bf5132d10abeaf48763105997550f80d9d5ce3afac14b",
+    "scripts_ic\\upgrade_common.py": "166b3388bcf3cc9ffd1eea022ce526394722c30a4b0780613b1f1bb8455332c4",
+    "ic_extension\\data\\io_use_final_first.npz": "0c44eb649909f73abb7de36cbea42dc3c5344b6b55a61256bf2cac3118c803f1",
+    "ic_extension\\data\\io_use_intermediate_first.npz": "80f7e69b6c68f760a9bd1da044952812914a84ffd9dc1f3a00263e43347f3473",
+    "ic_extension\\data\\io_use_proportional.npz": "a51b0f01d1bfe14f19f1e1d447082836a5d028c601ff6cc03c5c9c434695f26f"
+  },
+  "parameter_status": "behavioral coefficients are scenarios; AI proxies are separately documented",
+  "historical_policy_causality": false,
+  "task": "ic_g5",
+  "algorithm": "PPO government",
+  "training_seed": 107,
+  "environment_steps": 12000,
+  "wall_seconds": 43.90459980000742,
+  "best_validation_score": 0.18388799807337883,
+  "observations": 106,
+  "parameters": 11918,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip": 0.2,
+  "epochs": 4,
+  "minibatch": 256,
+  "learning_rate": 0.0003,
+  "finite_horizon": 30,
+  "terminal_value": 0,
+  "price_action": "frozen for all R1 strategies",
+  "private_spend_cap_fraction": 0.05,
+  "checkpoint_sha256": "f90f8eff579a724dab09fae56c673d8a0486e5985cfea9535904c171bc41a70d",
+  "ppo_source_sha256": "b6bdfa2788d59cd23df851baae63e79953c0a1d3b5a7923ea470e7c346437447"
+}

@@ -7,3 +7,6 @@ results_ic/
 qa/
 *.log
 .DS_Store
+external_validation/raw/
+learning/results/*/*/training_scenarios.json
+benchmark_splits/locked_scenarios.json

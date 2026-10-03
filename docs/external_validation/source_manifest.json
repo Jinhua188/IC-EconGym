@@ -1,0 +1,146 @@
+[
+  {
+    "quarter": "2020Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/601bd109/2020 Q4 Earnings Release_ENG_Final.pdf",
+    "sha256": "920f12259071a2be723ce3c9e646a08645fe705dd04499a37162d5ba60159c91",
+    "pages": 19
+  },
+  {
+    "quarter": "2020Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/2020 Q3 Earnings Release_ENG_Final.pdf",
+    "sha256": "4b52860c21bd4e60652f133c1bcce8994a87e4bf08362a6b8f6f5ba80108caed",
+    "pages": 20
+  },
+  {
+    "quarter": "2020Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/2020 Q2 Earnings Release_ENG_final.pdf",
+    "sha256": "84b2581299bb0ffa3f55c187bd5dac33bd627b563f648493906786bb110a77f4",
+    "pages": 20
+  },
+  {
+    "quarter": "2020Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/2020 Q1 Earnings Release_ENG_final.pdf",
+    "sha256": "ac46a1b04c0d70c112cf3d3f687d56b650147a7eef97d236bf44dc94ff3c4a05",
+    "pages": 19
+  },
+  {
+    "quarter": "2021Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/2021 Q4 Earnings Release_ENG final.pdf",
+    "sha256": "c9609e4191de70b8928762c3795c210df4d492b6f3d30f0db4e02076ac478dd3",
+    "pages": 17
+  },
+  {
+    "quarter": "2021Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/618cf5dc/2021 Q3 Earnings Release_ENG_Final.pdf",
+    "sha256": "26a56ee2ac5b81f638e8d06bf460d6dd5995b238bb56632cb1b3352391f2d681",
+    "pages": 17
+  },
+  {
+    "quarter": "2021Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/610ba2e4/2021 Q2 Earnings Release_ENG final.pdf",
+    "sha256": "53a49bdf4e2709c7c981239d83e1065c0a020bea7c96c23bd56b3e03e7aadde6",
+    "pages": 18
+  },
+  {
+    "quarter": "2021Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/2021 Q1 Earnings Release_ENG_final.pdf",
+    "sha256": "9c9e4398aba8f9c365d35711a4f3a94541f5aa7c928f9c7ef73d65de3895d539",
+    "pages": 18
+  },
+  {
+    "quarter": "2022Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/63e4d9b4/Q422_EN.pdf",
+    "sha256": "f4572793d61aef2f80b8a39af2c92d06f65843074bd95925e15c4088e7200081",
+    "pages": 17
+  },
+  {
+    "quarter": "2022Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/636cd68f/Q322_EN.pdf",
+    "sha256": "dda368d91b760d51a78900440964223fa5b89b06f408a0051396475939818688",
+    "pages": 17
+  },
+  {
+    "quarter": "2022Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/Q2 ER EN.pdf",
+    "sha256": "caa751cd84f5dd6aea06d8f93e0f641d08264168b2bb4ff25bf9c45868ffcf28",
+    "pages": 17
+  },
+  {
+    "quarter": "2022Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/627d0041/ER_ENG.pdf",
+    "sha256": "359512e588b9c2a9c28b19437d6f5669a142d681ace4bbd043c154841ea60fff",
+    "pages": 17
+  },
+  {
+    "quarter": "2023Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/65c20820/ER-en.pdf",
+    "sha256": "28550a9644ae90f119bc746452c4320c6236201790c6e5fbc97f723390a4149b",
+    "pages": 14
+  },
+  {
+    "quarter": "2023Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/654caf4e/ER_EN.pdf",
+    "sha256": "34540e14ab2b922aea498f512594f7d31008f32e2c91fa971a025dc2960d4c45",
+    "pages": 14
+  },
+  {
+    "quarter": "2023Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/64d4aaba/ER_EN.pdf",
+    "sha256": "87f7ab7525352085a4ce6550a03bc82966a8f97538baeb161c2a80389fd0a5ce",
+    "pages": 14
+  },
+  {
+    "quarter": "2023Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/645cc628/ER_EN.pdf",
+    "sha256": "bcbd5942b90bbfe270f1005566ee793e38e093b32b6f67dbad5f4ca499c7da13",
+    "pages": 17
+  },
+  {
+    "quarter": "2024Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/67ab0dc6/ER_EN.pdf",
+    "sha256": "18e7cc96cc2405587fbb06e5da078fe4ce129833e6257009fe1c650a0d070a76",
+    "pages": 13
+  },
+  {
+    "quarter": "2024Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/672c8aa1/ER_EN.pdf",
+    "sha256": "3d63bf35bd2f0b7ce05fb1f59177e56bbf19955d369aa7ed8ed36890104769d1",
+    "pages": 13
+  },
+  {
+    "quarter": "2024Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/66b4a5b9/ER_EN.pdf",
+    "sha256": "0d0e3b3dc0b5c04bc38af1a2704ba0ed063d7881636a55ce376a04dd1d3f4972",
+    "pages": 13
+  },
+  {
+    "quarter": "2024Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/663c9c80/ER_EN.pdf",
+    "sha256": "224b20ae4056e75144e39bb76970ea9add417aaefdf37baaf11f40c2d086cc4b",
+    "pages": 13
+  },
+  {
+    "quarter": "2025Q4",
+    "url": "https://smic.cdn.shwebspace.com/uploads/698ad7da/ER_EN.pdf",
+    "sha256": "a7049ce9968c9783f55e24889fd3802e80936338b42d99dd2f2b08cf8c42a194",
+    "pages": 13
+  },
+  {
+    "quarter": "2025Q3",
+    "url": "https://smic.cdn.shwebspace.com/uploads/6915b489/ER_EN.pdf",
+    "sha256": "cb942330012a8dc4bb4aef8c189ef687a41c0809fea6be56d99e64474b3d2784",
+    "pages": 13
+  },
+  {
+    "quarter": "2025Q2",
+    "url": "https://smic.cdn.shwebspace.com/uploads/689f075f/ER_EN.pdf",
+    "sha256": "234f4e517bf54734a39d5c61e1987bf5b9e0a6afea7c8cf2c6b676bf2e9693a2",
+    "pages": 13
+  },
+  {
+    "quarter": "2025Q1",
+    "url": "https://smic.cdn.shwebspace.com/uploads/681c74b6/ER_EN.pdf",
+    "sha256": "65f53b1a4a7dccb72531db9f81acf957493e45084b2e71bc895ed37dc230e584",
+    "pages": 13
+  }
+]

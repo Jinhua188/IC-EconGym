@@ -16,7 +16,7 @@ python -m http.server 8000
 
 ## 论文与补充证据
 
-中文稿见 [论文](paper/manuscript_zh.md)，已补充 426 条机制诊断及 [参考文献](paper/references.bib)。方法、结果及 [投稿证据检查](paper/SUBMISSION_EVIDENCE.md) 对应当前代码；学习型策略和独立外部验证尚未完成。诊断复现步骤见 [复现协议](REPRODUCIBILITY.md)。
+中文稿见 [论文](paper/manuscript_zh.md)，已补充 426 条机制诊断及 [参考文献](paper/references.bib)。方法、结果及 [投稿证据检查](paper/SUBMISSION_EVIDENCE.md) 区分原版与新增实验；R1／G5学习、局部容量外部对照和联合稳健性已完成，详见 [实验升级](EXPERIMENT_UPGRADE.md)。诊断复现步骤见 [复现协议](REPRODUCIBILITY.md)。
 
 ## 配置和规则
 
@@ -28,7 +28,7 @@ python -m http.server 8000
 
 投入产出表提供核算结构；55 部门细分来自收入比例分劈，三种进口使用分配为假设。动态行为系数为情景值，三个供给通道为合成槽。206 企业候选关系尚未进行守恒的投入流量分配。
 
-当前策略比较为规则与启发式基准；尚未完成 RL／LLM 训练或独立外部验证。论文、演示与政策排序均按条件机制实验解释。
+新增比较包含R1部门IPPO与G5政府PPO，未调用LLM；独立外部检验仅覆盖容量队列。论文、演示与政策排序均按条件机制实验解释。
 
 [中文论文](paper/manuscript_zh.md) · [数据说明](DATA_CARD.md) · [复现协议](REPRODUCIBILITY.md) · [发布说明](PUBLISHING.md)
 

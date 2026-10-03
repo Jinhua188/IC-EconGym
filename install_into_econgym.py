@@ -21,7 +21,7 @@ if __name__ == "__main__":
 '''
 
 
-def install(root: Path):
+def install(root: Path, include_upgrade: bool = False):
     source = Path(__file__).resolve().parent
     root = root.resolve()
     main = root / "main.py"
@@ -30,6 +30,12 @@ def install(root: Path):
     for name in ("ic_extension", "cfg_ic", "scripts_ic"):
         destination = root / name
         shutil.copytree(source / name, destination, dirs_exist_ok=True)
+    if include_upgrade:
+        for name in ("learning", "calibration", "benchmark_splits"):
+            shutil.copytree(source / name, root / name, dirs_exist_ok=True,
+                            ignore=shutil.ignore_patterns("__pycache__", "training_scenarios.json", "locked_scenarios.json"))
+        for name in ("requirements_learning.txt", "requirements_learning.lock.txt", "EXPERIMENT_UPGRADE.md"):
+            shutil.copy2(source / name, root / name)
     original = main.read_text(encoding="utf-8")
     if MARKER not in original:
         main.write_text(DISPATCH + original, encoding="utf-8")
@@ -40,4 +46,6 @@ def install(root: Path):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("econgym_root", type=Path)
-    install(p.parse_args().econgym_root)
+    p.add_argument("--include-upgrade", action="store_true", help="Copy v0.3 learning checkpoints, proxies and locked splits")
+    args = p.parse_args()
+    install(args.econgym_root, args.include_upgrade)

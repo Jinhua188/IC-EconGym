@@ -1,0 +1,16 @@
+{
+  "engine_version": "v0.3-experimental",
+  "hashes": {
+    "ic_extension\\model_v3.py": "d9ed016e9dcca9f0db1bf5132d10abeaf48763105997550f80d9d5ce3afac14b",
+    "scripts_ic\\upgrade_common.py": "166b3388bcf3cc9ffd1eea022ce526394722c30a4b0780613b1f1bb8455332c4",
+    "ic_extension\\data\\io_use_final_first.npz": "0c44eb649909f73abb7de36cbea42dc3c5344b6b55a61256bf2cac3118c803f1",
+    "ic_extension\\data\\io_use_intermediate_first.npz": "80f7e69b6c68f760a9bd1da044952812914a84ffd9dc1f3a00263e43347f3473",
+    "ic_extension\\data\\io_use_proportional.npz": "a51b0f01d1bfe14f19f1e1d447082836a5d028c601ff6cc03c5c9c434695f26f"
+  },
+  "parameter_status": "behavioral coefficients are scenarios; AI proxies are separately documented",
+  "historical_policy_causality": false,
+  "runs": 18,
+  "selection": "three synthetic recipes x three imports x edge on/off; no favorable-run filtering",
+  "parameter_identity": "synthetic threshold cases, not AI proxy initial conditions",
+  "no_behavioral_parameter_change": true
+}

@@ -1,0 +1,20 @@
+{
+  "observation": "end-of-quarter monthly standard-logic 8-inch-equivalent wafer capacity",
+  "input": "observed historical capex in USD million",
+  "case_scope": "shared capacity queue only; not full 13-sector validation",
+  "calibration": "2021Q1-2022Q4",
+  "validation": "2023Q1-2023Q4",
+  "test": "2024Q1-2025Q4",
+  "presample": "2020Q1-2020Q4 capex and 2020Q4 capacity",
+  "best": {
+    "lag_quarters": 4,
+    "efficiency_wafers_per_month_per_usd_million": 20.07198165886102,
+    "calibration_mae": 10659.200211978023,
+    "validation_mae": 25399.38926369013
+  },
+  "classification": "conditional historical replay, not ex-ante forecast",
+  "national_coefficient_transfer": false,
+  "baseline_linear": "OLS on calibration 2021-2022 capacity only, fixed before test",
+  "baseline_persistence": "2023Q4 capacity held constant throughout test; earlier rows are one-step diagnostics",
+  "shared_transition_sha256": "dd1317c571b731d33b8bf40fbfa8a57d45ed21ab5d451fd399edfd3d50d0a52e"
+}

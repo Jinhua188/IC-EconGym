@@ -1,0 +1,9 @@
+# Python 3.12.6; exact packages used in the CPU experiments
+numpy==1.26.4
+torch==2.3.0
+PyYAML==6.0.3
+psutil==7.2.2
+openpyxl==3.1.5
+PyMuPDF==1.27.2
+matplotlib==3.10.3
+pandas==2.2.3
