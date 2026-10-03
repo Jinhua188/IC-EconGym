@@ -44,13 +44,22 @@
       "tasks": 15,
       "G5_seed3_period12": "99.910%"
     },
-    "paper_math_elements": 50,
+    "paper_math_elements": 190,
     "paper_math_errors": 0,
-    "paper_mermaid_figures": 2
+    "paper_mermaid_figures": 1
   },
   "publication": {
     "repository": "https://github.com/Jinhua188/IC-EconGym",
     "site": "https://jinhua188.github.io/IC-EconGym/"
   },
-  "external_validation": false
+  "external_validation": false,
+  "manuscript_revision": {
+    "date": "2026-10-03",
+    "new_diagnostic_runs": 426,
+    "engine_unchanged": true,
+    "learning_baselines": false,
+    "independent_external_validation": false,
+    "visual_qa": "19-page PDF reviewed in page renders; no outside-page blocks",
+    "references": 7
+  }
 }
