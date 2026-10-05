@@ -1,0 +1,13 @@
+category,paths,license_or_terms,status,evidence,notes
+original_code,ic_extension/*.py; scripts_ic/*.py; learning/*.py; root Python scripts; original workflow code,Apache-2.0,covered,LICENSE_SCOPE.md,Owner-proposed code license adopted for original Work only
+operational_docs,explicit list in LICENSE_SCOPE.md; Issue and PR templates; citation metadata,Apache-2.0,covered,LICENSE_SCOPE.md,"Excludes paper, source extracts, third-party figures and data"
+task_configuration,cfg_ic/*.yaml; ic_extension/data/sector_roles.yaml,Apache-2.0 (original configuration code),covered,LICENSE_SCOPE.md,No grant over third-party data embedded in or referenced by a configuration
+processed_io,ic_extension/data/*.npz; IO numerical extracts,not specified / source terms apply,pending,DATA_PROVENANCE.json,Confirm authority for public derived-data redistribution
+ai_proxies,calibration/ firm and sector proxy tables,not specified / source terms apply,pending,calibration/data_source_registry.csv,Mixed-year user-supplied indicators; original workbook excluded
+source_registries,calibration/ source/split/parameter registries; reference/ extracts,not specified / source terms apply,pending,calibration/README.md,Some explanations original; external records retain source rights
+external_series,external_validation/ processed series and provenance,not specified / source terms apply,pending,external_validation/source_manifest.json,Official disclosures linked; raw PDFs excluded; extraction rights require review
+checkpoints,learning/results/*/*/best.pt and training artifacts,artifact license not specified,pending,learning/results/,Generated weights are not automatically licensed with training code
+simulation_artifacts,benchmark_results/; robustness/; demo_results*/; benchmark_splits/,artifact license not specified,pending,REPRODUCIBILITY.md; EXPERIMENT_UPGRADE.md,Review source-dependent outputs and select an artifact license if authorized
+manuscript,paper/; manuscript pages/PDF; generated figures,manuscript license not specified,pending,paper/manuscript_zh.md,No blanket Apache grant over manuscript or third-party excerpts
+generated_site,docs/ and assets,mixed / inherit category-specific terms,pending,LICENSE_SCOPE.md,Mirrored artifacts require the same rights review as their source
+raw_inputs,raw workbooks; external_validation/raw/; supplied unpublished research,source terms apply,not_distributed,DATA_CARD.md,Original attachments and raw disclosures excluded; ignored files are not a source of publication rights

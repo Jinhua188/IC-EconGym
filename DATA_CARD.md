@@ -13,3 +13,7 @@
 金额单位为万元、固定基期价格。处理后的矩阵为 `ic_extension/data/io_use_*.npz`，字段包含国内及进口中间使用、最终使用、产出和增加值。来源工作簿与处理文件哈希见 `DATA_PROVENANCE.json`，平衡检查见 `io_preparation_audit.json`。
 
 原始工作簿和收入分劈依据不随仓库发布。发布包能够从处理矩阵与代理表复现仿真，不能独立重建全部原始统计预处理。企业候选边表及完整未投稿稿件未分发。来源、分劈及动态参数身份见 calibration/；独立容量案例的来源与留出误差见 external_validation/。物理容量系数未替换全国价值量投资系数。
+
+## 数据权利状态
+
+Apache-2.0 仅覆盖 LICENSE_SCOPE.md 列明的原创代码与运行文档，不自动适用于本页的数据表、处理矩阵、代理、权重或论文。逐类再分发审查见 RIGHTS_REGISTRY.csv；标为 pending 的项目尚未确认，正式 GitHub／Zenodo 归档前须确认或移除。原始附件不随仓库分发。

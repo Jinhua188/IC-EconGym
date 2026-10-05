@@ -36,3 +36,7 @@ python -m http.server 8000
 项目主页：https://Jinhua188.github.io/IC-EconGym/  
 源码：https://github.com/Jinhua188/IC-EconGym  
 更新页面：`python -m pip install -r requirements_site.txt` 后执行 `python -m scripts_ic.build_project_site`。修改 `paper/manuscript_zh.md` 后推送 `main`，Pages 自动重建论文与演示。
+
+## 版本、治理与许可
+
+`VERSION=0.3.0` 为待发布版本线；尚未创建对应标签、Release 或 DOI。既有 v0.2.0 发布保留。原创代码及列明的运行文档采用 Apache-2.0；数据、权重和论文许可另见 [LICENSE_SCOPE.md](LICENSE_SCOPE.md) 与 [RIGHTS_REGISTRY.csv](RIGHTS_REGISTRY.csv)。贡献经 Fork／PR，最终合并与发布由 @Jinhua188 决定。参见 [GOVERNANCE.md](GOVERNANCE.md)、[CONTRIBUTING.md](CONTRIBUTING.md) 和 [发布检查](RELEASE_READINESS.json)。

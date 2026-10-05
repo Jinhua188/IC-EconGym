@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use IC-EconGym in research, please cite the software release and, when applicable, the accompanying paper."
+title: "IC-EconGym: An Input–Output-Constrained Multi-Agent Testbed for Semiconductor Industrial Policy and Supply-Chain Resilience"
+type: software
+version: "0.3.0"
+authors:
+  - given-names: "Jinhua"
+    family-names: "Gu"
+    orcid: "https://orcid.org/0009-0002-2310-6150"
+# license describes the software Work only; see LICENSE_SCOPE.md for artifact exclusions.
+abstract: >-
+  IC-EconGym is a research testbed with 13 industrial-sector agents and one government agent,
+  15 configured tasks, and input-output-constrained execution of orders, source-specific materials,
+  capacity, rationing and fiscal actions. It supports conditional mechanism experiments, strategy
+  comparison, learning-policy evaluation, robustness analysis and local external-validation cases.
+license: "Apache-2.0"
+repository-code: "https://github.com/Jinhua188/IC-EconGym"
+url: "https://jinhua188.github.io/IC-EconGym/"
+keywords:
+  - multi-agent systems
+  - agent-based computational economics
+  - input-output analysis
+  - semiconductor supply chain
+  - industrial policy
+  - supply-chain resilience
+  - reinforcement learning
+  - economic world models
+# Author and affiliation supplied by the owner; see AUTHOR_METADATA.md.
+# CFF 1.2.0 has no affiliation field.
+# date-released and DOI remain absent until an actual release/archive exists.

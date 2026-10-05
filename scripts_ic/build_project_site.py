@@ -26,7 +26,7 @@ def read_csv(path):
         return list(csv.DictReader(stream))
 
 
-def build():
+def build(refresh_figures=False):
     docs = ROOT / "docs"
     demo = ROOT / "demo_results_v2"
     index = json.loads((demo / "run_index.json").read_text(encoding="utf-8"))
@@ -47,36 +47,38 @@ def build():
         observer["tasks"].append(item)
     (docs / "observer-data.json").write_text(json.dumps(observer, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.spines.top": False,
-                         "axes.spines.right": False, "svg.fonttype": "none"})
-    fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), layout="constrained")
-    for ax, folder, policies, labels, title in [
-        (axes[0], "r1_v2", ["rule", "demand_tracking", "buffered_smoothing"], ["Rule", "Demand tracking", "Buffered"], "R1: sector policies"),
-        (axes[1], "g5_v2", ["uniform", "linkage", "stress"], ["Uniform", "Linkage", "Stress"], "G5: government targeting"),
-    ]:
-        rows = read_csv(ROOT / "benchmark_results" / folder / "run_metrics.csv")
-        for i, policy in enumerate(policies):
-            values = [100 * float(r["final_fill_rate"]) for r in rows if r["case"] == "base" and r["policy"] == policy]
-            color = ["#2563eb", "#f97316", "#059669"][i]
-            ax.scatter([i] * len(values), values, color=color, s=16, alpha=.55)
-            ax.scatter(i, statistics.mean(values), color=color, marker="_", s=500, linewidths=3)
-        ax.set_xticks(range(3), labels)
-        ax.set_ylabel("Final-demand fill rate (%)")
-        ax.set_title(title)
-        ax.grid(axis="y", alpha=.15)
     figures = ROOT / "paper" / "figures"
-    fig.savefig(figures / "final_demand_comparison.svg")
-    fig.savefig(figures / "final_demand_comparison.png", dpi=180)
-    plt.close(fig)
-    rows = read_csv(ROOT / "benchmark_results/runtime_v2/runtime_summary.csv")
-    fig, ax = plt.subplots(figsize=(10, 3.8), layout="constrained")
-    ax.bar([r["task"].replace("ic_", "").upper() for r in rows], [float(r["median_ms_per_step"]) for r in rows], color=["#2563eb"] * 5 + ["#f97316"] * 5 + ["#059669"] * 5)
-    ax.set_ylabel("Median milliseconds / step")
-    ax.set_title("Fixed 13-sector + government rollout")
-    ax.grid(axis="y", alpha=.15)
-    fig.savefig(figures / "runtime_15tasks.svg")
-    fig.savefig(figures / "runtime_15tasks.png", dpi=180)
-    plt.close(fig)
+    expected_figures = ["final_demand_comparison.svg", "final_demand_comparison.png", "runtime_15tasks.svg", "runtime_15tasks.png"]
+    if refresh_figures or not all((figures / name).exists() for name in expected_figures):
+        plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.spines.top": False,
+                             "axes.spines.right": False, "svg.fonttype": "none"})
+        fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), layout="constrained")
+        for ax, folder, policies, labels, title in [
+            (axes[0], "r1_v2", ["rule", "demand_tracking", "buffered_smoothing"], ["Rule", "Demand tracking", "Buffered"], "R1: sector policies"),
+            (axes[1], "g5_v2", ["uniform", "linkage", "stress"], ["Uniform", "Linkage", "Stress"], "G5: government targeting"),
+        ]:
+            rows = read_csv(ROOT / "benchmark_results" / folder / "run_metrics.csv")
+            for i, policy in enumerate(policies):
+                values = [100 * float(r["final_fill_rate"]) for r in rows if r["case"] == "base" and r["policy"] == policy]
+                color = ["#2563eb", "#f97316", "#059669"][i]
+                ax.scatter([i] * len(values), values, color=color, s=16, alpha=.55)
+                ax.scatter(i, statistics.mean(values), color=color, marker="_", s=500, linewidths=3)
+            ax.set_xticks(range(3), labels)
+            ax.set_ylabel("Final-demand fill rate (%)")
+            ax.set_title(title)
+            ax.grid(axis="y", alpha=.15)
+        fig.savefig(figures / "final_demand_comparison.svg")
+        fig.savefig(figures / "final_demand_comparison.png", dpi=180)
+        plt.close(fig)
+        rows = read_csv(ROOT / "benchmark_results/runtime_v2/runtime_summary.csv")
+        fig, ax = plt.subplots(figsize=(10, 3.8), layout="constrained")
+        ax.bar([r["task"].replace("ic_", "").upper() for r in rows], [float(r["median_ms_per_step"]) for r in rows], color=["#2563eb"] * 5 + ["#f97316"] * 5 + ["#059669"] * 5)
+        ax.set_ylabel("Median milliseconds / step")
+        ax.set_title("Fixed 13-sector + government rollout")
+        ax.grid(axis="y", alpha=.15)
+        fig.savefig(figures / "runtime_15tasks.svg")
+        fig.savefig(figures / "runtime_15tasks.png", dpi=180)
+        plt.close(fig)
     (docs / "figures").mkdir(exist_ok=True)
     for file in figures.iterdir():
         shutil.copy2(file, docs / "figures" / file.name)
@@ -102,6 +104,10 @@ def build():
         target = docs / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / relative, target)
+    for relative in ["LICENSE", "LICENSE_SCOPE.md", "NOTICE", "THIRD_PARTY_NOTICES.md", "CITATION.cff", "CONTRIBUTING.md", "GOVERNANCE.md", "ROADMAP.md", "SECURITY.md", "PUBLISHING.md", "RELEASE_v0.3.0.md", "ZENODO_RELEASE_GUIDE.md", "GITHUB_SETTINGS_CHECKLIST.md", "RIGHTS_REGISTRY.csv", "RELEASE_READINESS.json", "RELEASE_PREPARATION.md", "AUTHOR_METADATA.md", "TASKS.md", "CHANGELOG.md"]:
+        source = ROOT / relative
+        if source.exists():
+            shutil.copy2(source, docs / relative)
     for folder in ["r1_v2", "g5_v2", "runtime_v2", "manuscript_diagnostics"]:
         shutil.copytree(ROOT / "benchmark_results" / folder, docs / "benchmark_results" / folder, dirs_exist_ok=True)
     if (ROOT / "EXPERIMENT_UPGRADE.md").exists():
@@ -130,4 +136,7 @@ def build():
 
 
 if __name__ == "__main__":
-    build()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--refresh-figures", action="store_true", help="Explicitly regenerate research figures and update their artifact hashes")
+    build(refresh_figures=parser.parse_args().refresh_figures)

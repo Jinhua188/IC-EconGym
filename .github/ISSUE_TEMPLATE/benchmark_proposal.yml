@@ -1,0 +1,44 @@
+name: Benchmark task or strategy proposal
+description: Propose a new E/R/G task, baseline policy, optimization method, MARL or LLM-agent benchmark
+title: "[Benchmark] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Proposal type
+      options:
+        - New benchmark task
+        - Rule / heuristic baseline
+        - Optimization baseline
+        - RL / MARL baseline
+        - LLM-agent baseline
+        - Evaluation metric / protocol
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Scientific objective
+      description: What question does this benchmark answer that current tasks do not?
+    validations:
+      required: true
+  - type: textarea
+    id: fairness
+    attributes:
+      label: Observation, action and resource comparability
+      description: Specify what information/actions/resources the method receives relative to existing baselines.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation plan
+      description: Primary metric, diagnostics, locked tests/OOD tests, independent training instances and compute reporting as relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Failure modes / leakage risks
+      description: Explain how test leakage, reward hacking, endogenous-order metrics or non-binding mechanisms will be checked.

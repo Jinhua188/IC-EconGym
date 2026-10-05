@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0",
+  "status": "unreleased_preparation",
+  "baseline_commit": "bdb04be3a0c5a2a000f42114717568803e803d01",
+  "governance_package_date": "2026-10-05",
+  "tag_published": false,
+  "doi": null,
+  "confirmations": {
+    "authors": {
+      "confirmed": true,
+      "evidence": "Owner reply 2026-10-05: Jinhua Gu; Guangdong University of Technology; ORCID 0009-0002-2310-6150. See AUTHOR_METADATA.md."
+    },
+    "artifact_rights": {
+      "confirmed": false,
+      "evidence": "RIGHTS_REGISTRY.csv: pending categories must be confirmed or excluded before archive."
+    },
+    "zenodo_enabled": {
+      "confirmed": false,
+      "evidence": "Owner reply 2026-10-05: not connected; complete repository governance first."
+    },
+    "publication_authorized": {
+      "confirmed": false,
+      "evidence": "User requested governance integration before a separate formal-release decision."
+    }
+  },
+  "notes": "Engineering checks do not constitute publication, copyright review, owner authorization or Zenodo account activation."
+}
