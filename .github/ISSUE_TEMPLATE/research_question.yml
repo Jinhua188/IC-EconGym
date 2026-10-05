@@ -1,0 +1,33 @@
+name: Research question / mechanism critique
+description: Propose a research question, challenge an assumption, or identify a mechanism that may be missing/non-binding
+title: "[Research] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question or critique
+      description: State the question in a falsifiable or diagnosable form where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Proposed economic mechanism
+      description: What state/action/constraint channel should produce the effect?
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Why the current platform may be insufficient
+      description: Point to the current assumption, task, equation, code path or evidence boundary if known.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Literature or empirical motivation
+      description: Provide DOI, paper, dataset, official source or a concise argument. Distinguish observed evidence from modeling preference.
+  - type: textarea
+    id: test
+    attributes:
+      label: Suggested diagnostic / experiment
+      description: What would count as activation, falsification or meaningful comparison?

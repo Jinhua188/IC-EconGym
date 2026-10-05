@@ -1,0 +1,43 @@
+name: Data / calibration / validation evidence
+description: Propose a new data source, parameter calibration, network anchor or external-validation case
+title: "[Data] "
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and provenance
+      description: Official URL/identifier, vintage/date, publisher and access conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: License / redistribution status
+      description: Can the source file be redistributed, or should only derived metadata/links be committed?
+    validations:
+      required: true
+  - type: textarea
+    id: mapping
+    attributes:
+      label: Mapping to IC-EconGym
+      description: Units, transformations, sector/firm/product mapping and intended model variable.
+    validations:
+      required: true
+  - type: dropdown
+    id: use
+    attributes:
+      label: Intended evidence role
+      options:
+        - Calibration / estimation
+        - External validation
+        - Proxy / heterogeneity construction
+        - Descriptive context only
+        - Candidate network evidence
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Identification and coverage limits
+      description: Missingness, selection, mismatched units/years, aggregation or other limitations.

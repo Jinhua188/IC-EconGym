@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducibility, implementation, numerical or documentation defect
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Environment / accounting transition
+        - Task configuration
+        - Learning / policy implementation
+        - Benchmark results / metrics
+        - Reproducibility / installation
+        - External validation / calibration
+        - Website / documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What happened? Include error messages or numerical symptoms.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What behavior is documented or expected instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Commands, task, seed, configuration and smallest reproduction you can provide.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: IC-EconGym version / commit
+      placeholder: "e.g. v0.3.0 or git SHA"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Runtime environment
+      description: OS, Python version and relevant dependency versions.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Public-data check
+      options:
+        - label: I have not pasted credentials, private data or restricted source files into this Issue.
+          required: true

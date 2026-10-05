@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: IC-EconGym project page
+    url: https://jinhua188.github.io/IC-EconGym/
+    about: Read the current task descriptions, evidence boundaries and project documentation before opening an issue.
