@@ -98,9 +98,9 @@ def build(refresh_figures=False):
     template = (docs / "paper.html").read_text(encoding="utf-8")
     start = template.index('<article class="paper">')
     end = template.index("</article>", start) + len("</article>")
-    buttons = '<div class="actions"><button onclick="window.print()">打印或保存 PDF</button><a href="paper/IC-EconGym_中文论文完善稿.pdf">下载本版 PDF</a><a href="paper/manuscript_zh.md">下载 Markdown 源稿</a></div>'
+    buttons = '<div class="actions"><button onclick="window.print()">打印或保存 PDF</button><a href="paper/manuscript_zh.md">下载 Markdown 源稿</a></div>'
     (docs / "paper.html").write_text(template[:start] + '<article class="paper">' + buttons + body + '</article>' + template[end:], encoding="utf-8")
-    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/iewm13_source_audit.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
+    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/network_460_summary.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
         target = docs / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / relative, target)
@@ -121,9 +121,6 @@ def build(refresh_figures=False):
                     shutil.copy2(file, target / file.name)
         for folder in ["p0_v3", "p1_v3", "p4_v3", "upgrade_summary"]:
             shutil.copytree(ROOT / "benchmark_results" / folder, docs / "benchmark_results" / folder, dirs_exist_ok=True)
-    pdf = ROOT / "paper/IC-EconGym_中文论文完善稿.pdf"
-    if pdf.exists():
-        shutil.copy2(pdf, docs / "paper" / pdf.name)
     import subprocess
     manifest = []
     public = subprocess.check_output(["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"], cwd=ROOT).decode("utf-8").split("\0")

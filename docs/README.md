@@ -30,7 +30,7 @@ The v0.3 line adds learning, robustness and validation-oriented experiments whil
 
 R1 IPPO performs worse than the rule baseline on final-demand delivery despite rising training reward. G5 PPO improvements are not separated from zero under the reported uncertainty intervals. The local capacity queue is worse than a linear trend on the holdout period. These results are retained in [EXPERIMENT_UPGRADE.md](EXPERIMENT_UPGRADE.md) and the [manuscript](paper/manuscript_zh.md).
 
-Important boundaries remain: many dynamic coefficients are scenario settings; supplier-choice channels are synthetic; candidate firm links are not observed transaction weights; LLM agents and nationwide dynamic calibration are not part of the current benchmark.
+Important boundaries remain: many dynamic coefficients are scenario settings; supplier-choice channels are synthetic; the independently verified 460-node network has 617 disclosed links and 768 all-source links across announcement years, without sector-level transaction weights; LLM agents and nationwide dynamic calibration are not part of the current benchmark.
 
 ## Quick start
 
