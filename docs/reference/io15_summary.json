@@ -1,0 +1,74 @@
+{
+  "source_workspace": "outputs/io_15_2018_2020_2023",
+  "unit": "万元，现价",
+  "scope": "57-sector competitive-use tables, including 15 IC-related sectors and 42 external sectors",
+  "source_workbooks": {
+    "2018": {
+      "file": "终-2018投入产出表(1).xlsx",
+      "sha256": "b7bdfae5e3bea972c8b1f61203e3c07580050d6ff9438c38ee5d8164e4bd3a1f"
+    },
+    "2020": {
+      "file": "终-2020投入产出表(1).xlsx",
+      "sha256": "cca3c4b715c59c6dc3057ed0c301e0b8bf1ebf7a1027252f48695722ceed1d7d"
+    },
+    "2023": {
+      "file": "Q-2023投入产出表(1).xlsx",
+      "sha256": "85993128f37ffe3ccdf3a2e8a5ebe403f4dbed9b809ff458f4f32046e78089ed"
+    }
+  },
+  "metrics_by_year": [
+    {
+      "year": 2018,
+      "all_sector_count": 57,
+      "ic_sector_count": 15,
+      "external_sector_count": 42,
+      "ic_gross_output_wanyuan": 2677265021.0188794,
+      "ic_value_added_wanyuan": 634115836.2395158,
+      "ic_import_wanyuan": 472753324.4619453,
+      "ic_final_use_wanyuan": 1238934591.3155382,
+      "ic_to_ic_intermediate_wanyuan": 892783555.158529,
+      "ic_to_external_intermediate_wanyuan": 1018300199.0067577,
+      "external_to_ic_intermediate_wanyuan": 1150365629.6208344,
+      "ic15_coefficient_spectral_radius": 0.5299307225841633,
+      "mean_intra15_leontief_multiplier": 1.4844713704869952,
+      "row_balance_max_abs_wanyuan": 6.198883056640625e-06,
+      "column_balance_max_abs_wanyuan": 1.7404556274414062e-05
+    },
+    {
+      "year": 2020,
+      "all_sector_count": 57,
+      "ic_sector_count": 15,
+      "external_sector_count": 42,
+      "ic_gross_output_wanyuan": 3260562104.5139937,
+      "ic_value_added_wanyuan": 746909194.764589,
+      "ic_import_wanyuan": 526977560.3157468,
+      "ic_final_use_wanyuan": 1579097821.7548568,
+      "ic_to_ic_intermediate_wanyuan": 1147422548.7755418,
+      "ic_to_external_intermediate_wanyuan": 1061019294.2993419,
+      "external_to_ic_intermediate_wanyuan": 1366230360.9738634,
+      "ic15_coefficient_spectral_radius": 0.5225652511389278,
+      "mean_intra15_leontief_multiplier": 1.4951765098744476,
+      "row_balance_max_abs_wanyuan": 9.5367431640625e-07,
+      "column_balance_max_abs_wanyuan": 1.9073486328125e-06
+    },
+    {
+      "year": 2023,
+      "all_sector_count": 57,
+      "ic_sector_count": 15,
+      "external_sector_count": 42,
+      "ic_gross_output_wanyuan": 3920340526.8504667,
+      "ic_value_added_wanyuan": 883006049.4103867,
+      "ic_import_wanyuan": 649168545.4495119,
+      "ic_final_use_wanyuan": 1625960804.138945,
+      "ic_to_ic_intermediate_wanyuan": 1311628250.0812702,
+      "ic_to_external_intermediate_wanyuan": 1631920018.0797572,
+      "external_to_ic_intermediate_wanyuan": 1725706227.3588037,
+      "ic15_coefficient_spectral_radius": 0.4931976539055749,
+      "mean_intra15_leontief_multiplier": 1.4539073474715325,
+      "row_balance_max_abs_wanyuan": 5.245208740234375e-06,
+      "column_balance_max_abs_wanyuan": 4.5299530029296875e-06
+    }
+  ],
+  "limits": "Structural accounting results only. Not the 13-agent benchmark, not deflated growth, not product-level chip sales, and not source-specific import allocation.",
+  "max_absolute_balance_residual_wanyuan": 1.7404556274414062e-05
+}

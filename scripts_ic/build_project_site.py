@@ -100,7 +100,7 @@ def build(refresh_figures=False):
     end = template.index("</article>", start) + len("</article>")
     buttons = '<div class="actions"><button onclick="window.print()">打印或保存 PDF</button><a href="paper/manuscript_zh.md">下载 Markdown 源稿</a></div>'
     (docs / "paper.html").write_text(template[:start] + '<article class="paper">' + buttons + body + '</article>' + template[end:], encoding="utf-8")
-    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/network_460_summary.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
+    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/network_460_summary.json", "reference/io15_summary.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
         target = docs / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / relative, target)
