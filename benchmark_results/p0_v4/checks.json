@@ -1,0 +1,43 @@
+{
+  "engine_version": "v0.4-ic15-experimental",
+  "hashes": {
+    "IC-EconGym\\ic_extension\\model_v4.py": "523d871597f8a3db257a63ac28a2c4f30e9084f3ea1a1ae1e212f1fe0bedf6a5",
+    "IC-EconGym\\scripts_ic\\upgrade_common_v4.py": "7eeda8c6f1e7235b88e5170ceea42faf8a3e4221c6d38f1b08ce76ae4abe7532",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_final_first.npz": "4e2a0ae4c7a96a21d0e303a2a9e78dc92d89fd41e628f8dd0f34c85a69858f2d",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_intermediate_first.npz": "cc7d927b7cce0d4b70fe522af8dc3dc5a2cf6fb7258f601a0cdd48449d27cd06",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_proportional.npz": "5d332f27b6d3abdd6a31ecfdd8df212437ff188b6a012efad8abfd96c84a74e4"
+  },
+  "parameter_status": "behavioral coefficients are scenarios; AI proxies are separately documented",
+  "historical_policy_causality": false,
+  "runs": 870,
+  "invalid_actions": [
+    {
+      "case": "negative_plan",
+      "rejected": true,
+      "message": "Negative production_plan action for sector 1"
+    },
+    {
+      "case": "nan_plan",
+      "rejected": true,
+      "message": "Nonfinite production_plan action for sector 1"
+    },
+    {
+      "case": "negative_government",
+      "rejected": true,
+      "message": "Government action ai must be 15 finite nonnegative amounts"
+    },
+    {
+      "case": "nan_government",
+      "rejected": true,
+      "message": "Government action ai must be 15 finite nonnegative amounts"
+    },
+    {
+      "case": "wrong_government_shape",
+      "rejected": true,
+      "message": "Government action ai must be 15 finite nonnegative amounts"
+    }
+  ],
+  "nonnegative_output": true,
+  "government_budget": true,
+  "logs": 26100
+}

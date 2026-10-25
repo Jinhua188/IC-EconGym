@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv-ic15/
 .env
 .env.*
 results_ic/
@@ -9,4 +10,5 @@ qa/
 .DS_Store
 external_validation/raw/
 learning/results/*/*/training_scenarios.json
+learning/results_v4/*/*/training_scenarios.json
 benchmark_splits/locked_scenarios.json

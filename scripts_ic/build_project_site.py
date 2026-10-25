@@ -54,8 +54,8 @@ def build(refresh_figures=False):
                              "axes.spines.right": False, "svg.fonttype": "none"})
         fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), layout="constrained")
         for ax, folder, policies, labels, title in [
-            (axes[0], "r1_v2", ["rule", "demand_tracking", "buffered_smoothing"], ["Rule", "Demand tracking", "Buffered"], "R1: sector policies"),
-            (axes[1], "g5_v2", ["uniform", "linkage", "stress"], ["Uniform", "Linkage", "Stress"], "G5: government targeting"),
+            (axes[0], "r1_v4", ["rule", "demand_tracking", "buffered_smoothing"], ["Rule", "Demand tracking", "Buffered"], "R1: sector policies (15 sectors)"),
+            (axes[1], "g5_v4", ["uniform", "linkage", "stress"], ["Uniform", "Linkage", "Stress"], "G5: government targeting (15 sectors)"),
         ]:
             rows = read_csv(ROOT / "benchmark_results" / folder / "run_metrics.csv")
             for i, policy in enumerate(policies):
@@ -70,11 +70,11 @@ def build(refresh_figures=False):
         fig.savefig(figures / "final_demand_comparison.svg")
         fig.savefig(figures / "final_demand_comparison.png", dpi=180)
         plt.close(fig)
-        rows = read_csv(ROOT / "benchmark_results/runtime_v2/runtime_summary.csv")
+        rows = read_csv(ROOT / "benchmark_results/runtime_15tasks_v4/runtime_summary.csv")
         fig, ax = plt.subplots(figsize=(10, 3.8), layout="constrained")
         ax.bar([r["task"].replace("ic_", "").upper() for r in rows], [float(r["median_ms_per_step"]) for r in rows], color=["#2563eb"] * 5 + ["#f97316"] * 5 + ["#059669"] * 5)
         ax.set_ylabel("Median milliseconds / step")
-        ax.set_title("Fixed 13-sector + government rollout")
+        ax.set_title("Fixed 15-sector + government rollout")
         ax.grid(axis="y", alpha=.15)
         fig.savefig(figures / "runtime_15tasks.svg")
         fig.savefig(figures / "runtime_15tasks.png", dpi=180)
@@ -100,7 +100,7 @@ def build(refresh_figures=False):
     end = template.index("</article>", start) + len("</article>")
     buttons = '<div class="actions"><button onclick="window.print()">打印或保存 PDF</button><a href="paper/manuscript_zh.md">下载 Markdown 源稿</a></div>'
     (docs / "paper.html").write_text(template[:start] + '<article class="paper">' + buttons + body + '</article>' + template[end:], encoding="utf-8")
-    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/network_460_summary.json", "reference/io15_summary.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
+    for relative in ["paper/manuscript_zh.md", "paper/references.bib", "paper/reference_evidence.json", "paper/CITATION_REVISION.md", "paper/results_summary.json", "paper/SUBMISSION_EVIDENCE.md", "DATA_PROVENANCE.json", "MECHANISMS.md", "IEWM13_ADAPTATION.md", "IC15_DYNAMIC_VERSION.md", "README.md", "README_zh.md", "REPRODUCIBILITY.md", "reference/network_460_summary.json", "reference/io15_summary.json", "RELEASE_CHECKS.json", "ic_extension/iewm13.py", "ic_extension/data/io_preparation_audit.json", "scripts_ic/compare_external_baseline.py"]:
         target = docs / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / relative, target)
@@ -121,6 +121,7 @@ def build(refresh_figures=False):
                     shutil.copy2(file, target / file.name)
         for folder in ["p0_v3", "p1_v3", "p4_v3", "upgrade_summary"]:
             shutil.copytree(ROOT / "benchmark_results" / folder, docs / "benchmark_results" / folder, dirs_exist_ok=True)
+        shutil.copytree(ROOT / "benchmark_results/upgrade_summary_v4", docs / "benchmark_results/upgrade_summary_v4", dirs_exist_ok=True)
     import subprocess
     manifest = []
     public = subprocess.check_output(["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"], cwd=ROOT).decode("utf-8").split("\0")
