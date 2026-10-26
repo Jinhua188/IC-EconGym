@@ -1,0 +1,40 @@
+{
+  "task": "ic_r1",
+  "split": "test_id",
+  "scenario_count": 100,
+  "training_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "arms": [
+    "rule",
+    "learned",
+    "learned_plan",
+    "learned_inventory",
+    "learned_capex"
+  ],
+  "locked_scenarios_sha256": "56506ec17807288dd432e21ef6c8a71c784bedf8422f4109f03f31edf5555b6d",
+  "design": "One learned action component replaces the rule action on each evolving hybrid trajectory; no retraining.",
+  "scope": "Model-internal intervention; not observed economic or policy effects.",
+  "checkpoint_sha256": {
+    "101": "c836b3bdd8e77f307201c3f7a6c5a225c20a0d5c34a2cfb9fa8ecf303faa47ee",
+    "102": "801db5dcd0ee9f0a6c71f87857433a0e7800f97b34a55179ae86dbdc353cce81",
+    "103": "d6c2c3c2c30d28de79142f34aba54b008ac15da5881e842d30287a09d8b10dd8",
+    "104": "15aa443731d36e6d25aca08c34a3e73e6c5bd7adcb469998333dc7638df606ed",
+    "105": "01b462c5eb57d5e16289a42f674356efa8d52dbdc8b21a508e4fa3eaf2b92141",
+    "106": "97fa90a9cf6a720b715266f0a8353a580179add18e2fd719d628930e8f90080d",
+    "107": "88a035fffec714bff5c92b760f51738bb576e1a7017cdf34fc77e0322235d6a0",
+    "108": "bd33f56b22682e91dc7879ad079aabeebaf2516f57062f044167a683effba771",
+    "109": "56e7624f58ecdd8093bf8d84f2caefa6d94bf0a1eff00f08d7870716cec73f56",
+    "110": "e8ecd3325ef53b9fdb29f085f645417987f39242d1985cccdd83583433b5fef6"
+  },
+  "diagnostic_code_sha256": "fb729f0b79adf2d6953b3823dccb914d52d11bdd333c29ac3adcb36a5dff9db5"
+}

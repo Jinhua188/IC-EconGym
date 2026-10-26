@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "episodes": 5000,
+  "locked_test_id_scenarios": 100,
+  "training_seeds": 10,
+  "arms": 5,
+  "max_abs_final_fill_difference_vs_p1": 0.0,
+  "bootstrap": "Independent resampling of training instances and locked scenarios; 2000 draws."
+}

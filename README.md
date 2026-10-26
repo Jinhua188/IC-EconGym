@@ -30,6 +30,8 @@ The v0.3 line adds learning, robustness and validation-oriented experiments whil
 
 R1 IPPO performs worse than the rule baseline on final-demand delivery despite rising training reward. G5 PPO improvements are not separated from zero under the reported uncertainty intervals. The local capacity queue is worse than a linear trend on the holdout period. These results are retained in [EXPERIMENT_UPGRADE.md](EXPERIMENT_UPGRADE.md) and the [manuscript](paper/manuscript_zh.md).
 
+A matched R1 action-swap diagnostic is available in [benchmark_results/r1_action_diagnostic_v4/](benchmark_results/r1_action_diagnostic_v4/): across 100 locked scenarios and 10 trained checkpoints, replacing the rule's production plan with the learned plan reproduces the delivery gap. The inventory-target swap has no effect in these scenarios; the capex swap slightly improves delivery with much higher private spending.
+
 The supplied 2018, 2020 and 2023 workbooks each contain 15 IC-related sectors within 57 sectors. The [audited structural summary](reference/io15_summary.json) covers all three years; the current 15-agent dynamic benchmark uses the 2020 workbook. See [15-sector data and experiment methods](IC15_DYNAMIC_VERSION.md). The earlier 13-agent run remains versioned as historical evidence.
 
 Important boundaries remain: many dynamic coefficients are scenario settings; supplier-choice channels are synthetic; the independently verified 460-node network has 617 disclosed links and 768 all-source links across announcement years, without sector-level transaction weights; LLM agents and nationwide dynamic calibration are not part of the current benchmark.
