@@ -31,9 +31,9 @@ table{border-collapse:collapse;width:100%;font-size:12px}th,td{padding:9px 7px;t
 footer{color:var(--muted);font-size:11px;margin-top:10px}
 @media(max-width:800px){main{grid-template-columns:1fr;padding:12px}aside{max-height:none;position:static}header{padding:20px}.panel{padding:15px}}
 </style></head><body>
-<header><h1>IC EconGym　13部门产业经济实验</h1><p>赋能 × 风险 × 治理｜15个任务｜统一投入产出约束环境</p></header>
+<header><h1>IC EconGym　13部门历史演示</h1><p>旧版静态轨迹｜赋能 × 风险 × 治理｜15个任务</p></header>
 <main><aside><div class="aside-title">选择任务</div><div id="task-list"></div></aside>
-<div class="content"><section class="panel"><h2 id="task-title"></h2><p class="question" id="task-question"></p><div class="note">图表来自给定结构和参数下的机制仿真。2020年投入产出核算是数据锚点；AI、行为、冲击及政策系数为演示情景，不表示现实政策因果效应。金额原始单位为万元，图表中的大额金额换算为亿元。</div></section>
+<div class="content"><section class="panel"><h2 id="task-title"></h2><p class="question" id="task-question"></p><div class="note">本页回放旧 55 部门／13 决策部门轨迹；当前 57 部门／15 决策部门实验见论文。图表来自给定结构和参数下的机制仿真，不表示现实政策因果效应。金额原始单位为万元，图表中的大额金额换算为亿元。</div></section>
 <section class="panel"><div class="controls"><label for="metric">指标</label><select id="metric"></select><span id="run-info" class="tag"></span></div><div class="plot" id="plot"></div><div class="legend" id="legend"></div></section>
 <section class="panel"><h2 style="font-size:17px">期末情景对照</h2><div class="scroll"><table id="summary"></table></div><footer>同一任务的情景使用相同随机种子。完整逐期与部门结果见 runs 目录；财政成本为累计支出。</footer></section></div></main>
 <script type="application/json" id="payload">__DATA__</script>

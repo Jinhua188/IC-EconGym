@@ -1,0 +1,32 @@
+{
+  "engine_version": "v0.4-ic15-experimental",
+  "hashes": {
+    "IC-EconGym\\ic_extension\\model_v4.py": "523d871597f8a3db257a63ac28a2c4f30e9084f3ea1a1ae1e212f1fe0bedf6a5",
+    "IC-EconGym\\scripts_ic\\upgrade_common_v4.py": "7eeda8c6f1e7235b88e5170ceea42faf8a3e4221c6d38f1b08ce76ae4abe7532",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_final_first.npz": "4e2a0ae4c7a96a21d0e303a2a9e78dc92d89fd41e628f8dd0f34c85a69858f2d",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_intermediate_first.npz": "cc7d927b7cce0d4b70fe522af8dc3dc5a2cf6fb7258f601a0cdd48449d27cd06",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_proportional.npz": "5d332f27b6d3abdd6a31ecfdd8df212437ff188b6a012efad8abfd96c84a74e4"
+  },
+  "parameter_status": "behavioral coefficients are scenarios; AI proxies are separately documented",
+  "historical_policy_causality": false,
+  "task": "ic_g5",
+  "algorithm": "PPO government",
+  "training_seed": 104,
+  "environment_steps": 12000,
+  "wall_seconds": 45.381194000001415,
+  "best_validation_score": 0.2269721600359494,
+  "observations": 122,
+  "parameters": 13072,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip": 0.2,
+  "epochs": 4,
+  "minibatch": 256,
+  "learning_rate": 0.0003,
+  "finite_horizon": 30,
+  "terminal_value": 0,
+  "price_action": "frozen for all R1 strategies",
+  "private_spend_cap_fraction": 0.05,
+  "checkpoint_sha256": "061939052dc3f22fe790b3156d3acfc42b5ab29cdc76906e6b0ba93535b3650b",
+  "ppo_source_sha256": "4eec660d148ad1952b5453779ea348f1985b6aa8de355234bb1edb68aa1d5d16"
+}

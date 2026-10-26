@@ -8,7 +8,7 @@
 
 ## What is IC-EconGym?
 
-IC-EconGym is a Python research environment with **13 industrial-sector agents + 1 government agent**, **15 configured tasks**, and **3 accounting-consistent import-allocation assumptions**. Orders, source-specific materials, inventory, capacity, rationing, project delays and fiscal spending are executed under a common input–output accounting boundary.
+IC-EconGym is a Python research environment with **15 industrial-sector agents + 1 government agent**, **15 configured tasks**, and **3 accounting-consistent import-allocation assumptions**. Orders, source-specific materials, inventory, capacity, rationing, project delays and fiscal spending are executed under a common input–output accounting boundary.
 
 The current benchmark covers three question families:
 
@@ -16,7 +16,7 @@ The current benchmark covers three question families:
 - **R1–R5 · AI and supply-chain risk:** how local responses propagate through production constraints;
 - **G1–G5 · AI governance and industrial policy:** how fixed fiscal resources are allocated across sectors and instruments.
 
-## Current evidence — v0.3.0 release preparation
+## Current evidence — 15-sector experimental revision
 
 **Release status:** `VERSION=0.3.0` identifies the pending release line. No `v0.3.0` tag, GitHub Release or DOI has been published. The existing [v0.2.0 release](https://github.com/Jinhua188/IC-EconGym/releases/tag/v0.2.0) remains the published baseline. See [release readiness](RELEASE_READINESS.json).
 
@@ -30,9 +30,15 @@ The v0.3 line adds learning, robustness and validation-oriented experiments whil
 
 R1 IPPO performs worse than the rule baseline on final-demand delivery despite rising training reward. G5 PPO improvements are not separated from zero under the reported uncertainty intervals. The local capacity queue is worse than a linear trend on the holdout period. These results are retained in [EXPERIMENT_UPGRADE.md](EXPERIMENT_UPGRADE.md) and the [manuscript](paper/manuscript_zh.md).
 
-Important boundaries remain: many dynamic coefficients are scenario settings; supplier-choice channels are synthetic; candidate firm links are not observed transaction weights; LLM agents and nationwide dynamic calibration are not part of the current benchmark.
+A matched R1 action-swap diagnostic is available in [benchmark_results/r1_action_diagnostic_v4/](benchmark_results/r1_action_diagnostic_v4/): across 100 locked scenarios and 10 trained checkpoints, replacing the rule's production plan with the learned plan reproduces the delivery gap. The inventory-target swap has no effect in these scenarios; the capex swap slightly improves delivery with much higher private spending.
 
-## Quick start
+The supplied 2018, 2020 and 2023 workbooks each contain 15 IC-related sectors within 57 sectors. The [audited structural summary](reference/io15_summary.json) covers all three years; the current 15-agent dynamic benchmark uses the 2020 workbook. See [15-sector data and experiment methods](IC15_DYNAMIC_VERSION.md). The earlier 13-agent run remains versioned as historical evidence.
+
+Important boundaries remain: many dynamic coefficients are scenario settings; supplier-choice channels are synthetic; the independently verified 460-node network has 617 disclosed links and 768 all-source links across announcement years, without sector-level transaction weights; LLM agents and nationwide dynamic calibration are not part of the current benchmark.
+
+## Historical demo quick start
+
+These commands replay the earlier 13-sector demonstration. For the current 15-sector benchmark, use [IC15_DYNAMIC_VERSION.md](IC15_DYNAMIC_VERSION.md) with the supplied source workbooks.
 
 ```bash
 python -m pip install -r requirements_ic.txt
@@ -53,21 +59,21 @@ Then open `http://localhost:8000/docs/`. The web demo replays precomputed trajec
 
 ![Architecture](paper/figures/architecture.png)
 
-The 2020 accounting table was split from 42 to 55 sectors using revenue shares. Thirteen related sectors are decision agents; the other 42 domestic sectors, imports and final demand remain explicit boundaries. Monetary flows use fixed-base ten-thousand CNY units, with annual baseline flows divided into four equal quarters.
+The current 2020 competitive-use table has 57 sectors. Fifteen related sectors are decision agents; the other 42 domestic sectors, imports and final demand remain explicit boundaries. Monetary flows use current-price ten-thousand CNY units, with annual baseline flows divided into four equal quarters. Import purchasers are unidentified; three allocation scenarios balance the observed product totals.
 
 ## Architecture and repository map
 
 | Path | Purpose |
 |---|---|
-| `ic_extension/` | Environment, role constraints, policies and World13 adapter |
-| `cfg_ic/` | E1–E5 empowerment, R1–R5 risk, G1–G5 governance tasks |
+| `ic_extension/` | Versioned 15-sector environment and historical 13-sector adapter |
+| `cfg_ic15/` | Current E1–E5, R1–R5 and G1–G5 task configurations |
 | `scripts_ic/` | Task runners, benchmarks, diagnostics and runtime tools |
 | `benchmark_results/` | Paired results, learning evaluations and statistical summaries |
-| `benchmark_splits/` | Locked train/validation/test scenario definitions |
+| `benchmark_splits_v4/` | Current locked train/validation/test scenario definitions |
 | `calibration/` | Parameter registry, data-source registry and proxy mappings |
 | `external_validation/` | Local external-validation evidence and source manifest |
 | `learning/` | Learning policies, checkpoints and training utilities |
-| `robustness/` | Joint parameter and structural robustness experiments |
+| `robustness_v4/` | Current joint parameter and structural robustness experiments |
 | `paper/` | Manuscript, figures and computed summaries |
 | `docs/` | GitHub Pages project site, task replay and observer |
 
@@ -79,16 +85,18 @@ A change in an internal state is not automatically evidence of improved system p
 
 ## Learning and verification
 
-Use a separate Python 3.12 environment for learning. Original quick-start commands continue to execute the original engine. The v0.3 adapter is explicit:
+Use a separate Python 3.12 environment for learning. Original quick-start commands continue to execute the original engine. The historical v0.3 adapter remains available. The 15-sector command path is:
 
 ```bash
-python -m pip install -r requirements_learning.lock.txt
-python -m scripts_ic.verify_upgrade
-python -m ic_extension.entrypoint_v3 --problem_scene ic_r1 --split test_id --scenario 0 --sector-policy learned
-python -m ic_extension.entrypoint_v3 --problem_scene ic_g5 --split test_ood --scenario 0 --government-policy learned
+python -m scripts_ic.run_upgrade_experiments_v4 --package p0
+python -m scripts_ic.run_learning_upgrade_v4 --workers 4 --steps 12000
+python -m scripts_ic.verify_upgrade_v4
+python -m scripts_ic.run_upgrade_experiments_v4 --package p1 --workers 4
+python -m scripts_ic.run_upgrade_experiments_v4 --package p3 --workers 4
 ```
 
-The independent training instances, locked ID/OOD scenarios, joint robustness and timing commands are documented in [EXPERIMENT_UPGRADE.md](EXPERIMENT_UPGRADE.md). Reusing the original EconGym household/bank policies as sector baselines requires a separate adaptation.
+
+The current 15-sector inputs, training instances, locked scenarios, robustness and timing commands are documented in [IC15_DYNAMIC_VERSION.md](IC15_DYNAMIC_VERSION.md). Reusing the original EconGym household/bank policies as sector baselines requires a separate adaptation.
 
 Governance checks do not retrain policies:
 

@@ -1,0 +1,20 @@
+{
+  "engine_version": "v0.4-ic15-experimental",
+  "hashes": {
+    "IC-EconGym\\ic_extension\\model_v4.py": "523d871597f8a3db257a63ac28a2c4f30e9084f3ea1a1ae1e212f1fe0bedf6a5",
+    "IC-EconGym\\scripts_ic\\upgrade_common_v4.py": "7eeda8c6f1e7235b88e5170ceea42faf8a3e4221c6d38f1b08ce76ae4abe7532",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_final_first.npz": "4e2a0ae4c7a96a21d0e303a2a9e78dc92d89fd41e628f8dd0f34c85a69858f2d",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_intermediate_first.npz": "cc7d927b7cce0d4b70fe522af8dc3dc5a2cf6fb7258f601a0cdd48449d27cd06",
+    "outputs\\io_15_2018_2020_2023\\io_use_15_2020_proportional.npz": "5d332f27b6d3abdd6a31ecfdd8df212437ff188b6a012efad8abfd96c84a74e4"
+  },
+  "parameter_status": "behavioral coefficients are scenarios; AI proxies are separately documented",
+  "historical_policy_causality": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "logical_cpus": 22,
+  "python": "3.12.6",
+  "numpy": "1.26.4",
+  "torch": "2.3.0+cpu",
+  "actors_per_environment": 16,
+  "scaling_claim": "batched independent environments, not number-of-agents scaling"
+}

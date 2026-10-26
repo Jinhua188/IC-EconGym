@@ -33,15 +33,20 @@ def read_json(path: str) -> dict:
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
 
-def check_hashes(filename: str, full_public_snapshot: bool = False) -> int:
+def check_hashes(filename: str, full_public_snapshot: bool = False, baseline_commit: str | None = None) -> int:
     entries = {}
     for line in (ROOT / filename).read_text(encoding="utf-8").splitlines():
         digest, relative = line.split("  ", 1)
         require(re.fullmatch(r"[0-9a-f]{64}", digest) is not None, f"Invalid hash: {relative}")
         path = (ROOT / relative).resolve()
-        require(path.is_relative_to(ROOT) and path.is_file(), f"Invalid artifact path: {relative}")
+        require(path.is_relative_to(ROOT), f"Invalid artifact path: {relative}")
         require(relative not in entries, f"Duplicate hash entry: {relative}")
-        require(hashlib.sha256(path.read_bytes()).hexdigest() == digest, f"Hash mismatch: {relative}")
+        if baseline_commit:
+            source = subprocess.check_output(["git", "show", f"{baseline_commit}:{relative}"], cwd=ROOT)
+        else:
+            require(path.is_file(), f"Invalid artifact path: {relative}")
+            source = path.read_bytes()
+        require(hashlib.sha256(source).hexdigest() == digest, f"Hash mismatch: {relative}")
         entries[relative] = digest
     require(bool(entries), f"Empty manifest: {filename}")
     if full_public_snapshot:
@@ -111,7 +116,7 @@ def engineering_checks(schema_file: Path | None) -> dict:
         require(bool(data.get("on") and data.get("jobs")), f"Invalid workflow: {workflow.name}")
     # The recorded research snapshot preserves the source engine, configurations,
     # locked split, checkpoints and reported results of the pre-governance commit.
-    research_count = check_hashes("RESEARCH_SNAPSHOT.sha256")
+    research_count = check_hashes("RESEARCH_SNAPSHOT.sha256", baseline_commit=readiness["baseline_commit"])
     public_count = check_hashes("MANIFEST.sha256", full_public_snapshot=True)
     return {"version": version, "cff_schema": "1.2.0", "issue_forms": len(forms),
             "research_artifacts_verified": research_count, "public_files_verified": public_count,

@@ -1,0 +1,33 @@
+{
+  "source_workspace": "outputs/network_460_analysis/results",
+  "version": "verified_alias_2026-10-10",
+  "validation": {
+    "status": "PASS",
+    "nodes": 460,
+    "disclosure_pairs": 617,
+    "all_source_pairs": 768,
+    "new_alias_pairs": 11,
+    "amount_conflicts": 2,
+    "seeds": 10,
+    "workbook_sheets": 17,
+    "recovery_monotonic": true,
+    "sensitivity_monotonic": true,
+    "independent_record_reconstruction": true
+  },
+  "source_sha256": "1d3649cf0e1a6b5dc6990f8e969778c76bb6cce1e17b1b73fc55c496168b9fa0",
+  "reported_results": {
+    "disclosure_network_isolates": 60,
+    "disclosure_network_density": 0.0029222316946102113,
+    "disclosure_pairs_2022_2024_union": 143,
+    "critical_edges_10pct_seeds": 10,
+    "critical_edges_10pct_mean_failed_nodes": 74.5,
+    "critical_edges_10pct_mean_function": 0.8014649775043796,
+    "greedy_function_recovery_budget": 12,
+    "greedy_function_recovery_mean_final_function": 0.9406,
+    "greedy_function_recovery_seeds_reaching_0_95": 1
+  },
+  "result_files": ["network_statistics.csv", "cascade_summary.csv", "recovery_summary_by_seed.csv", "metadata.json", "validation.json"],
+  "interpretation": "Conditional equal-unit threshold stress test; not measured production loss, not causal AI evidence; announcement-year is not necessarily fiscal year",
+  "scope": "Cross-announcement-year union; not a same-year production network or calibrated 13-sector flow matrix",
+  "raw_matrix_distributed": false
+}
